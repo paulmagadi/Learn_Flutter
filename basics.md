@@ -28,46 +28,63 @@ You can install Flutter on Windows, Mac, and Linux or run it from the browser.
  `flutter doctor`
 
 
-Useful Flutter Commands
+#### Useful Flutter Commands
 Here you will find a list of useful Flutter commands that will make your app development process easier and faster.
 
 1. Setting Up
+
 Before diving into development, it’s essential to ensure that Flutter is set up correctly on your machine:
 
-flutter doctor
+`flutter doctor`
+
 This command checks your environment and displays a report of the status of your Flutter installation. It will also notify you of any dependencies you still need to install.
 
 2. Creating a New Project
+
 To start a new Flutter project you need to run flutter create command. This command will create a new Flutter project in the specified directory.
 
-flutter create my_app
+`flutter create my_app`
+
 This command sets up a new Flutter project called my_app.
 
 3. Running the App
+
 After creating a project, navigate to the project directory and use this command to run the Flutter app in the default device (emulator/simulator).
 
-flutter run
+`flutter run`
+
 4. Checking Installed Devices
+
 To check the list of all connected devices, use the following command:
 
-flutter devices
+`flutter devices`
+
 5. Building Apk For Android
+
 To build an APK file for Android, use:
 
-flutter build apk
+`flutter build apk`
+
 6. Building IPA For iOS
+
 To build an IPA file for iOS, use:
 
-flutter build ios
+`flutter build ios`
+
 7. Get All Packages
+
 To get all the packages in your project, use:
 
-flutter pub get
+`flutter pub get`
+
 8. To Create Android App Bundle
+
 To create an app bundle for Android to publish app, use:
 
-flutter build appbundle
-Conclusion
+`flutter build appbundle`
+
+**Conclusion**
+
 These are some of the basic commands to get you started with Flutter development. As you go advance, you will find more commands that Flutter provides to aid in the development process. Happy learning!
 
 
