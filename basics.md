@@ -1,52 +1,6 @@
 
 
-Using Dart and Flutter Together
-If you’re actively learning Flutter, learning Dart programming as well would be a great skill to add to your toolset. Leveraging Dart and Flutter together enables developers to build high-quality, natively compiled applications for mobile, web, and desktop from a single codebase, which can save you development time and improve your app’s performance. Learn how Pieces, an AI-enabled productivity tool across macOS, Windows and Linux with plugins across the entire development workflow, used these frameworks to build their products in their Dart and Flutter case study.
-What are the Prerequisites to Learn Flutter?
-You should have basic knowledge of a Dart programming language. If you don't know Dart, then you can learn it from here.
 
-
-
-What is Flutter?
-Flutter is a free tool developed by Google for creating mobile, web, and desktop apps with single code. It uses Dart programming language to create apps. Flutter quickly gained popularity because of easy and fast development process.
-
-Why You Should Learn Flutter?
-Flutter offers a many advantages for developers and businesses like:
-
-Single Codebase: You can use the same code to make apps for android, iOS, web, and desktop.
-Beautiful UI: Flutter has special things called widgets, that help you to create beautiful user interfaces.
-Fast Development: Flutter has a hot reload feature that allows you to see changes in your app in real time. This makes the development process faster.
-Efficient Testing: With Flutter, you can easily test your app on different devices and platforms at the same time.
-Ready Made Packages: You can get thousands of ready made packages to enhance your app’s functionality.
-Some Popular Apps Built With Flutter
-Here are some popular apps made with Flutter:
-
-Google Earth,
-Youtube Create,
-Google Pay,
-Alibaba,
-BMW,
-Ebay,
-Google Ads, etc.
- Info
-Note: As of May 2023, there are more than 1 millions apps built with flutter. This shows the popularity of flutter in such a short time.
-
-Flutter History
-Here is a timeline of Flutter’s history:
-
-📅Date	🎉Event
-2015	Google started Flutter as an open-source project.
-May 12, 2017	First alpha release of Flutter.
-Dec 4, 2018	Flutter 1.0 (first stable version) launches.
-Mar 3, 2021	Flutter 2.0 releases with web & desktop support.
-May 5, 2022	Flutter 3.0 releases with advanced features.
-Feb 15, 2024	Flutter 3.19 releases with more advanced features.
-Key Points
-Flutter allows you to build, test, and publish mobile, web, desktop apps from a single codebase.
-It uses Dart programming language, which helps you to build apps fast for many platforms.
-It has lots of widgets to build beautiful user interfaces.
-There are many ready made packages available for Flutter.
-It is backed by Google and trusted by well-known brands worldwide.
 
 
 Flutter Installation
