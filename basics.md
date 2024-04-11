@@ -83,9 +83,7 @@ To create an app bundle for Android to publish app, use:
 
 `flutter build appbundle`
 
-**Conclusion**
 
-These are some of the basic commands to get you started with Flutter development. As you go advance, you will find more commands that Flutter provides to aid in the development process. Happy learning!
 
 
 Basic Flutter Program
