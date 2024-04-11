@@ -3,16 +3,17 @@
 
 
 
-Flutter Installation
-There are multiple ways to install a flutter on your system. You can install Flutter on Windows, Mac, and Linux or run it from the browser. In this tutorial, you will learn easiest way to install a flutter on your system. If you got stuck somewhere, you can watch the video below to be more clear.
+# Flutter Installation
+You can install Flutter on Windows, Mac, and Linux or run it from the browser.
 
-Requirements
-Flutter SDK,
-VS code or other editors like Intellij [We will use VS Code here].
-Git [For Version Control].
-Anrdoid Studio.
-Flutter Windows Installation
-Follow the below instructions to install a flutter on the windows operating system.
+**Requirements**
+
+- Flutter SDK,
+- VS code or other editors like Intellij [We will use VS Code here].
+- Git [For Version Control].
+- Anrdoid Studio.
+- Flutter Windows Installation
+
 
 Steps:
 Download Flutter sdk from here.
