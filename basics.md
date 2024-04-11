@@ -1,19 +1,4 @@
-FLUTTER TUTORIAL
-Learn Flutter, powerful free toolkit for building Android, iOS, Web, and Desktop apps from a single codebase. Start your journey with this tutorial.
 
-Click here to get started.
-Learn Flutter
-Why Should You Learn Flutter?
-Free and open source.
-To develop apps for iOS, Android, Web, and Desktop using single codebase.
-To build apps faster.
-It has rich set of libraries and tools.
-Easy to test and publish mobile apps.
-Huge community support.
-It is backed by Google.
-targets
-Question For Practice
-At the end of the session, we provide you with challenges for Flutter, and they will help you to improve what you're learning. Completing these questions will help you to master Flutter.
 
 Using Dart and Flutter Together
 If you’re actively learning Flutter, learning Dart programming as well would be a great skill to add to your toolset. Leveraging Dart and Flutter together enables developers to build high-quality, natively compiled applications for mobile, web, and desktop from a single codebase, which can save you development time and improve your app’s performance. Learn how Pieces, an AI-enabled productivity tool across macOS, Windows and Linux with plugins across the entire development workflow, used these frameworks to build their products in their Dart and Flutter case study.
