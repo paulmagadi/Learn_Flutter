@@ -15,19 +15,17 @@ You can install Flutter on Windows, Mac, and Linux or run it from the browser.
 - Flutter Windows Installation
 
 
-Steps:
-Download Flutter sdk from here.
-Extract or copy Flutter sdk to your C drive.
-Setup path C:\flutter\bin to your environment variable. Watch the video below to be more clear.
-Open the command prompt and type flutter –version to check it.
-flutter --version
-Install VS Code from here and add Dart and Flutter Extension.
-Install Android Studio from here and add Android sdk.
-Install Git from here for version control and to keep track of your code changes.
-Open the command prompt and type flutter doctor to check and diagnose the setup of your flutter development environment.
- flutter doctor
-Flutter Windows Installation Video
-Watch this video to easily install a flutter on your windows operating system.
+#### Steps:
+1. Download Flutter sdk from here.
+2. Extract or copy Flutter sdk to your C drive.
+3. Setup path C:\flutter\bin to your environment variable. Watch the video below to be more clear.
+4. Open the command prompt and type flutter –version to check it.
+`flutter --version`
+5. Install VS Code from here and add Dart and Flutter Extension.
+6. Install Android Studio from here and add Android sdk.
+7. Install Git from here for version control and to keep track of your code changes.
+8. Open the command prompt and type flutter doctor to check and diagnose the setup of your flutter development environment.
+ `flutter doctor`
 
 
 Useful Flutter Commands
