@@ -1,40 +1,49 @@
-API AND REST API
-What is an API?
+# API AND REST API
+
+**What is an API?**
+
 An API, or Application Programming Interface, is a set of rules for building and interacting with software applications. It defines the methods and data formats for requesting and exchanging information between different software programs, enabling them to communicate and share functionalities efficiently.
 
-targets
 
-What is REST API?
+
+**What is REST API?**
+
 A REST API, or Representational State Transfer API, is a type of API that adheres to the REST architectural style. It uses HTTP requests to access and use data, with the operations including GET, POST, PUT, and DELETE.
 
-Principles of REST
-Client-server architecture: Separation of client and server functionalities to improve portability and scalability of the application.
-Stateless: Each request from the client to the server must contain all the information the server needs to understand and complete the request.
-Cacheable: Responses must define themselves as cacheable or not to prevent clients from reusing stale or inappropriate data.
-Uniform interface: Simplifies and decouples the architecture, which enables each part to evolve independently.
-Layered system: The client cannot tell whether it is connected directly to the end server or to an intermediary.
-Code on demand (optional): Servers can temporarily extend or customize the functionality of a client by transferring executable code.
-How Do REST APIs Work?
+**Principles of REST**
+
+1. **Client-server architecture**: Separation of client and server functionalities to improve portability and scalability of the application.
+2. **Stateless**: Each request from the client to the server must contain all the information the server needs to understand and complete the request.
+3. **Cacheable**: Responses must define themselves as cacheable or not to prevent clients from reusing stale or inappropriate data.
+4. **Uniform interface**: Simplifies and decouples the architecture, which enables each part to evolve independently.
+5. **Layered system**: The client cannot tell whether it is connected directly to the end server or to an intermediary.
+6. **Code on demand (optional)**: Servers can temporarily extend or customize the functionality of a client by transferring executable code.
+
+**How Do REST APIs Work?**
+
 When a client requires data or functionality, it sends a request to the server using a URL. The server processes the request, and then sends back a response. This response includes a status line indicating success or failure and the requested resource in the format specified by the request.
 
-Components of a RESTful API Request
-Resource identifier (URL): Uniquely identifies the resource being requested.
-HTTP Method: Defines the operation to be performed (GET, POST, PUT, DELETE, etc.).
-Headers: Provide metadata for the HTTP request, including content type, authentication, etc.
-Body (optional): Contains data sent with the request (for POST, PUT methods).
-Benefits of RESTful APIs
-Scalability: Efficient client-server interactions and stateless operations facilitate scalability.
-Flexibility and Independence: The separation of client and server, along with the stateless nature of requests, allows various parts of an application to evolve independently.
-Widespread Use: Given its efficiency, simplicity, and support across programming languages, REST APIs are widely used for web services, including social media platforms, mobile applications, and IoT devices.
-HTTP Status Codes
-Here are some common HTTP status codes and their meanings:
+**Components of a RESTful API Request**
 
-200 OK: The request was successful.
-201 Created: The request has been fulfilled and resulted in a new resource being created.
-400 Bad Request: The server cannot process the request due to a client error.
-401 Unauthorized: The request has not been applied because it lacks valid authentication credentials.
-404 Not Found: The server cannot find the requested resource.
-500 Internal Server Error: The server encountered an unexpected condition that prevented it from fulfilling the request.
+1. **Resource identifier (URL)**: Uniquely identifies the resource being requested.
+2. **HTTP Method**: Defines the operation to be performed (GET, POST, PUT, DELETE, etc.).
+3. **Headers**: Provide metadata for the HTTP request, including content type, authentication, etc.
+4. **Body (optional)**: Contains data sent with the request (for POST, PUT methods).
+
+**Benefits of RESTful APIs**
+
+- Scalability: Efficient client-server interactions and stateless operations facilitate scalability.
+- Flexibility and Independence: The separation of client and server, along with the stateless nature of requests, allows various parts of an application to evolve independently.
+- Widespread Use: Given its efficiency, simplicity, and support across programming languages, REST APIs are widely used for web services, including social media platforms, mobile applications, and IoT devices.
+
+**HTTP Status Codes**
+
+- **200 OK**: The request was successful.
+- **201 Created**: The request has been fulfilled and resulted in a new resource being created.
+- **400 Bad Request**: The server cannot process the request due to a client error.
+- **401 Unauthorized**: The request has not been applied because it lacks valid authentication credentials.
+- **404 Not Found**: The server cannot find the requested resource.
+- **500 Internal Server Error**: The server encountered an unexpected condition that prevented it from fulfilling the request.
 
 
 INTRODUCTION TO JSON
