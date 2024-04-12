@@ -46,16 +46,18 @@ When a client requires data or functionality, it sends a request to the server u
 - **500 Internal Server Error**: The server encountered an unexpected condition that prevented it from fulfilling the request.
 
 
-INTRODUCTION TO JSON
-What is JSON?
+# JSON
+
 JSON (JavaScript Object Notation) is a lightweight data-interchange format. Mostly it is used to transfer data between computers.
 
-Characteristics of JSON
-Lightweight: JSON is designed to be easy to use and quick to interpret, making it ideal for data interchange.
-Self-describing: JSON structures are clear and understandable, making it easy to read and write.
-Language Independent: Although derived from JavaScript, JSON is language-independent, with many programming languages providing support for parsing and generating JSON data.
- Info
-Note: JSON files have a .json extension.
+**Characteristics of JSON**
+
+- *Lightweight**: JSON is designed to be easy to use and quick to interpret, making it ideal for data interchange.
+- **Self-describing**: JSON structures are clear and understandable, making it easy to read and write.
+- **Language Independent**: Although derived from JavaScript, JSON is language-independent, with many programming languages providing support for parsing and generating JSON data.
+
+
+> Note: JSON files have a .json extension.
 
 Use Cases of JSON
 App and Web Development: JSON is extensively used in app and web development for transferring data between a server and a client.
