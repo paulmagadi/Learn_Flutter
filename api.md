@@ -348,6 +348,7 @@ Add the http package to your pubspec.yaml file:
 
 This example demonstrates updating a post using the JSON placeholder API:
 
+```
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -425,20 +426,26 @@ class _UpdatePostExampleState extends State<UpdatePostExample> {
     );
   }
 }
+```
 
+## DELETE DATA FROM REST API
 
-DELETE DATA FROM REST API
-Introduction
 Deleting data from a REST API is a critical function in many applications, allowing users to remove information from external data sources. This tutorial explains how to implement DELETE requests in Flutter using the http package.
 
-Setup
+**Setup**
+
 Ensure you have the http package in your pubspec.yaml file to make HTTP requests:
 
-dependencies:
+**dependencies:**
+
+```
   flutter:
     sdk: flutter
   http: ^1.2.1
-Example: Deleting a Post
+```
+
+**Example: Deleting a Post**
+
 This example demonstrates how to delete a post from a JSON placeholder API. We’ll send a DELETE request and handle the response.
 
 import 'package:flutter/material.dart';
