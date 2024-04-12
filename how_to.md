@@ -127,9 +127,11 @@ Run your app using the below command.
 
 `flutter run`
 
-Convert HTML to Flutter App
+## Convert HTML to Flutter App
+
 You can also convert website content to dart variable and then use it in your flutter app. For example, you can convert the below html code to dart variable and then use it in your flutter app.
 
+```
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
@@ -163,12 +165,15 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-Permissions
+```
+
+**Permissions**
+
 You need to add internet permission in your AndroidManifest.xml file. For iOS, you don’t need to add any permission.
 
-<uses-permission android:name="android.permission.INTERNET"/>
-Conclusion
-Congratulations, you have successfully converted website to flutter app.
+`<uses-permission android:name="android.permission.INTERNET"/>`
+
+
 
 
 HOW TO GET JOB IN FLUTTER
