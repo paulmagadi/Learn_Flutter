@@ -1,31 +1,42 @@
-UPDATE ALL PACKAGES IN FLUTTER
-Update All Packages in Flutter
+# UPDATE ALL PACKAGES IN FLUTTER
+
 We shall discover how to update every package in Flutter by looking at this example. To update all of the flutter packages, we will use the flutter pub upgrade command.
 
-See Available Upgrades
+**See Available Upgrades**
+
 If you want to see the available upgrades, you can use the flutter pub outdated command. It will show you the available upgrades for your flutter project.
 
-flutter pub outdated
-Update All Packages
+`flutter pub outdated`
+
+**Update All Packages**
+
 To update all packages in flutter, you can use the flutter pub upgrade command. It will update all packages in your flutter project.
 
-flutter pub upgrade
-Update a Specific Package
+`flutter pub upgrade`
+
+**Update a Specific Package**
+
 If you want to update a specific package, you can use the flutter pub upgrade command with the package name. It will update the specific package in your flutter project.
 
-flutter pub upgrade <package_name>
-Example: Update Specific Package
+`flutter pub upgrade <package_name>`
+
+*Example: Update Specific Package*
+
 Let’s suppose you want to update the firebase_auth package. To update the firebase_auth package, you can use the following command.
 
-flutter pub upgrade firebase_auth
-Update a Specific Package to a Specific Version
+`flutter pub upgrade firebase_auth`
+
+**Update a Specific Package to a Specific Version**
+
 If you want to update a specific package to a specific version, you can use the flutter pub upgrade command with the package name and version. It will update the specific package to a specific version in your flutter project.
 
-flutter pub upgrade <package_name> <version>
-Example: Update Specific Package to a Specific Version
+`flutter pub upgrade <package_name> <version>`
+
+*Example: Update Specific Package to a Specific Version*
+
 Let’s suppose you want to update the firebase_auth package to version 1.0.0. To update the firebase_auth package to version 1.0.0, you can use the following command.
 
-flutter pub upgrade firebase_auth 1.0.0
+`flutter pub upgrade firebase_auth 1.0.0`
 
 
 ADD INTERNET PERMISSION IN FLUTTER
