@@ -71,24 +71,32 @@ To add internet permission in iOS, you need to add the following line in the ios
 ```
 
 
-CONVERT WEBSITE TO FLUTTER APP
-Convert Website to Flutter App
+# CONVERT WEBSITE TO FLUTTER APP
 This part will teach you how to turn a website into a Flutter application. You can convert any website to flutter app using the webview_flutter package. This package is used to convert any website to flutter app.
 
-Step 1: Create a Flutter Project
+**Step 1: Create a Flutter Project**
+
 We will convert google.com website to flutter app. So, create a flutter project using the below command.
 
-flutter create website_to_flutter_app
-Step 2: Add Package
+`flutter create website_to_flutter_app`
+
+**Step 2: Add Package**
+
 Add webview_flutter package to your pubspec.yaml file.
 
 dependencies:
+
+```
   flutter:
     sdk: flutter
   webview_flutter: ^4.4.1
-Step 3: Add Code
+```
+
+**Step 3: Add Code**
+
 Add the below code to your main.dart file.
 
+```
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
@@ -111,10 +119,14 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-Step 4: Run App
+```
+
+**Step 4: Run App**
+
 Run your app using the below command.
 
-flutter run
+`flutter run`
+
 Convert HTML to Flutter App
 You can also convert website content to dart variable and then use it in your flutter app. For example, you can convert the below html code to dart variable and then use it in your flutter app.
 
