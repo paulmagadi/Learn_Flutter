@@ -248,10 +248,11 @@ If you’re finding it challenging to land a full-time role initially, consider 
 
 
 
-REMOVE DEBUG BANNER IN FLUTTER
-Remove Debug Banner in Flutter
+## REMOVE DEBUG BANNER IN FLUTTER
+
 To remove the debug banner in flutter, you need to set the debugShowCheckedModeBanner property to false in the MaterialApp widget.
 
+```
 MaterialApp(
     // set this property to false
   debugShowCheckedModeBanner: false,
@@ -266,3 +267,4 @@ CupertinoApp(
     // set this property to false
   debugShowCheckedModeBanner: false,
 )
+```
