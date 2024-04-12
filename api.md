@@ -59,24 +59,29 @@ JSON (JavaScript Object Notation) is a lightweight data-interchange format. Most
 
 > Note: JSON files have a .json extension.
 
-Use Cases of JSON
-App and Web Development: JSON is extensively used in app and web development for transferring data between a server and a client.
-APIs and Web Services: Many web services and APIs exchange data using JSON format due to its straightforward and efficient structure.
-JSON Data Types
-JSON supports various data types, including:
+**Use Cases of JSON**
 
-String: A sequence of characters wrapped in quotes.
-Number: Numeric data (integer or floating point).
-Boolean: Represents a truth value (true or false).
-Null: Represents a null value.
-Array: An ordered list of values, enclosed in square brackets [].
-Object: A collection of key-value pairs, enclosed in curly braces {}.
-JSON Syntax Rules
-Data is in name/value pairs.
-Curly braces {} hold objects, while square brackets [] hold arrays.
-Data is separated by commas, and each name in an object is followed by a colon : which precedes the value.
-Example of JSON Data:
+- App and Web Development: JSON is extensively used in app and web development for transferring data between a server and a client.
+- APIs and Web Services: Many web services and APIs exchange data using JSON format due to its straightforward and efficient structure.
 
+**JSON Data Types**
+
+1. String: A sequence of characters wrapped in quotes.
+2. Number: Numeric data (integer or floating point).
+3. Boolean: Represents a truth value (true or false).
+4. Null: Represents a null value.
+5. Array: An ordered list of values, enclosed in square brackets [].
+6. Object: A collection of key-value pairs, enclosed in curly braces {}.
+
+**JSON Syntax Rules**
+
+- Data is in name/value pairs.
+- Curly braces {} hold objects, while square brackets [] hold arrays.
+- Data is separated by commas, and each name in an object is followed by a colon : which precedes the value.
+
+*Example of JSON Data:*
+
+```
 {
   "name": "John Doe",
   "age": 30,
@@ -87,14 +92,18 @@ Example of JSON Data:
   },
   "phoneNumbers": ["123-456-7890", "456-789-0123"]
 }
-JSON vs. XML
+```
+
+#### JSON vs. XML
 JSON and XML are both used for data interchange, but JSON is generally preferred due to its simpler syntax, faster parsing, and lighter data format.
 
-Parsing JSON with Dart
+**Parsing JSON with Dart**
+
 To parse JSON in Dart, you can use the jsonDecode function from the dart:convert package.
 
-Example of Parsing JSON in Dart:
+*Example of Parsing JSON in Dart:*
 
+```
 import 'dart:convert';
 
 void main() {
@@ -112,6 +121,8 @@ void main() {
   print('Age: ${decodedJson['age']}');
   print('Is Employed: ${decodedJson['isEmployed']}');
 }
+```
+
  Info
 Note: Dart’s jsonDecode function returns a Map<String, dynamic>, allowing for easy access to JSON properties.
 
