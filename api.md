@@ -226,20 +226,27 @@ Create a motivational quotes app that fetches quotes from a REST API and display
 https://jsonguide.technologychannel.org/quotes.json
 
 
-POST DATA TO REST API
-Introduction
+## POST DATA TO REST API
+
 Posting data to a REST API is a common requirement for mobile applications, enabling them to send information to a server for processing or storage. This guide demonstrates how to make POST requests in Flutter, using the http package.
 
-Setup
+**Setup**
+
 Ensure the http package is included in your pubspec.yaml for making HTTP requests:
 
-dependencies:
+**dependencies:**
+
+```
   flutter:
     sdk: flutter
   http: ^1.2.1
-Example: Creating a New Post
+```
+
+*Example: Creating a New Post*
+
 Here’s how you can post data to create a new post in a JSON placeholder API:
 
+```
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -318,21 +325,27 @@ class _CreatePostExampleState extends State<CreatePostExample> {
     );
   }
 }
+```
 
 
+## PUT DATA TO REST API IN FLUTTER
 
-PUT DATA TO REST API IN FLUTTER
-Introduction
 Updating data on a server through a REST API is a common requirement for mobile applications. PUT requests are used for updating existing resources. This tutorial shows how to send PUT requests in Flutter using the http package.
 
-Setup
+**Setup**
+
 Add the http package to your pubspec.yaml file:
 
-dependencies:
+**dependencies:**
+
+```
   flutter:
     sdk: flutter
   http: ^1.2.1
-Example: Updating a Post
+```
+
+*Example: Updating a Post*
+
 This example demonstrates updating a post using the JSON placeholder API:
 
 import 'package:flutter/material.dart';
