@@ -39,31 +39,36 @@ Let’s suppose you want to update the firebase_auth package to version 1.0.0. T
 `flutter pub upgrade firebase_auth 1.0.0`
 
 
-ADD INTERNET PERMISSION IN FLUTTER
-Internet Permission in Flutter
+# ADD INTERNET PERMISSION IN FLUTTER
 In this example, you will learn how to add internet permission in flutter. And then you will learn how to add internet permission in flutter for android and ios.
 
-Add Internet Permission in Android
+**Add Internet Permission in Android**
+
 To add internet permission in android, you need to add the following line in the android/app/src/main/AndroidManifest.xml file.
 
-<uses-permission android:name="android.permission.INTERNET"/>
+`<uses-permission android:name="android.permission.INTERNET"/>`
+
 File Should Look Like This:
 
+```
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:label="Learn Computer Basic"
         android:icon="@mipmap/ic_launcher">
-Add Internet Permission in iOS
+```
+
+**Add Internet Permission in iOS**
+
 To add internet permission in iOS, you need to add the following line in the ios/Runner/Info.plist file.
 
+```
 <key>NSAppTransportSecurity</key>
 <dict>
     <key>NSAllowsArbitraryLoads</key>
     <true/>
 </dict>
-
-
+```
 
 
 CONVERT WEBSITE TO FLUTTER APP
