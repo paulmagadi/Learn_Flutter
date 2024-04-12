@@ -448,6 +448,7 @@ Ensure you have the http package in your pubspec.yaml file to make HTTP requests
 
 This example demonstrates how to delete a post from a JSON placeholder API. We’ll send a DELETE request and handle the response.
 
+```
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -514,23 +515,30 @@ class _DeletePostExampleState extends State<DeletePostExample> {
     );
   }
 }
+```
 
+# FLUTTER QUIZ APP WITH REST API
 
-
-FLUTTER QUIZ APP WITH REST API
-Introduction
 In this section, you will learn to build a simple quiz app in Flutter using API.
 
-Setup
-Ensure your pubspec.yaml includes dependencies for Flutter and the http package for API requests:
+**Setup**
+
+Ensure your `pubspec.yaml` includes dependencies for Flutter and the http package for API requests:
 
 dependencies:
+
+```
   flutter:
     sdk: flutter
   http: ^1.2.1
-Main Screen
+```
+
+**Main Screen**
+
 The main screen displays a play button that navigates to the quiz player screen.
 
+
+```
 import 'package:flutter/material.dart';
 
 void main() => runApp(const QuizApp());
@@ -567,10 +575,14 @@ class MainScreen extends StatelessWidget {
     );
   }
 }
-Player Screen
+```
+
+**Player Screen**
+
 The player screen fetches and displays a question, presenting multiple choice answers.
 
 
+```
 class PlayerScreen extends StatefulWidget {
   const PlayerScreen({super.key});
 
@@ -641,7 +653,10 @@ class _PlayerScreenState extends State<PlayerScreen> {
     );
   }
 }
-Question Model
+```
+
+**Question Model**
+
 Create a model to represent a question and its answers.
 
 class Question {
