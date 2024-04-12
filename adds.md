@@ -1,40 +1,59 @@
-SHOW BANNER AD IN FLUTTER
-How To Show Banner Ad In Flutter
+# SHOW BANNER AD IN FLUTTER
+
 In this section, you will learn how to show banner ad in flutter. You will learn how to integrate admob banner ad in flutter with these steps:
 
-Step 1: Create Flutter Project
+**Step 1: Create Flutter Project**
+
 First of all, create a flutter project with the name my_admob_app. To create a flutter project, open the command prompt and type the following command.
 
-flutter create my_admob_app
-Step 2: Add Admob Package
+`flutter create my_admob_app`
+
+**Step 2: Add Admob Package**
+
 Now, open your project in android studio and add the admob package in your project. To add the admob package, open the pubspec.yaml file and add the following code in it.
 
-flutter pub add google_mobile_ads  
-Step 3: Add Admob App Id
+`flutter pub add google_mobile_ads  `
+
+**Step 3: Add Admob App Id**
+
 Now, open the android folder and add the admob app id in the AndroidManifest.xml file. To get the admob app id, go to the admob website and create an account. After creating an account, create an app will appear and you have to click it, after that get the app id from there then add the app id in the AndroidManifest.xml file.
 
-Add Internet Permission
+- Add Internet Permission
+
 Open the AndroidManifest.xml file and add the following code inside the tag.
 
-<uses-permission android:name="android.permission.INTERNET"/>
-<uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
-Open AndroidManifest.xml File And Add Code
+`<uses-permission android:name="android.permission.INTERNET"/>`
+
+`<uses-permission android:name="com.google.android.gms.permission.AD_ID"/>`
+
+- Open AndroidManifest.xml File And Add Code
+
 Now, open the AndroidManifest.xml file and add the following code inside the tag. You can find the value of the app id in the admob website.
 
 <!-- For Admob. change the value to your own Admob App ID -->
+
+```
 <meta-data
 android:name="com.google.android.gms.ads.APPLICATION_ID"
 android:value="ca-app-pub-3940256099942544~3347511713"/>
-Change Minimum SDK Version
+```
+
+**Change Minimum SDK Version**
+
 After adding google_mobile_ads, you need to make sure that your app is using Android SDK version 19 or higher. Open my_admob_app\android\app\build.gradle and inside defaultConfig, change the minimum SDK version to 19. Also set multiDexEnabled to true.
 
+```
 defaultConfig {
         minSdkVersion 19
         multiDexEnabled true
      }
-Create Banner Ad Widget
+```
+
+**Create Banner Ad Widget**
+
 Now, create a banner ad widget. To create a banner ad widget, lets create a file ad.dart inside the lib folder and add the following code in it.
 
+```
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
@@ -69,9 +88,13 @@ class AdManager {
     );
   }
 }
-Add Banner Ad Widget
+```
+
+**Add Banner Ad Widget**
+
 Finally, add the banner ad widget in your flutter application. To add the banner ad widget, open the main.dart file and add the following code in it.
 
+```
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'ad.dart';
@@ -149,17 +172,17 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-Run Flutter App
+```
+
+**Run Flutter App**
+
 Finally, run your flutter app using the following command.
 
-flutter run
-Conclusion
-In this tutorial, you learned how to integrate admob banner ad in flutter with these step by step tutorials. You have also learned how to show banner ad in flutter. If you like this tutorial, please share it with others.
+`flutter run`
 
 
 
-SHOW INTERSTITIAL AD IN FLUTTER
-How To Show Interstitial Ad In Flutter?
+## SHOW INTERSTITIAL AD IN FLUTTER
 In this section, you will learn how to show interstitial ad in flutter. You will learn how to integrate admob interstitial ad in flutter with step by step tutorial.
 
 Step 1: Create Flutter Project
