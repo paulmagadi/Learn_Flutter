@@ -176,61 +176,74 @@ You need to add internet permission in your AndroidManifest.xml file. For iOS, y
 
 
 
-HOW TO GET JOB IN FLUTTER
-How to Get Job in Flutter
+## HOW TO GET JOB IN FLUTTER
+
 Getting a job as a Flutter developer involves a combination of technical proficiency, networking, and job search strategies. Here’s a step-by-step guide to help you land a job in Flutter development:
 
 1. Master Flutter
+
 Before you start applying for jobs, you need to master Flutter. You can learn Dart Programming Language and Flutter from our Dart Tutorial and Flutter Tutorial respectively. Make sure you have a solid understanding of the following concepts:
 
-Dart Programming Language Skills
-Object Oriented Programming concepts
-Flutter’s widgets and the widget tree
-State management solutions like Provider, Riverpod, BLoC, etc.
-CI/CD tools like GitHub Actions, Codemagic, etc.
-Building small apps and gradually move to more complex projects.
+- Dart Programming Language Skills
+- Object Oriented Programming concepts
+- Flutter’s widgets and the widget tree
+- State management solutions like Provider, Riverpod, BLoC, etc.
+- CI/CD tools like GitHub Actions, Codemagic, etc.
+- Building small apps and gradually move to more complex projects.
+
 2. Build a Portfolio
+
 A portfolio is a collection of your best work. It can be a website, a GitHub repository, or a mobile app. It should showcase your skills and experience in Flutter development. You can build a portfolio by working on open-source projects, contributing to existing projects, or creating your own apps.
 
-Create a portfolio of Flutter projects. These could range from simple apps to more intricate ones.
-Use platforms like GitHub to showcase your code. It’s essential to show potential employers that you can write clean and maintainable code.
-Deploy a few of your apps to the App Store or Google Play to demonstrate your ability to complete the full app development cycle.
+- Create a portfolio of Flutter projects. These could range from simple apps to more intricate ones.
+- Use platforms like GitHub to showcase your code. It’s essential to show potential employers that you can write clean and maintainable code.
+- Deploy a few of your apps to the App Store or Google Play to demonstrate your ability to complete the full app development cycle.
+
 3. Create a Resume
+
 A resume is a written description of your education, professional background, and skills. When recruiters get your application, they see it right away. You can get an interview and differentiate yourself from the competition with a strong CV. Here are some tips for creating a resume that will get you noticed:
 
-Highlight your Flutter and Dart experience prominently.
-Mention other relevant skills like familiarity with CI/CD, integration with Firebase, web development, etc.
-Include links to your GitHub projects and deployed apps.
+- Highlight your Flutter and Dart experience prominently.
+
+- Mention other relevant skills like familiarity with CI/CD, integration with Firebase, web development, etc.
+- Include links to your GitHub projects and deployed apps.
 Include objective statements that describe what you’re looking for in a job.
- Info
-Note: Don’t forget to create a LinkedIn profile. You will find it quite beneficial to network with other Flutter developers, possible employers, and other professionals in this sector.
+ 
+> Note: Don’t forget to create a LinkedIn profile. You will find it quite beneficial to network with other Flutter developers, possible employers, and other professionals in this sector.
 
 4. Networking
+
 Networking is a great way to find job opportunities and build relationships with other Flutter developers. Here are some tips for networking effectively:
 
-Join local Flutter meetups and conferences.
-Attend Flutter events like Flutter Engage and Flutter Live.
-Connect with other Flutter developers on LinkedIn and Twitter.
+- Join local Flutter meetups and conferences.
+- Attend Flutter events like Flutter Engage and Flutter Live.
+- Connect with other Flutter developers on LinkedIn and Twitter.
+
 5. Communication
+
 Communication is an essential skill for any developer. It’s important to be able to communicate your ideas clearly and concisely. Here are some tips for improving your communication skills:
 
-Practice writing emails and blog posts.
-Join a Toastmasters club or take public speaking classes.
-Read books on communication and presentation skills.
+- Practice writing emails and blog posts.
+- Join a Toastmasters club or take public speaking classes.
+- Read books on communication and presentation skills.
+
 6. Job Search
+
 Once you’ve mastered Flutter and built a portfolio, it’s time to start looking for jobs. Here are some top flutter job sites where you can apply for a flutter job.
 
-Indeed
-Glassdoor
-LinkedIn
-Flutter Jobs
- Info
-Note: Customize your cover letter for each position. Address the specific requirements mentioned in the job description. Also Prepare for technical interviews. This might include coding challenges, whiteboarding sessions, or discussions about Flutter-specific topics.
+- Indeed
+- Glassdoor
+- LinkedIn
+- Flutter Jobs
+
+> Note: Customize your cover letter for each position. Address the specific requirements mentioned in the job description. Also Prepare for technical interviews. This might include coding challenges, whiteboarding sessions, or discussions about Flutter-specific topics.
 
 7. Stay Updated
+
 Flutter is a rapidly evolving technology. It’s important to stay up-to-date with the latest developments in the Flutter ecosystem.
 
 8. Consider Freelancing
+
 If you’re finding it challenging to land a full-time role initially, consider taking up freelance Flutter projects. Platforms like Upwork, Freelancer, and Toptal often have Flutter-related gigs. This will help you gain more experience and build a stronger portfolio.
 
 
