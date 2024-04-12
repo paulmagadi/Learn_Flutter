@@ -123,23 +123,29 @@ void main() {
 }
 ```
 
- Info
-Note: Dart’s jsonDecode function returns a Map<String, dynamic>, allowing for easy access to JSON properties.
+> Note: Dart’s jsonDecode function returns a Map<String, dynamic>, allowing for easy access to JSON properties.
 
-FETCH DATA FROM REST API
-Introduction
+### FETCH DATA FROM REST API
+
 Fetching data from a REST API is a fundamental task in modern app development. It allows your app to interact with external data sources, providing dynamic content to users. This guide covers how to fetch data from a REST API in Flutter, including setup, making network requests, and handling responses.
 
-Setup
-First, add the http package to your pubspec.yaml file to make HTTP requests:
+**Setup**
 
-dependencies:
+First, add the http package to your `pubspec.yaml` file to make HTTP requests:
+
+**dependencies:**
+
+```
   flutter:
     sdk: flutter
   http: ^1.2.1
-Example 1: Posts Listing App
+```
+
+*Example 1: Posts Listing App*
+
 In this example below, you will learn how to fetch data from a REST API and display it in your Flutter app.
 
+```
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -211,7 +217,10 @@ class _PostListState extends State<PostList> {
     );
   }
 }
-Challenges
+```
+
+**Challenges**
+
 Create a motivational quotes app that fetches quotes from a REST API and displays them in a list. Here is URL to fetch quotes from:
 
 https://jsonguide.technologychannel.org/quotes.json
