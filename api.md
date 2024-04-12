@@ -659,6 +659,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
 
 Create a model to represent a question and its answers.
 
+```
 class Question {
   final String question;
   final List<String> answers;
@@ -678,9 +679,14 @@ class Question {
     );
   }
 }
-Score Screen
+```
+
+**Score Screen**
+
 After answering questions, navigate to the results screen to display the score.
 
+
+```
 import 'package:flutter/material.dart';
 
 class ScoreScreen extends StatelessWidget {
@@ -698,13 +704,13 @@ class ScoreScreen extends StatelessWidget {
     );
   }
 }
+```
 
+# QUESTIONS FOR PRACTICE 
 
-QUESTIONS FOR PRACTICE 10
-Flutter Practice Questions
 This section includes practice questions designed to enhance your understanding and skills in working with REST APIs in Flutter.
 
-Create a application that fetches data from (https://jsonplaceholder.typicode.com/users) and displays the list of users.
-Create a form where users can input their name and message. Post this data to a (https://jsonplaceholder.typicode.com/posts). Display a confirmation message on successful submission.
-Create a Weather app in Flutter that fetches weather data from a weather API (e.g., OpenWeatherMap) and displays the current weather information for a specific location.
-Write a function in Flutter that converts the JSON data fetched from the REST API into a list of Dart objects.
+1. Create a application that fetches data from (https://jsonplaceholder.typicode.com/users) and displays the list of users.
+2. Create a form where users can input their name and message. Post this data to a (https://jsonplaceholder.typicode.com/posts). Display a confirmation message on successful submission.
+3. Create a Weather app in Flutter that fetches weather data from a weather API (e.g., OpenWeatherMap) and displays the current weather information for a specific location.
+4. Write a function in Flutter that converts the JSON data fetched from the REST API into a list of Dart objects.
