@@ -1,14 +1,17 @@
-PROFILE APP
-Profile App Using Flutter
+# PROFILE APP
 This guide will walk you through creating a Profile App using Flutter. The app will display user information in a clean and simple layout.
 
 1. Setup and Project Creation
+
 Ensure you have Flutter installed on your system. Create a new Flutter project with this command:
 
-flutter create profile_app
+`flutter create profile_app`
+
 2. Designing the User Interface
+
 Replace the lib/main.dart file with the following code to set up the user interface:
 
+```
 import 'package:flutter/material.dart';
 
 void main() {
@@ -118,28 +121,34 @@ class ProfilePage extends StatelessWidget {
     );
   }
 }
-Run the App
+```
+
+3. Run the App
+
 To run the app, execute flutter run in your terminal. Alternatively, in Visual Studio Code, you can start debugging by pressing F5.
 
-This guide gives you a basic structure for a Profile App. You can customize and enhance this app by adding more user information, styling, and interactivity.
+`flutter run`
 
-Challenge
-Create your profile app with your information and customize the UI to your liking. You can add more details, such as education, work experience, and hobbies.
+**Challenge**
+- Create your profile app with your information and customize the UI to your liking. You can add more details, such as education, work experience, and hobbies.
 
 
-INTEREST CALCULATOR APP
-Simple Interest Calculator App Using Flutter
+#vINTEREST CALCULATOR APP
 This guide will help you create a Simple Interest Calculator using Flutter. You’ll learn to build a user interface for inputting values, calculate simple interest, and display the result.
 
-targets
 
 1. Setup and Project Creation
+
 Ensure Flutter is installed on your system. Begin by creating a new Flutter project:
 
-flutter create simple_interest_calculator
+`flutter create simple_interest_calculator`
+
 2. Designing the User Interface
+
 Navigate to lib/main.dart and replace its content with the following code to design the interface:
 
+
+```
 import 'package:flutter/material.dart';
 
 void main() => runApp(SimpleInterestApp());
@@ -209,33 +218,45 @@ class _InterestCalculatorScreenState extends State<InterestCalculatorScreen> {
     });
   }
 }
-Explanation
-SimpleInterestApp: The root widget that sets up the MaterialApp.
-InterestCalculatorScreen: A StatefulWidget that contains the UI for the calculator.
-TextEditingController: Controllers for handling text input.
-_calculateInterest: Function to calculate the simple interest.
-User Interface Components
-Text fields for entering the principal amount, rate of interest, and time.
-A button to trigger the calculation.
-A text widget to display the result.
-Run the App
+```
+**Explanation**
+
+- SimpleInterestApp: The root widget that sets up the MaterialApp.
+- InterestCalculatorScreen: A StatefulWidget that contains the UI for the calculator.
+- TextEditingController: Controllers for handling text input.
+- _calculateInterest: Function to calculate the simple interest.
+
+**User Interface Components**
+
+- Text fields for entering the principal amount, rate of interest, and time.
+- A button to trigger the calculation.
+- A text widget to display the result.
+
+3. Run the App
+
 To run the application in Visual Studio Code, press F5 or navigate to Run > Start Debugging. Alternatively, use the following command in your terminal:
 
-flutter run
-Challenge
-Create a new screen to display the result in a more visually appealing manner. You can use a Card widget to display the result.
+`flutter run`
 
-TODO APP
-Todo App Using Flutter
+**Challenge**
+
+- Create a new screen to display the result in a more visually appealing manner. You can use a Card widget to display the result.
+
+# TODO APP
+
 This guide will walk you through the steps to create a simple Todo application using Flutter. You will learn how to create a basic UI, manage state, and implement basic functionalities.targets
 
 1. Setup and Project Creation
+
 First, make sure you have Flutter installed. Then, create a new Flutter project:
 
-flutter create todo_app
+`flutter create todo_app`
+
 2. Designing the User Interface
+
 Now, it’s time to design the user interface. Go to the lib/main.dart file and replace the code with the following:
 
+```
 import 'package:flutter/material.dart';
 
 void main() {
@@ -299,39 +320,54 @@ class _TodoListScreenState extends State<TodoListScreen> {
     );
   }
 }
-Explanation
-TodoApp: The root widget that sets up the MaterialApp.
-TodoListScreen: A StatefulWidget that manages the list of tasks.
-tasks: A list of strings to hold tasks.
-ListView.builder: Dynamically creates a list of tasks.
-FloatingActionButton: A button to add new tasks.
-_addTask: Function to show a dialog for adding a new task.
-Run the App
+```
+
+
+**Explanation**
+
+- TodoApp: The root widget that sets up the MaterialApp.
+- TodoListScreen: A StatefulWidget that manages the list of tasks.
+- tasks: A list of strings to hold tasks.
+- ListView.builder: Dynamically creates a list of tasks.
+- FloatingActionButton: A button to add new tasks.
+- _addTask: Function to show a dialog for adding a new task.
+
+3. Run the App
+
 To run the app in vs code, press F5 or go to Run > Start Debugging. You can also run the app using the following command:
 
-flutter run
-Challenge
-Create a delete functionality for the tasks. When a user taps on a task, it should be removed from the lis
+`flutter run`
+
+**Challenge**
+
+- Create a delete functionality for the tasks. When a user taps on a task, it should be removed from the lis
 
 
-BOOK READER APP
-Online PDF Book Reader App Using Flutter
+# BOOK READER APP
 In this guide, you’ll learn how to create an online PDF book reader app using Flutter. This app will allow users to view PDF books from a URL.
 
 1. Setup and Project Creation
+
 To start, ensure Flutter is installed on your system. Create a new Flutter project with the following command:
 
-flutter create pdf_reader_app
+`flutter create pdf_reader_app`
+
 2. Adding Dependencies
+
 Open your pubspec.yaml file and add the following dependency to include the PDF rendering package:
 
+```
 dependencies:
   flutter:
     sdk: flutter
   flutter_pdfview: ^1.0.4+2
+  ```
+
 3. Designing the User Interface
+
 Replace the code in lib/main.dart with the following to set up the user interface:
 
+```
 import 'package:flutter/material.dart';
 import 'package:flutter_pdfview/flutter_pdfview.dart';
 
@@ -374,28 +410,41 @@ class _PDFViewPageState extends State<PDFViewPage> {
     );
   }
 }
-Explanation
-PDFReaderApp: The root widget initializing the MaterialApp.
-PDFViewPage: A StatefulWidget that displays the PDF reader.
-PDFView: A widget from flutter_pdfview used to render the PDF.
-User Interface Components
-A PDFView widget is used to display the PDF file.
-The app bar to provide a title for the app.
-Run the App
+```
+
+
+**Explanation**
+
+- PDFReaderApp: The root widget initializing the MaterialApp.
+- PDFViewPage: A StatefulWidget that displays the PDF reader.
+- PDFView: A widget from flutter_pdfview used to render the PDF.
+
+**User Interface Components**
+
+- A PDFView widget is used to display the PDF file.
+- The app bar to provide a title for the app.
+
+4. Run the App
+
 To run the app, use the flutter run command. You can also run the app in Visual Studio Code by pressing F5.
 
+`flutter run`
 
-TIC TAC TOE GAME
-Tic Tac Toe Game Using Flutter
+# TIC TAC TOE GAME
+
 In this guide, we’ll create a simple Tic Tac Toe game using Flutter. We’ll use a GridView.builder to create the game grid and manage the game state.
 
 1. Setup and Project Creation
+
 First, ensure Flutter is installed on your machine. Create a new Flutter project with the following command:
 
-flutter create tic_tac_toe_game
+`flutter create tic_tac_toe_game`
+
 2. Designing the User Interface
+
 Edit the lib/main.dart file with the following code to design the game’s interface:
 
+```
 import 'package:flutter/material.dart';
 
 void main() => runApp(TicTacToeApp());
@@ -455,24 +504,33 @@ class _TicTacToeScreenState extends State<TicTacToeScreen> {
     }
   }
 }
-Explanation
-TicTacToeApp: Sets up the MaterialApp.
-TicTacToeScreen: A StatefulWidget that contains the UI and logic for the game.
-board: A list that represents the 3x3 grid of the game.
-GridView.builder: Used to create the game grid.
-_markCell: A function to mark a cell with the current player’s symbol.
-Game Logic
-The game alternates between two players, ‘X’ and ‘O’.
-Players tap on a cell to mark it with their symbol.
-The game continues until all cells are marked.
-Run the App
+```
+
+
+**Explanation**
+
+- TicTacToeApp: Sets up the MaterialApp.
+- TicTacToeScreen: A StatefulWidget that contains the UI and logic for the game.
+- oard: A list that represents the 3x3 grid of the game.
+- GridView.builder: Used to create the game grid.
+- _markCell: A function to mark a cell with the current player’s symbol.
+
+**Game Logic**
+
+- The game alternates between two players, ‘X’ and ‘O’.
+- Players tap on a cell to mark it with their symbol.
+- The game continues until all cells are marked.
+
+3. Run the App
+
 To run the application, use the flutter run command, or press F5 in Visual Studio Code to start debugging.
 
+`flutter run`
 
-QUESTIONS FOR PRACTICE 6
-Flutter Practice Questions
-Create a Counter App that allows users to increment and decrement a counter, introducing you to the fundamentals of state management in Flutter.
-Create a Note-taking App for writing and saving notes, teaching you about file handling and persistent storage in Flutter.
-Create a Currency Converter App that converts currencies, involving fetching current exchange rates from an API and applying them in your application.
-Create a Stopwatch App with functionalities like start, stop, and reset, which will help you learn about timers and updating the UI in real-time in Flutter.
-Create a Basic Calculator App that performs basic arithmetic operations. This project will help you understand the nuances of layout design and handling user input in Flutter.
+# QUESTIONS FOR PRACTICE 
+
+1. Create a Counter App that allows users to increment and decrement a counter, introducing you to the fundamentals of state management in Flutter.
+2. Create a Note-taking App for writing and saving notes, teaching you about file handling and persistent storage in Flutter.
+3. Create a Currency Converter App that converts currencies, involving fetching current exchange rates from an API and applying them in your application.
+4. Create a Stopwatch App with functionalities like start, stop, and reset, which will help you learn about timers and updating the UI in real-time in Flutter.
+5. Create a Basic Calculator App that performs basic arithmetic operations. This project will help you understand the nuances of layout design and handling user input in Flutter.

@@ -1,16 +1,20 @@
-FORM IN FLUTTER
-Forms in Flutter
+# FORM IN FLUTTER
+
 Form widget is used to group multiple form fields, such as textbox, checkboxes, and buttons, to create a easy data entry experience.
 
-Why Forms are Useful?
+**Why Forms are Useful?**
+
 Form are important for building interactive and user-friendly applications. They are useful for the following reasons:
 
-Data Collection: It is used to collect the user input data such as name, email, phone number, etc.
-Validation: It is used to validate the user input data such as email, phone number, etc.
-Submission: It is used to submit the user input data to the server.
-Example 1: Basic Form in Flutter
+1. **Data Collection**: It is used to collect the user input data such as name, email, phone number, etc.
+2. **Validation**: It is used to validate the user input data such as email, phone number, etc.
+3. **Submission**: It is used to submit the user input data to the server.
+
+*Example 1: Basic Form in Flutter*
+
 In this example below, you will learn to create a form with First Name and Last Name fields.
 
+```
 Form(
   child: Column(
     children: [
@@ -30,9 +34,13 @@ Form(
     ],
   ),
 )
-Example 2: Form with Validation in Flutter
+```
+
+*Example 2: Form with Validation in Flutter*
+
 In this example below, you will learn to create a form with First Name and Last Name fields with validation. You will learn more about validation in the next section.
 
+```
 final _formKey = GlobalKey<FormState>();
 Form(
   key: _formKey,
@@ -75,25 +83,32 @@ Form(
     ],
   ),
 ),
- Info
-Note: GlobalKey is a unique identifier for widgets. It is used to access the state of a widget from outside the widget.
+```
+
+> Note: GlobalKey is a unique identifier for widgets. It is used to access the state of a widget from outside the widget.
 
 
-TEXTFORMFIELD IN FLUTTER
-Introduction
+# TEXTFORMFIELD IN FLUTTER
+
 TextFormField is a widget that allows you to enter text into an app. It makes easy to collect text input, validate and save that input.
 
-Example 1: Basic TextFormField
+*Example 1: Basic TextFormField*
+
 In this example, you will learn to create a basic form field for text input.
 
+```
 TextFormField(
   decoration: InputDecoration(
     labelText: 'Enter your name',
   ),
 )
-Example 2: TextFormField with Validation
+```
+
+*Example 2: TextFormField with Validation*
+
 In this example below, you will learn to implement validation to ensure the input is not empty.
 
+```
 TextFormField(
   decoration: InputDecoration(
     labelText: 'Enter your email',
@@ -105,18 +120,26 @@ TextFormField(
     return null;
   },
 )
-Example 3: Password Field
+```
+
+*Example 3: Password Field*
+
 In this example below, you will learn to create a password field that hides the input.
 
+```
 TextFormField(
   decoration: InputDecoration(
     labelText: 'Password',
   ),
   obscureText: true,
 )
-Example 4: Styled TextFormField
+```
+
+*Example 4: Styled TextFormField*
+
 In this example below, you will learn to customize the appearance of your TextFormField.
 
+```
 TextFormField(
   decoration: InputDecoration(
     border: OutlineInputBorder(
@@ -125,9 +148,13 @@ TextFormField(
     labelText: 'Enter your address',
   ),
 )
-Example 5: TextFormField with Prefix and Suffix Icons
+```
+
+*Example 5: TextFormField with Prefix and Suffix Icons*
+
 In this example below, you will learn to create a TextFormField with prefix and suffix icons.
 
+```
 TextFormField(
   decoration: InputDecoration(
     labelText: 'Phone Number',
@@ -135,27 +162,39 @@ TextFormField(
     suffixIcon: Icon(Icons.check_circle),
   ),
 )
-Example 6: TextFormField with Max Length
+```
+
+*Example 6: TextFormField with Max Length*
+
 In this example below, you will learn to create a TextFormField with a maximum length of 10 characters.
 
+```
 TextFormField(
   decoration: InputDecoration(
     labelText: 'Enter your address',
   ),
   maxLength: 10,
 )
-Example 7: TextFormField with Number Keyboard
+```
+
+*Example 7: TextFormField with Number Keyboard*
+
 In this example below, you will learn to create a TextFormField that opens the number keyboard on focus.
 
+```
 TextFormField(
   decoration: InputDecoration(
     labelText: 'Enter your age',
   ),
   keyboardType: TextInputType.number,
 )
-Example 8: TextFormField with Input Formatter
+```
+
+*Example 8: TextFormField with Input Formatter*
+
 In this example below, you will learn to create a TextFormField with an input formatter that formats the input as a phone number. To achieve this, you will need to add the following import statement to your file:
 
+```
 import 'package:flutter/services.dart';
 TextFormField(
   decoration: InputDecoration(
@@ -166,19 +205,24 @@ TextFormField(
     LengthLimitingTextInputFormatter(10),
   ],
 )
+```
+
 Input Formatters are used to format the input as it is being entered. In above example, we use FilteringTextInputFormatter to allow only digits and LengthLimitingTextInputFormatter to limit the input to 10 characters.
 
-Challenge
-Create a TextFormField for user feedback that includes validation to ensure the input is at least 15 characters long. Style the field with a rounded border and include a prefix icon that represents communication.
+**Challenge**
+
+- Create a TextFormField for user feedback that includes validation to ensure the input is at least 15 characters long. Style the field with a rounded border and include a prefix icon that represents communication.
 
 
-CHECKBOX IN FLUTTER
-Introduction
+# CHECKBOX IN FLUTTER
+
 Checkbox is a widget that allows users to select between two states: checked or unchecked. This is typically used in forms and settings to enable or disable options.
 
-Example 1: Basic Checkbox
+*Example 1: Basic Checkbox*
+
 In this example, you will learn to create a simple checkbox using the Checkbox widget.
 
+```
 Checkbox(
   value: isChecked,
   onChanged: (bool? value) {
@@ -187,9 +231,13 @@ Checkbox(
     });
   },
 ),
-Example 2: Checkbox with Custom Colors
+```
+
+*Example 2: Checkbox with Custom Colors*
+
 In this example, you will learn to create a checkbox with custom colors using the Checkbox widget.
 
+```
 Checkbox(
   value: isChecked,
   checkColor: Colors.white, // color of tick Mark
@@ -200,9 +248,13 @@ Checkbox(
     });
   },
 )
-Example 3: Checkbox List
+```
+
+*Example 3: Checkbox List*
+
 In this example, you will learn to create a group of checkboxes using the CheckboxListTile widget.
 
+```
 var options = <String>['Option 1', 'Option 2', 'Option 3', 'Option 4'];
 var selectedOptions = <String>[];
 
@@ -223,9 +275,13 @@ ListView(
     );
   }).toList(),
 )
-Example 4: Accept Terms & Conditions Checkbox
+```
+
+*Example 4: Accept Terms & Conditions Checkbox*
+
 In this example, you will learn to create a checkbox for accepting terms and conditions using the CheckboxListTile widget.
 
+```
 Form(
   child: Column(
     children: [
@@ -242,9 +298,13 @@ Form(
     ],
   ),
 )
-Example 5: Interest Selection Checkbox
+```
+
+*Example 5: Interest Selection Checkbox*
+
 In this example, you will learn to find the selected interests from a list of interests using the CheckboxListTile widget.
 
+```
 List<String> interests = [
   'Reading',
   'Music',
@@ -272,9 +332,13 @@ Column(
     );
   }).toList(),
 )
-Challenge
-Create a checkbox group for selecting multiple programming languages from a list of languages.
+```
 
+**Challenge**
+
+- Create a checkbox group for selecting multiple programming languages from a list of languages.
+
+```
 // available programming languages
 List<String> languages = [
   'Dart',
@@ -288,18 +352,21 @@ List<String> languages = [
   'Swift',
   'Kotlin',
 ];
+```
 
+# RADIOBUTTON IN FLUTTER
 
-RADIOBUTTON IN FLUTTER
-Introduction
 RadioButtons are a type of input widget to select one option from a group. Checkbox allows multiple selections but Radio Button allows only one selection at a time.
 
-Example 1: Basic RadioButton
+**Example 1: Basic RadioButton**
+
 In this example, learn how to create a group of radio buttons for selecting Male, Female and Others. If you have any problem try Run Online button to see the code in action.
 
-Step 1: Create Enum For Options
+**Step 1: Create Enum For Options**
+
 We will use enhanced enum to create the options for the radio buttons.
 
+```
 enum Gender {
   male("Male"),
   female("Female"),
@@ -309,13 +376,19 @@ enum Gender {
   final String text;
   const Gender(this.text);
 }
-Step 2: Create State Variable
+```
+
+**Step 2: Create State Variable**
+
 It’s time to create a state variable to store the selected option.
 
-Gender? _selectedOption = Gender.male;
-Step 3: Create Radio Buttons
+`Gender? _selectedOption = Gender.male;`
+
+**Step 3: Create Radio Buttons**
+
 Finally, create the radio buttons using the RadioListTile widget.
 
+```
 Column(
   // Radio buttons
   children: Gender.values
@@ -331,12 +404,17 @@ Column(
           ))
       .toList(),
 )
-Example 2: Game Difficulty Selection
+```
+
+**Example 2: Game Difficulty Selection**
+
 In this example, learn how to create a group of radio buttons for selecting the game difficulty level. If you have any problem try Run Online button to see the code in action.
 
-Step 1: Create Enum For Options
+**Step 1: Create Enum For Options**
+
 We will use enhanced enum to create the options for the radio buttons.
 
+```
 enum Difficulty {
   easy("Easy"),
   medium("Medium"),
@@ -346,13 +424,19 @@ enum Difficulty {
   final String text;
   const Difficulty(this.text);
 }
-Step 2: Create State Variable
+```
+
+**Step 2: Create State Variable**
+
 It’s time to create a state variable to store the selected option.
 
 Difficulty? _selectedDifficulty = Difficulty.easy;
-Step 3: Create Radio Buttons
+
+**Step 3: Create Radio Buttons**
+
 Finally, create the radio buttons using the RadioListTile widget.
 
+```
 Column(
   // Radio buttons
   children: Difficulty.values
@@ -368,23 +452,29 @@ Column(
           ))
       .toList(),
 )
-Challenge
-Create a quiz app with radio buttons to select the correct answer for each question.
+```
+
+**Challenge**
+
+- Create a quiz app with radio buttons to select the correct answer for each question.
 
 Question: What is the capital of France?
+
 Options:
 - Paris
 - London
 - Berlin
 
 
-SWITCH IN FLUTTER
-Introduction
+# SWITCH IN FLUTTER
+
 The Switch widget in Flutter is a fundamental UI component used for toggling between two states, such as on/off or true/false. This article will guide you through various implementations of the Switch widget, from basic usage to more advanced scenarios including custom styling and integration with forms.
 
-Example 1: Basic Switch
+*Example 1: Basic Switch*
+
 Learn how to create a simple switch that toggles a boolean value.
 
+```
 Switch(
   value: isSwitched,
   onChanged: (value) {
@@ -393,9 +483,13 @@ Switch(
     });
   },
 ),
-Example 2: Custom Styled Switch
+```
+
+*Example 2: Custom Styled Switch*
+
 Customize the appearance of a switch with custom colors.
 
+```
 Switch(
   value: isSwitched,
   activeTrackColor: Colors.lightGreenAccent,
@@ -406,9 +500,13 @@ Switch(
     });
   },
 )
-Example 3: Switch List
+```
+
+*Example 3: Switch List*
+
 Implement a list of switches, each controlling a different setting.
 
+```
 var settings = <String, bool>{
   'Wi-Fi': true,
   'Bluetooth': false,
@@ -429,9 +527,13 @@ ListView(
     );
   }).toList(),
 )
-Example 4: Form Switch
+```
+
+*Example 4: Form Switch*
+
 Incorporate a switch into a form to accept terms & conditions or toggle preferences.
 
+```
 Form(
   child: Column(
     children: [
@@ -448,9 +550,13 @@ Form(
     ],
   ),
 )
-Example 5: Profile Visibility Switch
+```
+
+*Example 5: Profile Visibility Switch*
+
 Use a switch to control the visibility of user profile information.
 
+```
 SwitchListTile(
   title: Text('Show Profile Publicly'),
   value: isProfilePublic,
@@ -460,9 +566,13 @@ SwitchListTile(
     });
   },
 )
-Challenge
-Create a settings page using switches to control various app features such as notifications, dark mode, location tracking, and automatic updates.
+```
 
+**Challenge**
+
+- Create a settings page using switches to control various app features such as notifications, dark mode, location tracking, and automatic updates.
+
+```
 // App settings options
 Map<String, bool> appSettings = {
   'Notifications': true,
@@ -470,15 +580,18 @@ Map<String, bool> appSettings = {
   'Location Tracking': true,
   'Automatic Updates': false,
 };
+```
 
+# DATETIME PICKER IN FLUTTER
 
-DATETIME PICKER IN FLUTTER
-Introduction
 The DateTime Picker is a widget that allows users to select a date, time, or both from a dialog. This is very useful for apps that require you to input dates or times, like scheduling events or setting reminders.
 
-Example 1: BirthDate Picker
+
+*Example 1: BirthDate Picker*
+
 In this example, you will learn to create a date picker for selecting a birthdate.
 
+```
 DateTime? selectedDate;
 
 Future<void> _selectDate(BuildContext context) async {
@@ -493,9 +606,13 @@ Future<void> _selectDate(BuildContext context) async {
       selectedDate = picked;
     });
 }
-Example 2: Attendance Time Picker
+```
+
+*Example 2: Attendance Time Picker*
+
 In this example, you will learn to create a time picker for selecting attendance time.
 
+```
 TimeOfDay? selectedTime;
 
 Future<void> _selectTime(BuildContext context) async {
@@ -508,9 +625,13 @@ Future<void> _selectTime(BuildContext context) async {
       selectedTime = picked;
     });
 }
-Example 3: Combined DateTime Picker
+```
+
+*Example 3: Combined DateTime Picker*
+
 In this example, you will learn to create a combined date and time picker.
 
+```
 DateTime? selectedDateTime;
 
 Future<void> _selectDateTime(BuildContext context) async {
@@ -538,21 +659,27 @@ Future<void> _selectDateTime(BuildContext context) async {
     }
   }
 }
-Challenge
-Create application that find age from the selected birthdate and display it in the app.
+```
+
+**Challenge**
+
+- Create application that find age from the selected birthdate and display it in the app.
 
 
-FORM VALIDATION IN FLUTTER
-Form Validation in Flutter
+# FORM VALIDATION IN FLUTTER
 If you are building a form in your Flutter application, it is essential to validate the user input data to ensure data integrity. In this section, you will learn how to validate user input data using the TextFormField widget in Flutter.
 
-Why Form Validation is Important?
-Data Integrity: It ensures that the data entered by the user is accurate and consistent.
-User Experience: It provides a better user experience by guiding the user to enter valid data.
-Error Prevention: It helps in preventing errors and exceptions caused by invalid data.
-Example 1: Feedback Form with Validation
+**Why Form Validation is Important?**
+
+- Data Integrity: It ensures that the data entered by the user is accurate and consistent.
+- User Experience: It provides a better user experience by guiding the user to enter valid data.
+- Error Prevention: It helps in preventing errors and exceptions caused by invalid data.
+
+*Example 1: Feedback Form with Validation*
+
 In this example, you will learn to create a feedback form with a validation rule ensuring a minimum character count. If you have any problem try Run Online button to see the code in action.
 
+```
 // Create a GlobalKey for the form
 final _formKey = GlobalKey<FormState>();
 
@@ -595,9 +722,13 @@ Form(
     ],
   ),
 )
-Example 2: Sign-Up Form with Validation
+```
+
+*Example 2: Sign-Up Form with Validation*
+
 In this example, you will learn to create a sign-up form with validation to ensure users provide a valid email address and a secure password. If you have any problem try Run Online button to see the code in action.
 
+```
 // Create a GlobalKey for the form
 final _formKey = GlobalKey<FormState>();
 
@@ -659,17 +790,21 @@ Form(
     ],
   ),
 )
-Challenge
-Create a contact form with fields name, phone number, and email and validate according to the following rules:
+```
+**Challenge**
+
+- Create a contact form with fields name, phone number, and email and validate according to the following rules:
 
 Name: Required
+
 Phone Number: Required, must be 10 digits
+
 Email: Required, must be a valid email address
 
 
-QUESTIONS FOR PRACTICE 6
-Form Validation Practice Questions
-Create a form with First Name and Last Name fields. Validate the form to ensure that both fields are not empty.
-Create a form with Email and Password fields. Validate the form to ensure that the email is not empty and the password is at least 6 characters long.
-Create a form with Phone Number and Address fields. Validate the form to ensure that the phone number is not empty and the address is at least 10 characters long.
-Create a form with Username and Confirm Password fields. Validate the form to ensure that both fields are not empty and the password matches the confirm password.
+# QUESTIONS FOR PRACTICE 6
+
+1. Create a form with First Name and Last Name fields. Validate the form to ensure that both fields are not empty.
+2. Create a form with Email and Password fields. Validate the form to ensure that the email is not empty and the password is at least 6 characters long.
+3. Create a form with Phone Number and Address fields. Validate the form to ensure that the phone number is not empty and the address is at least 10 characters long.
+4. Create a form with Username and Confirm Password fields. Validate the form to ensure that both fields are not empty and the password matches the confirm password.
