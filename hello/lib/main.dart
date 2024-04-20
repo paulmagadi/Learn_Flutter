@@ -5,7 +5,7 @@ void main() {
     MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('My First App'),
+          title: const Text('Paul Magadi'),
         ),
         body: const Center(
           child: Text('Hello World!'),
