@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 color: Colors.red,
                 backgroundColor: Color.fromARGB(255, 158, 152, 133),
+                decoration: TextDecoration.underline,
               ),
               textAlign: TextAlign.center,
               ),
