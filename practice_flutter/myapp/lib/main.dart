@@ -230,7 +230,7 @@ void main() {
           ),
           backgroundColor: Colors.deepPurple[400],
         ),
-        body: const Center(
+        body: Container(
           child: Image(
             image: 
               NetworkImage('https://codemy.com/images/aspenhospital.jpg')),
@@ -240,6 +240,8 @@ void main() {
     ),
   );
 }
+
+
 
 
 
