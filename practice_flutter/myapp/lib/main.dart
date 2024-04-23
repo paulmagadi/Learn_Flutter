@@ -13,7 +13,15 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: const Center(
-            child: Text('Hello, Flutter!'),
+            child: Text(
+              'Hello, Flutter!',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+                color: Colors.red,
+                backgroundColor: Color.fromARGB(255, 158, 152, 133),
+              ),
+              ),
             ),
         ),
         body: const Center(
