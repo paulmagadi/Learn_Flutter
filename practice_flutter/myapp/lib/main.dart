@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
             child: Text(
               'Hello, Flutter!',
               style: TextStyle(
-                fontSize: 16,
+                fontSize: 36,
                 fontWeight: FontWeight.bold,
                 color: Colors.red,
                 backgroundColor: Color.fromARGB(255, 158, 152, 133),
