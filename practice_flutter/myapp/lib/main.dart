@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
                 color: Colors.red,
                 backgroundColor: Color.fromARGB(255, 158, 152, 133),
               ),
+              textAlign: TextAlign.center,
               ),
             ),
         ),
