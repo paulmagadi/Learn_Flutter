@@ -1,3 +1,36 @@
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'My First Flutter App',
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Center(
+            child: Text('Hello, Flutter!'),
+            ),
+        ),
+        body: const Center(
+          child: Text(
+            'Hello, Flutter!',
+            style: TextStyle(fontSize: 24),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+
+
+
+
 // import 'package:flutter/material.dart';
 
 // void main() {
@@ -149,35 +182,5 @@
 //     ),
 //   );
 // }
-
-
-
-import 'package:flutter/material.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'My First Flutter App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Center(
-            child: Text('Hello, Flutter!'),
-            ),
-        ),
-        body: const Center(
-          child: Text(
-            'Hello, Flutter!',
-            style: TextStyle(fontSize: 24),
-          ),
-        ),
-      ),
-    );
-  }
-}
 
 
