@@ -219,27 +219,27 @@
 
 
 import 'package:flutter/material.dart';
+void main() => runApp(MyApp());
 
-void main() {
-  runApp(
-    MaterialApp(
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return  MaterialApp(
+      title: "Container Widget Demo",
       home: Scaffold(
         appBar: AppBar(
-          title: const Center(
-            child: Text("To Do App"),
-          ),
-          backgroundColor: Colors.deepPurple[400],
+          title: const Text("Your App Name"),
         ),
-        body: Container(
-          child: Image(
-            image: 
-              NetworkImage('https://codemy.com/images/aspenhospital.jpg')),
-        ),
-        backgroundColor: Colors.deepPurple[200],
+        body:  Container(
+        child: const Text('Raj Sharma'),
+),
       ),
-    ),
-  );
+    );
+  }
 }
+
 
 
 
