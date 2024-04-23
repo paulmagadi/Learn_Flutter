@@ -127,25 +127,57 @@
 //Internet Image
 
 
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(
+//     MaterialApp(
+//       home: Scaffold(
+//         appBar: AppBar(
+//           title: const Center(
+//             child: Text("To Do App"),
+//           ),
+//           backgroundColor: Colors.deepPurple[400],
+//         ),
+//         body: const Center(
+//           child: Image(
+//             image: 
+//               NetworkImage('https://codemy.com/images/aspenhospital.jpg')),
+//         ),
+//         backgroundColor: Colors.deepPurple[200],
+//       ),
+//     ),
+//   );
+// }
+
+
+
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'My First Flutter App',
       home: Scaffold(
         appBar: AppBar(
           title: const Center(
-            child: Text("To Do App"),
-          ),
-          backgroundColor: Colors.deepPurple[400],
+            child: Text('Hello, Flutter!'),
+            ),
         ),
         body: const Center(
-          child: Image(
-            image: 
-              NetworkImage('https://codemy.com/images/aspenhospital.jpg')),
+          child: Text(
+            'Hello, Flutter!',
+            style: TextStyle(fontSize: 24),
+          ),
         ),
-        backgroundColor: Colors.deepPurple[200],
       ),
-    ),
-  );
+    );
+  }
 }
+
+
