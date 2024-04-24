@@ -280,8 +280,8 @@ class MyWidget extends StatelessWidget {
           title: const Text('Row In Flutter'),
         ),
         body: const Row(
-          // Try replacing "center" with "start", "end", "spaceBetween", "spaceAround" or "spaceEvenly"
-          mainAxisAlignment: MainAxisAlignment.center,
+          // Try replacing "center" with "start", "end", "spaceBetween", "center", "spaceAround" or "spaceEvenly"
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Icon(Icons.star, color: Colors.black),
             Icon(Icons.star, color: Colors.black),
