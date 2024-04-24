@@ -561,12 +561,12 @@ class HomeScreen extends StatelessWidget {
         title: Center(
           child: Text(
             'My Portfolio',
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.titleLarge,
           ),
         ),
         backgroundColor: Theme.of(context).primaryColor,
       ),
-      body: Center(
+      body: const Center(
         child: Text('Welcome to my portfolio!'),
       ),
     );
