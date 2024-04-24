@@ -547,6 +547,10 @@ class MyWidget extends StatelessWidget {
           ),
           backgroundColor: const Color.fromARGB(255, 29, 196, 168),
         ),
+        style: const  TextStyle(
+          fontSize: 24,
+          color: Colors.white, 
+        ),
       ),
     );
   }
