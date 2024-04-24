@@ -277,10 +277,10 @@ void main() {
         ),
         body: const Row(
           children: [
-            Icon(Icons.star, color: Colors.yellow),
-            Icon(Icons.star, color: Colors.yellow),
-            Icon(Icons.star, color: Colors.yellow),
-            Icon(Icons.star, color: Colors.yellow),
+            Icon(Icons.star, color: Colors.black),
+            Icon(Icons.star, color: Colors.black),
+            Icon(Icons.star, color: Colors.black),
+            Icon(Icons.star, color: Colors.black),
             Icon(Icons.star_border, color: Colors.yellow),
           ],
         ),
