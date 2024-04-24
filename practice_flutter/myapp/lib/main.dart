@@ -330,6 +330,35 @@
 // }
 
 
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(const MyWidget());
+// }
+// class MyWidget extends StatelessWidget {
+//   const MyWidget({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+    
+//     return MaterialApp(
+//       home: Scaffold(
+//         appBar: AppBar(
+//           title: const Text('My First App'),
+//         ),
+//         body: const Column(
+//           children: [
+//             Icon(Icons.star, size: 50),
+//             Text('I am learning flutter'),
+//             Icon(Icons.star, size: 50),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -346,11 +375,19 @@ class MyWidget extends StatelessWidget {
         appBar: AppBar(
           title: const Text('My First App'),
         ),
-        body: const Column(
+        body: Column(
+           // Try replacing "center" with "start", "end", "center", spaceBetween", "spaceAround" or "spaceEvenly"
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+           // Try replacing "center" with "start", "end", "stretch", or "baseline"
+            crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Icon(Icons.star, size: 50),
-            Text('I am learning flutter'),
-            Icon(Icons.star, size: 50),
+            Container(height: 100, width: 100, color: Colors.blue),
+            const SizedBox(height: 5),
+            Container(height: 100, width: 100, color: Colors.blue),
+            const SizedBox(height: 5),
+            Container(height: 100, width: 100, color: Colors.blue),
+            const SizedBox(height: 5),
+            Container(height: 100, width: 100, color: Colors.blue),
           ],
         ),
       ),
