@@ -295,7 +295,6 @@
 //   }
 // }
 
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -313,8 +312,8 @@ class MyWidget extends StatelessWidget {
           title: const Text('Row In Flutter'),
         ),
         body: const Row(
-          // Try replacing "center" with "start", "end", "spaceBetween", "center", "spaceAround" or "spaceEvenly"
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          // Try replacing "center" with "start", "end", "center", "stretch" or "baseline"
+            crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Icon(Icons.star, color: Colors.black),
             Icon(Icons.star, color: Colors.black),
@@ -325,3 +324,5 @@ class MyWidget extends StatelessWidget {
         ),
       ),
     );
+  }
+}
