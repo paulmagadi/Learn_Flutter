@@ -530,27 +530,44 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyWidget());
+  runApp(MyApp());
 }
 
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
-
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-      title: "My Portfolio",
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Center(
-            child: Text("My Portfolio"),
+    return MaterialApp(
+      title: 'My Portfolio',
+      theme: ThemeData(
+        primaryColor:const Color.fromARGB(255, 29, 196, 168),
+        textTheme: const TextTheme(
+          titleLarge: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            color: Color.fromARGB(255, 255, 255, 255),
           ),
-          backgroundColor: const Color.fromARGB(255, 29, 196, 168),
         ),
-        style: const  TextStyle(
-          fontSize: 24,
-          color: Colors.white, 
+      ),
+      home: HomeScreen(),
+    );
+  }
+}
+
+class HomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Center(
+          child: Text(
+            'My Portfolio',
+            style: Theme.of(context).textTheme.headline6,
+          ),
         ),
+        backgroundColor: Theme.of(context).primaryColor,
+      ),
+      body: Center(
+        child: Text('Welcome to my portfolio!'),
       ),
     );
   }
