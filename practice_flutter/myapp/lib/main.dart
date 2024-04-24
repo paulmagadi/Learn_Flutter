@@ -396,50 +396,135 @@
 // }
 
 
+// Profile
+
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(const MyWidget());
+// }
+// class MyWidget extends StatelessWidget {
+//   const MyWidget({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: Scaffold(
+//         appBar: AppBar(
+//           title: const Text('My Portfolio'),
+//         ),
+//         body: const Row(
+//   crossAxisAlignment: CrossAxisAlignment.start,
+//   children: <Widget>[
+//     CircleAvatar(
+//       radius: 35,
+//       backgroundImage: AssetImage(
+//         'images/paul.jpg',
+//       ),
+//     ),
+//     Padding(padding: EdgeInsets.all(2.0)),
+//     Column(
+//       children: <Widget>[
+//         Text(
+//           'Paul Magadi',
+//           style: TextStyle(
+//             fontSize: 20,
+//             fontWeight: FontWeight.bold,
+//           ),
+//         ),
+//         Text(
+//           'Flutter Developer',
+//           style: TextStyle(
+//             fontSize: 15,
+//           ),
+//         ),
+//       ],
+//     ),
+//   ],
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+
+// Login form
+
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyWidget());
+  runApp(MyApp());
 }
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'My Portfolio',
+      home: HomeScreen(),
+    );
+  }
+}
+
+class HomeScreen extends StatefulWidget {
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  final TextEditingController _usernameController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
+
+  void _login() {
+    // Handle login action here
+    String username = _usernameController.text;
+    String password = _passwordController.text;
+
+    // Add your authentication logic here
+
+    print('Username: $username');
+    print('Password: $password');
+  }
 
   @override
   Widget build(BuildContext context) {
-    
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('My First App'),
-        ),
-        body: const Row(
-  crossAxisAlignment: CrossAxisAlignment.start,
-  children: <Widget>[
-    CircleAvatar(
-      radius: 35,
-      backgroundImage: AssetImage(
-        'images/paul.jpg',
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('My Portfolio'),
       ),
-    ),
-    Padding(padding: EdgeInsets.all(2.0)),
-    Column(
-      children: <Widget>[
-        Text(
-          'Paul Magadi',
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        Text(
-          'Flutter Developer',
-          style: TextStyle(
-            fontSize: 15,
-          ),
-        ),
-      ],
-    ),
-  ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Row(
+              children: [
+                const Text('Username: '),
+                Expanded(
+                  child: TextField(
+                    controller: _usernameController,
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                const Text('Password: '),
+                Expanded(
+                  child: TextField(
+                    controller: _passwordController,
+                    obscureText: true,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 20),
+            MaterialButton(
+              color: Colors.blue,
+              textColor: Colors.white,
+              onPressed: _login,
+              child: const Text('Login'),
+            ),
+          ],
         ),
       ),
     );
