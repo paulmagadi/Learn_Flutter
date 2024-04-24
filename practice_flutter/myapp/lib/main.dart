@@ -212,7 +212,6 @@
 
 // import 'package:flutter/material.dart';
 
-
 // void main() => runApp(const MyApp());
 
 // class MyApp extends StatelessWidget {
@@ -243,7 +242,6 @@
 //   }
 // }
 
-
 // import 'package:flutter/material.dart';
 
 // void main() {
@@ -265,12 +263,18 @@
 //   );
 // }
 
-
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
+  runApp(const MyWidget());
+}
+
+class MyWidget extends StatelessWidget {
+  const MyWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Row In Flutter'),
@@ -285,6 +289,6 @@ void main() {
           ],
         ),
       ),
-    ),
-  );
+    );
+  }
 }
