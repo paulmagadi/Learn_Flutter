@@ -281,7 +281,7 @@ void main() {
             Icon(Icons.star, color: Colors.black),
             Icon(Icons.star, color: Colors.black),
             Icon(Icons.star, color: Colors.black),
-            Icon(Icons.star_border, color: Colors.yellow),
+            Icon(Icons.star_border, color: Colors.black),
           ],
         ),
       ),
