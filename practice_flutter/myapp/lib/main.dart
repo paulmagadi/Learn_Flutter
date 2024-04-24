@@ -295,33 +295,62 @@
 //   }
 // }
 
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(const MyWidget());
+// }
+
+// class MyWidget extends StatelessWidget {
+//   const MyWidget({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: Scaffold(
+//         appBar: AppBar(
+//           title: const Text('Row In Flutter'),
+//         ),
+//         body: const Row(
+//           // Try replacing "center" with "start", "end", "spaceBetween", "center", "spaceAround" or "spaceEvenly"
+//           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//           // Try replacing "center" with "start", "end", "center", "stretch" or "baseline"
+//             crossAxisAlignment: CrossAxisAlignment.end,
+//           children: [
+//             Icon(Icons.star, color: Colors.black),
+//             Icon(Icons.star, color: Colors.black),
+//             Icon(Icons.star, color: Colors.black),
+//             Icon(Icons.star, color: Colors.black),
+//             Icon(Icons.star_border, color: Colors.black),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyWidget());
 }
-
 class MyWidget extends StatelessWidget {
   const MyWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
+    
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Row In Flutter'),
+          title: const Text('My First App'),
         ),
-        body: const Row(
-          // Try replacing "center" with "start", "end", "spaceBetween", "center", "spaceAround" or "spaceEvenly"
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          // Try replacing "center" with "start", "end", "center", "stretch" or "baseline"
-            crossAxisAlignment: CrossAxisAlignment.end,
+        body: const Column(
           children: [
-            Icon(Icons.star, color: Colors.black),
-            Icon(Icons.star, color: Colors.black),
-            Icon(Icons.star, color: Colors.black),
-            Icon(Icons.star, color: Colors.black),
-            Icon(Icons.star_border, color: Colors.black),
+            Icon(Icons.star, size: 50),
+            Text('I am learning flutter'),
+            Icon(Icons.star, size: 50),
           ],
         ),
       ),
