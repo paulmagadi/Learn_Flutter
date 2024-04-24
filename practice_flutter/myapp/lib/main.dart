@@ -329,7 +329,6 @@
 //   }
 // }
 
-
 // import 'package:flutter/material.dart';
 
 // void main() {
@@ -340,7 +339,7 @@
 
 //   @override
 //   Widget build(BuildContext context) {
-    
+
 //     return MaterialApp(
 //       home: Scaffold(
 //         appBar: AppBar(
@@ -358,7 +357,6 @@
 //   }
 // }
 
-
 // import 'package:flutter/material.dart';
 
 // void main() {
@@ -369,7 +367,7 @@
 
 //   @override
 //   Widget build(BuildContext context) {
-    
+
 //     return MaterialApp(
 //       home: Scaffold(
 //         appBar: AppBar(
@@ -394,7 +392,6 @@
 //     );
 //   }
 // }
-
 
 // Profile
 
@@ -446,7 +443,6 @@
 //     );
 //   }
 // }
-
 
 // Login form
 
@@ -531,25 +527,27 @@
 //   }
 // }
 
-
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(const MyWidget());
 }
+
 class MyWidget extends StatelessWidget {
   const MyWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp();
+    return  MaterialApp(
+      title: "My Portfolio",
       home: Scaffold(
         appBar: AppBar(
           title: const Center(
-            child: Text("My Portfolio")
+            child: Text("My Portfolio"),
           ),
+          backgroundColor: const Color.fromARGB(255, 29, 196, 168),
         ),
       ),
+    );
   }
-
 }
