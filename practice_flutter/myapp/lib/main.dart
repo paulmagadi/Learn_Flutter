@@ -1,4 +1,3 @@
-
 // import 'package:flutter/material.dart';
 
 // void main() {
@@ -37,8 +36,6 @@
 //     );
 //   }
 // }
-
-
 
 // import 'package:flutter/material.dart';
 
@@ -156,7 +153,7 @@
 //         ),
 //         body: const Center(
 //           child: Image(
-//             image: 
+//             image:
 //               AssetImage("images/paul.jpg")),
 //         ),
 //         backgroundColor: Colors.deepPurple[200],
@@ -165,9 +162,7 @@
 //   );
 // }
 
-
 //Internet Image
-
 
 // import 'package:flutter/material.dart';
 
@@ -183,7 +178,7 @@
 //         ),
 //         body: const Center(
 //           child: Image(
-//             image: 
+//             image:
 //               NetworkImage('https://codemy.com/images/aspenhospital.jpg')),
 //         ),
 //         backgroundColor: Colors.deepPurple[200],
@@ -192,7 +187,6 @@
 //   );
 // }
 
-
 // import 'package:flutter/material.dart';
 
 // void main() {
@@ -207,7 +201,7 @@
 //         ),
 //         body: const Center(
 //           child: Image(
-//             image: 
+//             image:
 //               AssetImage("images/paul.jpg")),
 //         ),
 //         backgroundColor: Colors.deepPurple[200],
@@ -216,34 +210,35 @@
 //   );
 // }
 
-
-
 import 'package:flutter/material.dart';
-void main() => runApp(MyApp());
+
+
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
       title: "Container Widget Demo",
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Your App Name"),
+          title: const Center(
+            child: Text("MYAPP"),
+          ),
         ),
-        body:  Container(
-        child: const Text('Raj Sharma'),
-),
+        body: Container(
+          child: Text('This is my first app'),
+          padding: EdgeInsets.all(20),
+          decoration: BoxDecoration(
+            border: Border.all(
+              color: Colors.black,
+              width: 2,
+            ),
+          ),
+        ),
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
