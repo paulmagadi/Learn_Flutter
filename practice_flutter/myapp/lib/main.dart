@@ -605,14 +605,12 @@ class MyApp extends StatelessWidget {
           padding: EdgeInsets.all(5.0),
           margin: EdgeInsets.all(5.0),
         ),
-        Container(
-          height: 400,
-          width: 400,
-          color: Colors.blue,
-          alignment: Alignment.center,
-          child: const Image(image: AssetImage('images/paul.jpg')),
-          padding: EdgeInsets.all(5.0),
-          margin: EdgeInsets.all(5.0),
+        Center(
+          child: Text("Paul Magadi",
+          style: TextStyle(
+            fontSize: 24,
+            color: Colors.blue,
+           ),),
         ),
       ]
       ),
