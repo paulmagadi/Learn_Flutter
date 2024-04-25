@@ -589,17 +589,17 @@ class MyApp extends StatelessWidget {
       appBar: AppBar(
         title: const Center(
           child: Text(
-            "Paul Magadi",
+            "My Portfolio",
             style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
           ),
         ),
-        backgroundColor: const Color.fromARGB(255, 33, 243, 72),
+        backgroundColor: Color.fromARGB(255, 45, 125, 123),
       ),
       body: Column(children: [
         Container(
           height: 400,
           width: 400,
-          color: Colors.blue,
+          color: Color.fromARGB(255, 45, 125, 123),
           alignment: Alignment.center,
           child: const Image(image: AssetImage('images/paul.jpg')),
           padding: EdgeInsets.all(5.0),
@@ -608,8 +608,8 @@ class MyApp extends StatelessWidget {
         Center(
           child: Text("Paul Magadi",
           style: TextStyle(
-            fontSize: 24,
-            color: Colors.blue,
+            fontSize: 30,
+            color: Color.fromARGB(255, 45, 125, 123),
            ),),
         ),
       ]
