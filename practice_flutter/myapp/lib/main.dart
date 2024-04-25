@@ -595,10 +595,17 @@ class MyApp extends StatelessWidget {
           ),
           backgroundColor: const Color.fromARGB(255, 33, 243, 72),
         ),
-        body: const Center(
-          child: Image(
+        body: Container(
+          height: 400,
+          width: 400,
+          color: Colors.blue,
+          alignment: Alignment.center,
+          child: const Image(
             image: 
-            AssetImage('images/paul.jpg'))
+            AssetImage('images/paul.jpg')
+            ),
+            padding:EdgeInsets.all(5.0),
+            margin: EdgeInsets.all(5.0),
             ),
           ),
     );
