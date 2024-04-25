@@ -642,7 +642,9 @@ class MyApp extends StatelessWidget {
         ),
         backgroundColor:const Color.fromARGB(255, 45, 125, 123),
       ),
-      body:Column(children: [
+      body:Row(
+        children: [
+          Column(children: [
         Container(
           height: 400,
           width: 400,
@@ -661,6 +663,8 @@ class MyApp extends StatelessWidget {
         ),
       ]
       ),
+        ],
+      )
     ));
   }
 }
