@@ -596,14 +596,11 @@ class MyApp extends StatelessWidget {
           backgroundColor: const Color.fromARGB(255, 33, 243, 72),
         ),
         body: const Center(
-          child: Text(
-            "My name is Paul Magadi",
-            style: TextStyle(
-              color: Colors.blue,
+          child: Image(
+            image: 
+            AssetImage('images/paul.jpg'))
             ),
           ),
-        ),
-      ),
     );
   }
 }
