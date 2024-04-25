@@ -527,6 +527,52 @@
 //   }
 // }
 
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(MyApp());
+// }
+
+// class MyApp extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'My Portfolio',
+//       theme: ThemeData(
+//         primaryColor:const Color.fromARGB(255, 29, 110, 97),
+//         textTheme: const TextTheme(
+//           titleLarge: TextStyle(
+//             fontSize: 24,
+//             fontWeight: FontWeight.bold,
+//             color: Color.fromARGB(255, 255, 255, 255),
+//           ),
+//         ),
+//       ),
+//       home: HomeScreen(),
+//     );
+//   }
+// }
+
+// class HomeScreen extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Center(
+//           child: Text(
+//             'My Portfolio',
+//             style: Theme.of(context).textTheme.titleLarge,
+//           ),
+//         ),
+//         backgroundColor: Theme.of(context).primaryColor,
+//       ),
+//       body: const Center(
+//         child: Text('Welcome to my portfolio!'),
+//       ),
+//     );
+//   }
+// }
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -534,40 +580,29 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'My Portfolio',
-      theme: ThemeData(
-        primaryColor:const Color.fromARGB(255, 29, 196, 168),
-        textTheme: const TextTheme(
-          titleLarge: TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
-            color: Color.fromARGB(255, 255, 255, 255),
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Center(
+            child: Text(
+              "Paul Magadi",
+              style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
+            ),
           ),
+          backgroundColor: const Color.fromARGB(255, 33, 243, 72),
         ),
-      ),
-      home: HomeScreen(),
-    );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Center(
+        body: const Center(
           child: Text(
-            'My Portfolio',
-            style: Theme.of(context).textTheme.titleLarge,
+            "My name is Paul Magadi",
+            style: TextStyle(
+              color: Colors.blue,
+            ),
           ),
         ),
-        backgroundColor: Theme.of(context).primaryColor,
-      ),
-      body: const Center(
-        child: Text('Welcome to my portfolio!'),
       ),
     );
   }
