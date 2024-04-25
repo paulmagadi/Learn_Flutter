@@ -585,29 +585,37 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Center(
-            child: Text(
-              "Paul Magadi",
-              style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
-            ),
+        home: Scaffold(
+      appBar: AppBar(
+        title: const Center(
+          child: Text(
+            "Paul Magadi",
+            style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
           ),
-          backgroundColor: const Color.fromARGB(255, 33, 243, 72),
         ),
-        body: Container(
+        backgroundColor: const Color.fromARGB(255, 33, 243, 72),
+      ),
+      body: Column(children: [
+        Container(
           height: 400,
           width: 400,
           color: Colors.blue,
           alignment: Alignment.center,
-          child: const Image(
-            image: 
-            AssetImage('images/paul.jpg')
-            ),
-            padding:EdgeInsets.all(5.0),
-            margin: EdgeInsets.all(5.0),
-            ),
-          ),
-    );
+          child: const Image(image: AssetImage('images/paul.jpg')),
+          padding: EdgeInsets.all(5.0),
+          margin: EdgeInsets.all(5.0),
+        ),
+        Container(
+          height: 400,
+          width: 400,
+          color: Colors.blue,
+          alignment: Alignment.center,
+          child: const Image(image: AssetImage('images/paul.jpg')),
+          padding: EdgeInsets.all(5.0),
+          margin: EdgeInsets.all(5.0),
+        ),
+      ]
+      ),
+    ));
   }
 }
