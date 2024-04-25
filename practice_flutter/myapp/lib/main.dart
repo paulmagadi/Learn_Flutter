@@ -576,7 +576,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -593,19 +593,19 @@ class MyApp extends StatelessWidget {
             style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
           ),
         ),
-        backgroundColor: Color.fromARGB(255, 45, 125, 123),
+        backgroundColor:const Color.fromARGB(255, 45, 125, 123),
       ),
       body: Column(children: [
         Container(
           height: 400,
           width: 400,
-          color: Color.fromARGB(255, 45, 125, 123),
+          color:const  Color.fromARGB(255, 45, 125, 123),
           alignment: Alignment.center,
+          padding:const EdgeInsets.all(5.0),
+          margin:const EdgeInsets.all(5.0),
           child: const Image(image: AssetImage('images/paul.jpg')),
-          padding: EdgeInsets.all(5.0),
-          margin: EdgeInsets.all(5.0),
         ),
-        Center(
+        const Center(
           child: Text("Paul Magadi",
           style: TextStyle(
             fontSize: 30,
