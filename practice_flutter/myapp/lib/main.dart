@@ -643,6 +643,7 @@ class MyApp extends StatelessWidget {
         backgroundColor:const Color.fromARGB(255, 45, 125, 123),
       ),
       body:Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Column(children: [
         Container(
