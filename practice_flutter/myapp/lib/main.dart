@@ -663,6 +663,44 @@ class MyApp extends StatelessWidget {
         ),
       ]
       ),
+      Column(children: [
+        Container(
+          height: 400,
+          width: 400,
+          color:const  Color.fromARGB(255, 45, 125, 123),
+          alignment: Alignment.center,
+          padding:const EdgeInsets.all(5.0),
+          margin:const EdgeInsets.all(5.0),
+          child: const Image(image: AssetImage('images/paul.jpg')),
+        ),
+        const Center(
+          child: Text("Paul Magadi",
+          style: TextStyle(
+            fontSize: 30,
+            color: Color.fromARGB(255, 45, 125, 123),
+           ),),
+        ),
+      ]
+      ),
+      Column(children: [
+        Container(
+          height: 400,
+          width: 400,
+          color:const  Color.fromARGB(255, 45, 125, 123),
+          alignment: Alignment.center,
+          padding:const EdgeInsets.all(5.0),
+          margin:const EdgeInsets.all(5.0),
+          child: const Image(image: AssetImage('images/paul.jpg')),
+        ),
+        const Center(
+          child: Text("Paul Magadi",
+          style: TextStyle(
+            fontSize: 30,
+            color: Color.fromARGB(255, 45, 125, 123),
+           ),),
+        ),
+      ]
+      ),
         ],
       )
     ));
