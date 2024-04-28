@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-
 void main() {
   runApp(const ProfileApp());
 }
@@ -64,7 +63,7 @@ class ProfilePage extends StatelessWidget {
                 ListTile(
                     leading: const Icon(Icons.web),
                     title: const Text('Website'),
-                    subtitle: const Text('brp.com.np'),
+                    subtitle: const Text('sqcodes.com'),
                     onTap: () {}),
                 const ListTile(
                   leading: Icon(Icons.email),
@@ -90,7 +89,7 @@ class ProfilePage extends StatelessWidget {
                 tooltip: 'Facebook',
               ),
               IconButton(
-                icon: const FaIcon(FontAwesomeIcons.gamepad), 
+                icon: const FaIcon(FontAwesomeIcons.linkedin),
                 onPressed: () {},
                 color: Colors.blue,
                 tooltip: 'LinkedIn',
