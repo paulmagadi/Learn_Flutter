@@ -19,7 +19,11 @@ class ProfileApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Profile'),
+          title: Row(
+            children: [
+              
+            ],
+          )
         ),
         body: const ProfilePage(),
       ),
