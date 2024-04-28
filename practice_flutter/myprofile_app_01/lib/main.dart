@@ -71,24 +71,24 @@ class ProfilePage extends StatelessWidget {
               style: Theme.of(context).textTheme.bodyLarge),
           const SizedBox(height: 20),
           Card(
-            elevation: 4.0,
+            elevation: 8.0,
             child: Column(
               children: <Widget>[
                 const ListTile(
-                  leading: Icon(Icons.cake),
-                  title: Text('Birth Date'),
-                  subtitle: Text('1999'),
+                  leading: Icon(Icons.phone),
+                  title: Text('Tell'),
+                  subtitle: Text('+2547000000'),
+                ),
+                const ListTile(
+                  leading: Icon(Icons.email),
+                  title: Text('Email'),
+                  subtitle: Text('sqcodes@gmail.com'),
                 ),
                 ListTile(
                     leading: const Icon(Icons.web),
                     title: const Text('Website'),
                     subtitle: const Text('sqcodes.com'),
                     onTap: () {}),
-                const ListTile(
-                  leading: Icon(Icons.email),
-                  title: Text('Email'),
-                  subtitle: Text('sqcodes@gmail.com'),
-                ),
                 const ListTile(
                   leading: Icon(Icons.location_on),
                   title: Text('Address'),
