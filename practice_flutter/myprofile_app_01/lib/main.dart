@@ -36,11 +36,10 @@ class ProfilePage extends StatelessWidget {
         children: <Widget>[
           const CircleAvatar(
             radius: 80,
-            backgroundImage: NetworkImage(
-                'https://avatars.githubusercontent.com/u/33576285?v=4'),
+            backgroundImage: AssetImage('images/paul.jpg'),
           ),
           const SizedBox(height: 20),
-          Text('Bishworaj Poudel',
+          Text('Paul Magadi',
               style: Theme.of(context)
                   .textTheme
                   .bodyLarge
