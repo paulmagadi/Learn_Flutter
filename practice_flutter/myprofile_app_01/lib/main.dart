@@ -17,25 +17,29 @@ class ProfileApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
-        appBar: AppBar(
-            backgroundColor: Color.fromARGB(255, 44, 166, 99),
-            foregroundColor: Colors.white,
-            title: const Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "My Profile",
-                  style: TextStyle(fontSize: 28),
-                ),
-                Text(
-                  "Paul Magadi",
-                  style: TextStyle(fontSize: 23),
-                ),
-              ],
-            )),
+        appBar: appBar(),
         body: const ProfilePage(),
       ),
     );
+  }
+
+  AppBar appBar() {
+    return AppBar(
+          backgroundColor:const  Color.fromARGB(255, 44, 166, 99),
+          foregroundColor: Colors.white,
+          title: const Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                "My Profile",
+                style: TextStyle(fontSize: 28),
+              ),
+              Text(
+                "Paul Magadi",
+                style: TextStyle(fontSize: 23),
+              ),
+            ],
+          ));
   }
 }
 
