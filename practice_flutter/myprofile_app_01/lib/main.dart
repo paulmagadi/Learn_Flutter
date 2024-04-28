@@ -90,7 +90,9 @@ class ProfilePage extends StatelessWidget {
               ),
               IconButton(
                 icon: const FaIcon(FontAwesomeIcons.linkedin),
-                onPressed: () {},
+                onPressed: () {
+                  
+                },
                 color: Colors.black,
                 tooltip: 'LinkedIn',
               ),
