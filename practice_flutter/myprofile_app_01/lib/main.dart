@@ -25,25 +25,14 @@ class ProfileApp extends StatelessWidget {
             "My Profile",
             style: TextStyle(fontSize: 28),
           ),
-               Column(
-                children: [
-                  SizedBox(
-                    // Here I use SizeBox instead of Container
-                    height: 30,
-                    width: 30,
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(50),
-                      child: Image.asset('assets/images/paul.jpg'),
-                    ),
-                  ),
-                  const Center(
-                    child: Text(
+                
+                  
+                   Text(
                       "Magadi",
                       style: TextStyle(fontSize: 13),
                     ),
-                  ),
-                ],
-              ),
+                  
+            
             ],
           )
         ),
