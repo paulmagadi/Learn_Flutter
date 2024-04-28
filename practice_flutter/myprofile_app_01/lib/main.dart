@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-
 void main() {
   runApp(const ProfileApp());
 }
@@ -14,28 +13,26 @@ class ProfileApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
         appBar: AppBar(
-          title:  Row(
-            children: [
-               const Text(
-            "My Profile",
-            style: TextStyle(fontSize: 28),
-          ),
-                
-                  
-                   Text(
-                      "Magadi",
-                      style: TextStyle(fontSize: 13),
-                    ),
-                  
-            
-            ],
-          )
-        ),
+            backgroundColor: Color.fromARGB(255, 44, 166, 99),
+            foregroundColor: Colors.white,
+            title: const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "My Profile",
+                  style: TextStyle(fontSize: 28),
+                ),
+                Text(
+                  "Paul Magadi",
+                  style: TextStyle(fontSize: 23),
+                ),
+              ],
+            )),
         body: const ProfilePage(),
       ),
     );
@@ -62,8 +59,7 @@ class ProfilePage extends StatelessWidget {
                   .bodyLarge
                   ?.copyWith(fontWeight: FontWeight.bold)),
           const SizedBox(height: 10),
-          Text(
-              'I love teaching students and helping them to achieve their dreams.',
+          Text('I am a Full-Stack Software Developer with...',
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.bodyLarge),
           const SizedBox(height: 20),
@@ -106,9 +102,7 @@ class ProfilePage extends StatelessWidget {
               ),
               IconButton(
                 icon: const FaIcon(FontAwesomeIcons.linkedin),
-                onPressed: () {
-                  
-                },
+                onPressed: () {},
                 color: Colors.black,
                 tooltip: 'LinkedIn',
               ),
