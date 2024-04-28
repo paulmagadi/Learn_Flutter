@@ -19,9 +19,12 @@ class ProfileApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Row(
+          title: const Row(
             children: [
-              
+               Text(
+            "My Profile",
+            style: TextStyle(fontSize: 28),
+          ),
             ],
           )
         ),
