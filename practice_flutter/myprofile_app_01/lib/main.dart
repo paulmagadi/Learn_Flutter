@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
@@ -10,6 +11,8 @@ class ProfileApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+        const SystemUiOverlayStyle(statusBarColor: Colors.transparent));
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
@@ -25,21 +28,21 @@ class ProfileApp extends StatelessWidget {
 
   AppBar appBar() {
     return AppBar(
-          backgroundColor:const  Color.fromARGB(255, 44, 166, 99),
-          foregroundColor: Colors.white,
-          title: const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                "My Profile",
-                style: TextStyle(fontSize: 28),
-              ),
-              Text(
-                "Paul Magadi",
-                style: TextStyle(fontSize: 23),
-              ),
-            ],
-          ));
+        backgroundColor: const Color.fromARGB(255, 44, 166, 99),
+        foregroundColor: Colors.white,
+        title: const Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              "My Profile",
+              style: TextStyle(fontSize: 28),
+            ),
+            Text(
+              "Paul Magadi",
+              style: TextStyle(fontSize: 23),
+            ),
+          ],
+        ));
   }
 }
 
