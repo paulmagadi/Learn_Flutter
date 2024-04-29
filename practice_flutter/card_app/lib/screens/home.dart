@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import '../constants/colors.dart';
 
 class Home extends StatefulWidget {
@@ -133,8 +134,29 @@ class _HomeState extends State<Home> {
                 ),
               ),
             ),
-            Column(
-              
+            const SizedBox(height: 20),
+            Wrap(
+              spacing: 10,
+            children: <Widget>[
+              IconButton(
+                icon: const Icon(Icons.facebook),
+                onPressed: () {},
+                color: Colors.blue,
+                tooltip: 'Facebook',
+              ),
+              IconButton(
+                icon: const FaIcon(FontAwesomeIcons.linkedin),
+                onPressed: () {},
+                color: Colors.black,
+                tooltip: 'LinkedIn',
+              ),
+              IconButton(
+                icon: const FaIcon(FontAwesomeIcons.github),
+                onPressed: () {},
+                color: Colors.black,
+                tooltip: 'GitHub',
+              ),
+            ],
             )
           ],
           
