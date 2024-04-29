@@ -31,7 +31,7 @@ class _HomeState extends State<Home> {
                   children: <Widget>[
                     const Row(
                       children: [
-                        Icon(Icons.phone, color: Colors.blue),
+                        Icon(Icons.phone, color: mainColor),
                         SizedBox(width: 8), // Add spacing between icon and text
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -39,7 +39,7 @@ class _HomeState extends State<Home> {
                             Text('Tell',
                                 style: TextStyle(fontWeight: FontWeight.bold)),
                             Text('+2547000000',
-                                style: TextStyle(color: Colors.grey)),
+                                style: TextStyle(color: greyColor)),
                           ],
                         ),
                       ],
@@ -49,7 +49,7 @@ class _HomeState extends State<Home> {
                     // Email information
                     const Row(
                       children: [
-                        Icon(Icons.email, color: Colors.blue),
+                        Icon(Icons.email, color: mainColor),
                         SizedBox(width: 8),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -57,7 +57,7 @@ class _HomeState extends State<Home> {
                             Text('Email',
                                 style: TextStyle(fontWeight: FontWeight.bold)),
                             Text('sqcodes@gmail.com',
-                                style: TextStyle(color: Colors.grey)),
+                                style: TextStyle(color: greyColor)),
                           ],
                         ),
                       ],
@@ -67,7 +67,7 @@ class _HomeState extends State<Home> {
                     // Website information
                     Row(
                       children: [
-                        const Icon(Icons.web, color: Colors.blue),
+                        const Icon(Icons.web, color: mainColor),
                         const SizedBox(width: 8),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -81,7 +81,7 @@ class _HomeState extends State<Home> {
                               },
                               child: const Text(
                                 'sqcodes.com',
-                                style: TextStyle(color: Colors.grey),
+                                style: TextStyle(color: greyColor),
                               ),
                             ),
                           ],
@@ -93,7 +93,7 @@ class _HomeState extends State<Home> {
                     // Address information
                     const Row(
                       children: [
-                        Icon(Icons.location_on, color: Colors.blue),
+                        Icon(Icons.location_on, color: mainColor),
                         SizedBox(width: 8),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -101,7 +101,7 @@ class _HomeState extends State<Home> {
                             Text('Address',
                                 style: TextStyle(fontWeight: FontWeight.bold)),
                             Text('Nairobi, Kenya',
-                                style: TextStyle(color: Colors.grey)),
+                                style: TextStyle(color: greyColor)),
                           ],
                         ),
                       ],
