@@ -20,7 +20,7 @@ class _HomeState extends State<Home> {
         ),
         body: Card(
           elevation: 4.0,
-          margin: const EdgeInsets.all(16),
+          margin: const EdgeInsets.all(26),
           child: Padding(
             padding: const EdgeInsets.all(16),
             child: Row(
