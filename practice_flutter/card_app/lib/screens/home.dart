@@ -19,7 +19,7 @@ class _HomeState extends State<Home> {
           title: const Text("Flutter Card"),
         ),
         body: Card(
-          elevation: 8.0,
+          elevation: 4.0,
           margin: const EdgeInsets.all(16),
           child: Padding(
             padding: const EdgeInsets.all(16),
