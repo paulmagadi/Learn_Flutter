@@ -26,13 +26,10 @@ class _HomeState extends State<Home> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Column(
+                Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    // Text("Hello world"),
-                    // Text("My Name is paul"),
-
-                    Row(
+                    const Row(
                       children: [
                         Icon(Icons.phone, color: Colors.blue),
                         SizedBox(width: 8), // Add spacing between icon and text
@@ -47,36 +44,83 @@ class _HomeState extends State<Home> {
                         ),
                       ],
                     ),
-                    // const ListTile(
-                    //   leading: Icon(Icons.email),
-                    //   title: Text('Email'),
-                    //   subtitle: Text('sqcodes@gmail.com'),
-                    // ),
-                    // ListTile(
-                    //     leading: const Icon(Icons.web),
-                    //     title: const Text('Website'),
-                    //     subtitle: const Text('sqcodes.com'),
-                    //     onTap: () {}),
-                    // const ListTile(
-                    //   leading: Icon(Icons.location_on),
-                    //   title: Text('Address'),
-                    //   subtitle: Text('Nairobi, Kenya'),
-                    // ),
+                    const SizedBox(height: 16), // Add spacing between rows
+
+                    // Email information
+                    const Row(
+                      children: [
+                        Icon(Icons.email, color: Colors.blue),
+                        SizedBox(width: 8),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('Email',
+                                style: TextStyle(fontWeight: FontWeight.bold)),
+                            Text('sqcodes@gmail.com',
+                                style: TextStyle(color: Colors.grey)),
+                          ],
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 16), // Add spacing between rows
+
+                    // Website information
+                    Row(
+                      children: [
+                        const Icon(Icons.web, color: Colors.blue),
+                        const SizedBox(width: 8),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text('Website',
+                                style: TextStyle(fontWeight: FontWeight.bold)),
+                            GestureDetector(
+                              onTap: () {
+                                // Handle website tap
+                                // You can use url_launcher package to launch the URL
+                              },
+                              child: const Text(
+                                'sqcodes.com',
+                                style: TextStyle(color: Colors.grey),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 16), // Add spacing between rows
+
+                    // Address information
+                    const Row(
+                      children: [
+                        Icon(Icons.location_on, color: Colors.blue),
+                        SizedBox(width: 8),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('Address',
+                                style: TextStyle(fontWeight: FontWeight.bold)),
+                            Text('Nairobi, Kenya',
+                                style: TextStyle(color: Colors.grey)),
+                          ],
+                        ),
+                      ],
+                    ),
                   ],
                 ),
                 Column(
                   children: <Widget>[
                     const CircleAvatar(
-                      radius: 10,
+                      radius: 50,
                       backgroundImage: AssetImage('images/paul.jpg'),
                     ),
-                    const SizedBox(height: 5),
+                    const SizedBox(height: 20),
                     Text('Paul Magadi',
                         style: Theme.of(context)
                             .textTheme
                             .bodyLarge
                             ?.copyWith(fontWeight: FontWeight.bold)),
-                    const SizedBox(height: 10),
+                    const SizedBox(height: 20),
                     Text('Software Developer ',
                         textAlign: TextAlign.center,
                         style: Theme.of(context).textTheme.bodyLarge),
