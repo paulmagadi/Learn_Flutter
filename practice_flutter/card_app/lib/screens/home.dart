@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import '../constants/colors.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -35,12 +36,14 @@ class _HomeState extends State<Home> {
                         const Row(
                           children: [
                             Icon(Icons.phone, color: mainColor),
-                            SizedBox(width: 8), // Add spacing between icon and text
+                            SizedBox(
+                                width: 8), // Add spacing between icon and text
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text('Tell',
-                                    style: TextStyle(fontWeight: FontWeight.bold)),
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold)),
                                 Text('+2547000000',
                                     style: TextStyle(color: greyColor)),
                               ],
@@ -48,7 +51,7 @@ class _HomeState extends State<Home> {
                           ],
                         ),
                         const SizedBox(height: 16), // Add spacing between rows
-            
+
                         // Email information
                         const Row(
                           children: [
@@ -58,7 +61,8 @@ class _HomeState extends State<Home> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text('Email',
-                                    style: TextStyle(fontWeight: FontWeight.bold)),
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold)),
                                 Text('sqcodes@gmail.com',
                                     style: TextStyle(color: greyColor)),
                               ],
@@ -66,7 +70,7 @@ class _HomeState extends State<Home> {
                           ],
                         ),
                         const SizedBox(height: 16), // Add spacing between rows
-            
+
                         // Website information
                         Row(
                           children: [
@@ -76,7 +80,8 @@ class _HomeState extends State<Home> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 const Text('Website',
-                                    style: TextStyle(fontWeight: FontWeight.bold)),
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold)),
                                 GestureDetector(
                                   onTap: () {
                                     // Handle website tap
@@ -92,7 +97,7 @@ class _HomeState extends State<Home> {
                           ],
                         ),
                         const SizedBox(height: 16), // Add spacing between rows
-            
+
                         // Address information
                         const Row(
                           children: [
@@ -102,7 +107,8 @@ class _HomeState extends State<Home> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text('Address',
-                                    style: TextStyle(fontWeight: FontWeight.bold)),
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold)),
                                 Text('Nairobi, Kenya',
                                     style: TextStyle(color: greyColor)),
                               ],
@@ -137,29 +143,28 @@ class _HomeState extends State<Home> {
             const SizedBox(height: 20),
             Wrap(
               spacing: 10,
-            children: <Widget>[
-              IconButton(
-                icon: const Icon(Icons.facebook),
-                onPressed: () {},
-                color: Colors.blue,
-                tooltip: 'Facebook',
-              ),
-              IconButton(
-                icon: const FaIcon(FontAwesomeIcons.linkedin),
-                onPressed: () {},
-                color: Colors.black,
-                tooltip: 'LinkedIn',
-              ),
-              IconButton(
-                icon: const FaIcon(FontAwesomeIcons.github),
-                onPressed: () {},
-                color: Colors.black,
-                tooltip: 'GitHub',
-              ),
-            ],
+              children: <Widget>[
+                IconButton(
+                  icon: const Icon(Icons.facebook),
+                  onPressed: () {},
+                  color: Colors.blue,
+                  tooltip: 'Facebook',
+                ),
+                IconButton(
+                  icon: const FaIcon(FontAwesomeIcons.linkedin),
+                  onPressed: () {},
+                  color: Colors.black,
+                  tooltip: 'LinkedIn',
+                ),
+                IconButton(
+                  icon: const FaIcon(FontAwesomeIcons.github),
+                  onPressed: () {},
+                  color: Colors.black,
+                  tooltip: 'GitHub',
+                ),
+              ],
             )
           ],
-          
         ),
       ),
     );
