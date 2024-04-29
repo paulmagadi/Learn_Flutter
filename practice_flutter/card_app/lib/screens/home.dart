@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import '../constants/colors.dart';
+import '../constants/constants.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Home extends StatefulWidget {
@@ -22,22 +21,29 @@ class _HomeState extends State<Home> {
         ),
         body: Column(
           children: [
+            //card
             Card(
               elevation: 4.0,
-              margin: const EdgeInsets.all(26),
+              margin: largePadding,
               child: Padding(
-                padding: const EdgeInsets.all(16),
+                padding: defaultPadding,
+                // The entire card is a row
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+                    //Create two columns.
+                    // First column
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
+                        //Create a row for each item
                         const Row(
+                          //The row wil have 3 children(icon, space and texts)
                           children: [
                             Icon(Icons.phone, color: mainColor),
                             SizedBox(
                                 width: 8), // Add spacing between icon and text
+                            // The texts will be in a column with children. 2
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -51,7 +57,7 @@ class _HomeState extends State<Home> {
                           ],
                         ),
                         const SizedBox(height: 16), // Add spacing between rows
-
+//REPEATE THE ABOVE FOR ALL THE ROWS
                         // Email information
                         const Row(
                           children: [
@@ -119,23 +125,34 @@ class _HomeState extends State<Home> {
                     ),
                     Column(
                       children: <Widget>[
-                        const CircleAvatar(
-                          radius: 50,
-                          backgroundImage: AssetImage('images/paul.jpg'),
+                        // Container with a circular border and a CircleAvatar as child
+                        Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: mainColor, // Border color
+                              width: 4, // Border width
+                            ),
+                          ),
+                          child: const CircleAvatar(
+                            radius: 55,
+                            backgroundImage: AssetImage('images/paul.jpg'),
+                          ),
                         ),
                         const SizedBox(height: 20),
-                        Text('Paul Magadi',
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyLarge
-                                ?.copyWith(fontWeight: FontWeight.bold)),
-                        const SizedBox(height: 20),
-                        Text('Software Developer ',
-                            textAlign: TextAlign.center,
-                            style: Theme.of(context).textTheme.bodyLarge),
-                        const SizedBox(height: 20),
+                        const Text(
+                          'Paul Magadi',
+                          style: boldStyle,
+                        ),
+                        const SizedBox(height: 10),
+                        const Text(
+                          'Software Developer',
+                          textAlign: TextAlign.center,
+                          style: bodyStyle,
+                        ),
+                        // const SizedBox(height: 20),
                       ],
-                    )
+                    ),
                   ],
                 ),
               ),
@@ -147,19 +164,19 @@ class _HomeState extends State<Home> {
                 IconButton(
                   icon: const Icon(Icons.facebook),
                   onPressed: () {},
-                  color: Colors.blue,
+                  color: blackColor,
                   tooltip: 'Facebook',
                 ),
                 IconButton(
                   icon: const FaIcon(FontAwesomeIcons.linkedin),
                   onPressed: () {},
-                  color: Colors.black,
+                  color: blackColor,
                   tooltip: 'LinkedIn',
                 ),
                 IconButton(
                   icon: const FaIcon(FontAwesomeIcons.github),
                   onPressed: () {},
-                  color: Colors.black,
+                  color: blackColor,
                   tooltip: 'GitHub',
                 ),
               ],
