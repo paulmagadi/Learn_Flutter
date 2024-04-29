@@ -164,19 +164,19 @@ class _HomeState extends State<Home> {
                 IconButton(
                   icon: const Icon(Icons.facebook),
                   onPressed: () {},
-                  color: blackColor,
+                  color: mainColor,
                   tooltip: 'Facebook',
                 ),
                 IconButton(
                   icon: const FaIcon(FontAwesomeIcons.linkedin),
                   onPressed: () {},
-                  color: blackColor,
+                  color: mainColor,
                   tooltip: 'LinkedIn',
                 ),
                 IconButton(
                   icon: const FaIcon(FontAwesomeIcons.github),
                   onPressed: () {},
-                  color: blackColor,
+                  color: mainColor,
                   tooltip: 'GitHub',
                 ),
               ],
