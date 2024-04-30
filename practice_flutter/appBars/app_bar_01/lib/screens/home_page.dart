@@ -30,6 +30,14 @@ _appBar() {
       ),
     ),
     actions: const [
+      Text("Home"),
+      SizedBox(
+        width: 10,
+      ),
+      Text("About",),
+      SizedBox(
+        width: 10,
+      ),
       Icon(
         Icons.person,
         size: 20,
