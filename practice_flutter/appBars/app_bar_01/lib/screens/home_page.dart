@@ -34,7 +34,7 @@ _appBar() {
       SizedBox(
         width: 10,
       ),
-      Text("About",),
+      Text("About"),
       SizedBox(
         width: 10,
       ),
