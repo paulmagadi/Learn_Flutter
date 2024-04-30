@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
+          foregroundColor: const Color.fromARGB(0, 255, 255, 255),
           title: const Text("App Bar"),
           centerTitle: true,
           backgroundColor: Colors.green,
