@@ -22,6 +22,7 @@ class _HomePageState extends State<HomePage> {
 _appBar() {
   return AppBar(
     backgroundColor: const Color.fromARGB(255, 12, 152, 126),
+    foregroundColor: Colors.white,
     leading: GestureDetector(
       onTap: () {},
       child: const Icon(
@@ -29,7 +30,7 @@ _appBar() {
         size: 20,
       ),
     ),
-    title: const Text("App Bar"),
+    // title: const Text("App Bar"),
     actions: const [
       Text("Home"),
       SizedBox(
