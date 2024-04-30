@@ -23,14 +23,18 @@ _appBar() {
   return AppBar(
     backgroundColor: const Color.fromARGB(255, 12, 152, 126),
     foregroundColor: Colors.white,
-    leading: GestureDetector(
-      onTap: () {},
-      child: const Icon(
-        Icons.dark_mode_rounded,
-        size: 20,
-      ),
+    // leading: GestureDetector(
+    //   onTap: () {},
+    //   child: const Icon(
+    //     Icons.dark_mode_rounded,
+    //     size: 20,
+    //   ),
+    // ),
+    leading: IconButton(
+      icon: const Icon(Icons.menu),
+      tooltip: 'Menu Icon',
+      onPressed: () {},
     ),
-    // title: const Text("App Bar"),
     actions: const [
       Text("Home"),
       SizedBox(
