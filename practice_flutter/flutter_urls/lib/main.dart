@@ -6,7 +6,7 @@ void main() {
 }
 
 _launchURLBrowser() async {
-  var url = Uri.parse("https://www.instagram.com/");
+  var url = Uri.parse("https://www.whatsapp.com/");
   if (await canLaunchUrl(url)) {
     await launchUrl(url);
   } else {
@@ -15,7 +15,7 @@ _launchURLBrowser() async {
 }
 
 _launchURLApp() async {
-  var url = Uri.parse("https://www.instagram.com/");
+  var url = Uri.parse("https://www.whatsapp.com/");
   if (await canLaunchUrl(url)) {
     await launchUrl(url);
   } else {
