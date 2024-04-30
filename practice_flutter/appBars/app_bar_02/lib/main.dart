@@ -20,8 +20,13 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.green,
           leading: const Icon(Icons.menu),
           actions: [
-            IconButton(onPressed: () => {}, icon: Icon(Icons.search)),
-            IconButton(onPressed: () => {}, icon: Icon(Icons.more_vert)),
+            IconButton(
+              icon: const Icon(Icons.search),
+              onPressed: () => {}),
+              
+            IconButton(
+              icon: const Icon(Icons.more_vert),
+            onPressed: () => {}),
           ],
         ),
       ),
