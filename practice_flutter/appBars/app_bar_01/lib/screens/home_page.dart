@@ -12,7 +12,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _appBar(),
-      body:const Column(
+      body: const Column(
         children: [],
       ),
     );
@@ -28,5 +28,14 @@ _appBar() {
         size: 20,
       ),
     ),
+    actions: [
+      Icon(
+        Icons.person,
+        size: 20,
+      ),
+      SizedBox(
+        width: 10,
+      )
+    ],
   );
 }
