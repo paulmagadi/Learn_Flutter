@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
 
 _appBar() {
   return AppBar(
-    backgroundColor: Colors.red,
+    backgroundColor: const Color.fromARGB(255, 12, 152, 126),
     leading: GestureDetector(
       onTap: () {},
       child: const Icon(
