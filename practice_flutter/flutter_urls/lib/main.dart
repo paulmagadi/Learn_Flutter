@@ -90,8 +90,8 @@ class MyApp extends StatelessWidget {
 
   AppBar _appBar() {
     return AppBar(
-        title: const Text('Flutter Urls'),
-        backgroundColor: Colors.green,
-      );
+      title: const Text('Flutter Urls'),
+      backgroundColor: Colors.green,
+    );
   }
 }
