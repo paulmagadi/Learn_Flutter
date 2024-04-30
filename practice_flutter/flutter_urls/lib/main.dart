@@ -34,10 +34,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Geeks for Geeks'),
-          backgroundColor: Colors.green,
-        ),
+        appBar: _appBar(),
         body: SafeArea(
           child: Center(
             child: Column(
@@ -46,7 +43,7 @@ class MyApp extends StatelessWidget {
                   height: 250.0,
                 ),
                 const Text(
-                  'Welcome to GFG!',
+                  'Flutter Urls',
                   style: TextStyle(
                     fontSize: 30.0,
                     color: Colors.green,
@@ -89,5 +86,12 @@ class MyApp extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  AppBar _appBar() {
+    return AppBar(
+        title: const Text('Flutter Urls'),
+        backgroundColor: Colors.green,
+      );
   }
 }
