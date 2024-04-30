@@ -21,6 +21,7 @@ class _HomePageState extends State<HomePage> {
 
 _appBar() {
   return AppBar(
+    backgroundColor: Colors.red,
     leading: GestureDetector(
       onTap: () {},
       child: const Icon(
@@ -28,13 +29,13 @@ _appBar() {
         size: 20,
       ),
     ),
-    actions: [
+    actions: const [
       Icon(
         Icons.person,
         size: 20,
       ),
       SizedBox(
-        width: 10,
+        width: 20,
       )
     ],
   );
