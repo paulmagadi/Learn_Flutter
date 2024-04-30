@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './screens/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,15 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter App Bar',
-      theme: ThemeData(
-        
-      ),
-      home: const MyHomePage(),
+      theme: ThemeData(),
+      home: const HomePage(),
     );
   }
 }
-
-
-
-
