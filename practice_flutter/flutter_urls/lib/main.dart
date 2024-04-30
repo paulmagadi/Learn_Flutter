@@ -6,7 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 void main() => runApp(const MyApp());
 
 _launchURLBrowser() async {
-var url = Uri.parse("https://www.geeksforgeeks.org/");
+var url = Uri.parse("https://www.instagram.com/");
 if (await canLaunchUrl(url)) {
 	await launchUrl(url);
 } else {
@@ -15,7 +15,7 @@ if (await canLaunchUrl(url)) {
 }
 
 _launchURLApp() async {
-var url = Uri.parse("https://www.geeksforgeeks.org/");
+var url = Uri.parse("https://www.instagram.com/");
 if (await canLaunchUrl(url)) {
 	await launchUrl(url);
 } else {
