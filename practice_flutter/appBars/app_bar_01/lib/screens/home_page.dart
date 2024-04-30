@@ -29,6 +29,7 @@ _appBar() {
         size: 20,
       ),
     ),
+    title: const Text("App Bar"),
     actions: const [
       Text("Home"),
       SizedBox(
