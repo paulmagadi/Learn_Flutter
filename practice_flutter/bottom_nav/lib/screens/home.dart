@@ -18,11 +18,12 @@ class _HomepageState extends State<Homepage> {
       )),
       bottomNavigationBar: NavigationBar(
         height: 60,
-        elevation: 100,
+        elevation: 0,
         destinations: const [
           NavigationDestination(icon: Icon(Icons.home), label: "Home"),
           NavigationDestination(icon: Icon(Icons.store), label: "Store"),
           NavigationDestination(icon: Icon(Icons.category), label: "Category"),
+          NavigationDestination(icon: Icon(Icons.shopping_cart), label: "Cart"),
           NavigationDestination(icon: Icon(Icons.person), label: "Profile"),
         ],
         // backgroundColor: Colors.amber,
