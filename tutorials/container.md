@@ -2,28 +2,11 @@
 Container class in flutter is a convenience widget that combines common painting, positioning, and sizing of widgets. A Container class can be used to store one or more widgets and position them on the screen according to our convenience. Basically, a container is like a box to store contents. A basic container element that stores a widget has a `margin`, which separates the present container from other contents. The total container can be given a `border` of different shapes, for example, `rounded rectangles`, etc. A container surrounds its child with `padding` and then applies additional `constraints` to the padded extent (incorporating the `width` and `height` as constraints, if either is non-null).
 
 
+## Properties of Container Class:
 
-Constructor of Container Class
-Syntax: 
+1. **child**:  Container widget has a property `child:` which stores its children. The child class can be any widget. Let us take an example, taking a text widget as a child. 
 
-
-Container({Key key,
-           AlignmentGeometry alignment, 
-           EdgeInsetsGeometry padding, 
-           Color color, 
-           Decoration decoration, 
-           Decoration foregroundDecoration, 
-           double width, 
-           double height, 
-           BoxConstraints constraints, 
-           EdgeInsetsGeometry margin, 
-           Matrix4 transform, 
-           Widget child, 
-           Clip clipBehavior: Clip.none});
-Properties of Container Class:
-
-1. child:  Container widget has a property ‘child:’ which stores its children. The child class can be any widget. Let us take an example, taking a text widget as a child. 
-
+```
 import 'package:flutter/material.dart';
  
 void main() => runApp(const MyApp());
@@ -46,6 +29,8 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+```
+
 child of container class in flutter
 
 2. color:  The color property sets the background color of the entire container. Now we can visualize the position of the container using a background color. 
