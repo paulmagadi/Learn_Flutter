@@ -11,13 +11,27 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-          onPressed: () {},
-          icon: const Icon(Icons.menu),
-        ),
-        actions: const [Icon(Icons.menu)],
+      appBar: _appBar(),
+      body: const SafeArea(
+          child: Column(
+        children: [],
+      )),
+    );
+  }
+
+  AppBar _appBar() {
+    return AppBar(
+      backgroundColor: Colors.amber[100],
+      leading: IconButton(
+        onPressed: () {},
+        icon: const Icon(Icons.menu),
       ),
+      actions: const [
+        Icon(Icons.menu),
+        SizedBox(
+          width: 20,
+        )
+      ],
     );
   }
 }
