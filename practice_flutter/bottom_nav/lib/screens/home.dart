@@ -17,6 +17,8 @@ class _HomepageState extends State<Homepage> {
         children: [],
       )),
       bottomNavigationBar: NavigationBar(
+        height: 60,
+        elevation: 100,
         destinations: const [
           NavigationDestination(icon: Icon(Icons.home), label: "Home"),
           NavigationDestination(icon: Icon(Icons.store), label: "Store"),
@@ -24,8 +26,6 @@ class _HomepageState extends State<Homepage> {
           NavigationDestination(icon: Icon(Icons.person), label: "Profile"),
         ],
         // backgroundColor: Colors.amber,
-        // showSelectedLabels: false,
-        // showUnselectedLabels: false,
       ),
     );
   }
