@@ -17,8 +17,8 @@ class _HomepageState extends State<Homepage> {
         children: [],
       )),
       bottomNavigationBar: NavigationBar(
-        height: 60,
-        elevation: 0,
+        height: 50,
+        elevation: 1,
         destinations: const [
           NavigationDestination(icon: Icon(Icons.home), label: "Home"),
           NavigationDestination(icon: Icon(Icons.store), label: "Store"),
