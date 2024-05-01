@@ -19,11 +19,11 @@ class _HomepageState extends State<Homepage> {
       bottomNavigationBar: NavigationBar(
         destinations: const [
           NavigationDestination(icon: Icon(Icons.home), label: "Home"),
-          NavigationDestination(icon: Icon(Icons.shop), label: "Store"),
+          NavigationDestination(icon: Icon(Icons.store), label: "Store"),
           NavigationDestination(icon: Icon(Icons.category), label: "Category"),
           NavigationDestination(icon: Icon(Icons.person), label: "Profile"),
         ],
-        backgroundColor: Colors.amber,
+        // backgroundColor: Colors.amber,
         // showSelectedLabels: false,
         // showUnselectedLabels: false,
       ),
