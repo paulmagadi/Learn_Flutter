@@ -16,6 +16,21 @@ class _HomepageState extends State<Homepage> {
           child: Column(
         children: [],
       )),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.amber,
+        // showSelectedLabels: false,
+        // showUnselectedLabels: false,
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          // BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
+          // BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+        ],
+      ),
     );
   }
 
