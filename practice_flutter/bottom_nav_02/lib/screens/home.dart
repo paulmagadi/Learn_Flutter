@@ -19,11 +19,15 @@ class _HomeState extends State<Home> {
         children: [],
       ),
       bottomNavigationBar:
-          BottomNavigationBar(items: const <BottomNavigationBarItem>[
+  
+          BottomNavigationBar(
+            backgroundColor: Colors.white,
+            elevation: 0,
+        items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(icon: Icon(Icons.menu), label: "Menu"),
         BottomNavigationBarItem(icon: Icon(Icons.chat), label: "Chat"),
         BottomNavigationBarItem(icon: Icon(Icons.call), label: "Call"),
-        BottomNavigationBarItem(icon: Icon(Icons.camera), label: "Camera"),
+        
       ]),
     ));
   }
