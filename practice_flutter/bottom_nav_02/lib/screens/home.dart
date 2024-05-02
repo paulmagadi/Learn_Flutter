@@ -29,8 +29,8 @@ class _HomeState extends State<Home> {
         ),
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.shifting,
-          backgroundColor: Colors.white,
-          elevation: 0,
+          backgroundColor: const Color.fromARGB(255, 22, 147, 154),
+          elevation: 5,
           iconSize: 20,
           mouseCursor: SystemMouseCursors.grab,
           selectedFontSize: 10,
