@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class BottomNavigationExample extends StatefulWidget {
-  const BottomNavigationExample({Key? key}) : super(key: key);
+class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   _BottomNavigationExampleState createState() =>
@@ -43,6 +43,7 @@ class _BottomNavigationExampleState extends State {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedTab,
         onTap: (index) => _changeTab(index),
+        //properties
         selectedItemColor: Colors.red,
         unselectedItemColor: Colors.grey,
         items: const [
