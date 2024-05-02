@@ -20,10 +20,10 @@ class _HomeState extends State<Home> {
       ),
       bottomNavigationBar:
           BottomNavigationBar(items: const <BottomNavigationBarItem>[
-        BottomNavigationBarItem(icon: Icon(Icons.menu)),
-        BottomNavigationBarItem(icon: Icon(Icons.chat)),
-        BottomNavigationBarItem(icon: Icon(Icons.call)),
-        BottomNavigationBarItem(icon: Icon(Icons.camera)),
+        BottomNavigationBarItem(icon: Icon(Icons.menu), label: "Menu"),
+        BottomNavigationBarItem(icon: Icon(Icons.chat), label: "Chat"),
+        BottomNavigationBarItem(icon: Icon(Icons.call), label: "Call"),
+        BottomNavigationBarItem(icon: Icon(Icons.camera), label: "Camera"),
       ]),
     ));
   }
