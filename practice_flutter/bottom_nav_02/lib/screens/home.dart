@@ -11,6 +11,7 @@ class _HomeState extends State<Home> {
   int _selectedIndex = 0; // Moved _selectedIndex inside the class
 
   // Define _onItemTapped function
+
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
