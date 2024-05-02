@@ -18,9 +18,13 @@ class _HomeState extends State<Home> {
       body: const Column(
         children: [],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const [BottomNavigationBarItem(icon: Icon(Icons.menu))],
-      ),
+      bottomNavigationBar:
+          BottomNavigationBar(items: const <BottomNavigationBarItem>[
+        BottomNavigationBarItem(icon: Icon(Icons.menu)),
+        BottomNavigationBarItem(icon: Icon(Icons.chat)),
+        BottomNavigationBarItem(icon: Icon(Icons.call)),
+        BottomNavigationBarItem(icon: Icon(Icons.camera)),
+      ]),
     ));
   }
 }
