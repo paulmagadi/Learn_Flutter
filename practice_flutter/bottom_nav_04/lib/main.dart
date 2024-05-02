@@ -4,14 +4,14 @@ class BottomNavigationExample extends StatefulWidget {
   const BottomNavigationExample({Key? key}) : super(key: key);
 
   @override
-  BottomNavigationExampleState createState() =>
-      BottomNavigationExampleState();
+  _BottomNavigationExampleState createState() =>
+      _BottomNavigationExampleState();
 }
 
-class BottomNavigationExampleState extends State {
+class _BottomNavigationExampleState extends State {
   int _selectedTab = 0;
 
-  List pages = [
+  List _pages = [
     Center(
       child: Text("Home"),
     ),
@@ -39,7 +39,7 @@ class BottomNavigationExampleState extends State {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: pages[_selectedTab],
+      body: _pages[_selectedTab],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedTab,
         onTap: (index) => _changeTab(index),
