@@ -28,11 +28,13 @@ class _HomeState extends State<Home> {
           children: [],
         ),
         bottomNavigationBar: BottomNavigationBar(
+          //properties
           type: BottomNavigationBarType.shifting,
           backgroundColor: const Color.fromARGB(255, 22, 147, 154),
           elevation: 5,
           iconSize: 20,
           mouseCursor: SystemMouseCursors.grab,
+          // style selected
           selectedFontSize: 10,
           selectedIconTheme: const IconThemeData(
             color: Color.fromARGB(255, 255, 0, 0),
@@ -40,12 +42,15 @@ class _HomeState extends State<Home> {
           ),
           selectedItemColor: const Color.fromARGB(255, 255, 0, 0),
           selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
+          //style unselected
           unselectedIconTheme: const IconThemeData(
             color: Color.fromARGB(255, 157, 114, 101),
           ),
           unselectedItemColor: const Color.fromARGB(255, 219, 145, 123),
+          //remove labels
           showSelectedLabels: false,
           showUnselectedLabels: false,
+          //nav items
           items: const [
             BottomNavigationBarItem(
               icon: Icon(Icons.menu),
