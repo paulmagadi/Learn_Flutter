@@ -1,60 +1,29 @@
 import 'package:flutter/material.dart';
 
-class BottomNavigationExample extends StatefulWidget {
-  const BottomNavigationExample({Key? key}) : super(key: key);
-
-  @override
-  _BottomNavigationExampleState createState() =>
-      _BottomNavigationExampleState();
+void main() {
+  runApp(const MyApp());
 }
 
-class _BottomNavigationExampleState extends State {
-  int _selectedTab = 0;
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-  List _pages = [
-    Center(
-      child: Text("Home"),
-    ),
-    Center(
-      child: Text("About"),
-    ),
-    Center(
-      child: Text("Products"),
-    ),
-    Center(
-      child: Text("Contact"),
-    ),
-    Center(
-      child: Text("Settings"),
-    ),
-  ];
-
-  _changeTab(int index) {
-    setState(() {
-      _selectedTab = index;
-    });
-  }
-
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-      body: _pages[_selectedTab],
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _selectedTab,
-        onTap: (index) => _changeTab(index),
-        selectedItemColor: Colors.red,
-        unselectedItemColor: Colors.grey,
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: "About"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.grid_3x3_outlined), label: "Product"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.contact_mail), label: "Contact"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.settings), label: "Settings"),
-        ],
+    return MaterialApp(
+      home: Scaffold(appBar: AppBar(
+        title: const Text(("BottomNavigationBar")),
+      ),
+      bottomNavigationBar: CurvedNavigationBar(
+    backgroundColor: Colors.blueAccent,
+    items: <Widget>[
+      Icon(Icons.add, size: 30),
+      Icon(Icons.list, size: 30),
+      Icon(Icons.compare_arrows, size: 30),
+    ],
+    onTap: (index) {
+      //Handle button tap
+    },
       ),
     );
   }
