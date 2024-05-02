@@ -19,14 +19,17 @@ class _HomepageState extends State<Homepage> {
       bottomNavigationBar: NavigationBar(
         height: 50,
         elevation: 1,
+        backgroundColor: Colors.amber[100],
         destinations: const [
           NavigationDestination(icon: Icon(Icons.home), label: "Home"),
           NavigationDestination(icon: Icon(Icons.store), label: "Store"),
           NavigationDestination(icon: Icon(Icons.category), label: "Category"),
           NavigationDestination(icon: Icon(Icons.shopping_cart), label: "Cart"),
-          NavigationDestination(icon: Icon(Icons.person), label: "Profile"),
+          NavigationDestination(
+            icon: Icon(Icons.person),
+            label: "Profile",
+          ),
         ],
-        // backgroundColor: Colors.amber,
       ),
     );
   }
@@ -34,6 +37,7 @@ class _HomepageState extends State<Homepage> {
   AppBar _appBar() {
     return AppBar(
       backgroundColor: Colors.amber[100],
+      foregroundColor: Colors.white,
       leading: IconButton(
         onPressed: () {},
         icon: const Icon(Icons.menu),
