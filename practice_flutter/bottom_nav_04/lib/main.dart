@@ -168,7 +168,7 @@ class ProfileScreen extends StatelessWidget {
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 24),
                       ),
-                      const SizedBox(height: 10),
+                      const SizedBox(height: 6),
                       const Text(
                         "Software Developer",
                         textAlign: TextAlign.center,
