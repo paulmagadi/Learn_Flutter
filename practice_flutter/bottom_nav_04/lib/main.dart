@@ -37,6 +37,7 @@ class ProfileScreen extends StatelessWidget {
         children: [
           Card(
             shadowColor: mainColor,
+            surfaceTintColor: const Color.fromARGB(255, 0, 255, 204),
             // borderOnForeground: false,
 
             margin: const EdgeInsets.all(20),
