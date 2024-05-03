@@ -6,7 +6,7 @@ A Flutter package for easy implementation of curved navigation bar.
 
 ## Menu screen
 
-<img src="screen1.png width=50%>
+<img src="screen1.png" width=50%>
 
 **Add dependency** 
 
@@ -99,10 +99,10 @@ Scaffold(
   }
   ```
 
-<img src="screen2.png width=50%>
+<img src="screen2.png" width=50%>
 
-<img src="screen3.png width=50%>
+<img src="screen3.png" width=50%>
 
 ## Profile screen with a Card
 
-<img src="screen4.png width=50%>
+<img src="screen4.png" width=50%>
