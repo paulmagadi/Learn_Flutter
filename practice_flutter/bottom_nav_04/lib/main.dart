@@ -9,50 +9,128 @@ class HomeScreen extends StatelessWidget {
       child: Column(
         children: [
           Card(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                //left column
-                Column(
-                  children: [
-                    //first child of left column
-                    Row(
-                      children: [
-                        IconButton(
-                            onPressed: () {}, icon: const Icon(Icons.call)),
-                        const SizedBox(width: 4),
-                        const Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Tell",
-                                style: TextStyle(fontWeight: FontWeight.bold)),
-                            Text("+254700000001",
-                                style: TextStyle(color: Colors.grey)),
-                          ],
-                        )
-                      ],
-                    ),
-                    //second child of left column
-                    Row(
-                      children: [
-                        IconButton(
-                            onPressed: () {}, icon: const Icon(Icons.email)),
-                        const SizedBox(width: 4),
-                        const Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Email",
-                                style: TextStyle(fontWeight: FontWeight.bold)),
-                            Text("sqcodes@gmail.com",
-                                style: TextStyle(color: Colors.grey)),
-                          ],
-                        )
-                      ],
-                    )
-                  ],
-                ),
-                //right column
-              ],
+            margin: const EdgeInsets.all(20),
+            child: Container(
+              padding: const EdgeInsets.all(10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  //left column
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      //first child of left column
+                      Row(
+                        children: [
+                          IconButton(
+                              onPressed: () {}, icon: const Icon(Icons.call)),
+                          const SizedBox(width: 8),
+                          const Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Tell",
+                                  style:
+                                      TextStyle(fontWeight: FontWeight.bold)),
+                              Text("+254700000001",
+                                  style: TextStyle(color: Colors.grey)),
+                            ],
+                          )
+                        ],
+                      ),
+                      const SizedBox(height: 25),
+                      //second child of left column
+                      Row(
+                        children: [
+                          IconButton(
+                              onPressed: () {}, icon: const Icon(Icons.email)),
+                          const SizedBox(width: 8),
+                          const Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Email",
+                                  style:
+                                      TextStyle(fontWeight: FontWeight.bold)),
+                              Text("sqcodes@gmail.com",
+                                  style: TextStyle(color: Colors.grey)),
+                            ],
+                          )
+                        ],
+                      ),
+                      const SizedBox(height: 25),
+                      //Third child of left column
+                      Row(
+                        children: [
+                          IconButton(
+                              onPressed: () {}, icon: const Icon(Icons.web)),
+                          const SizedBox(width: 8),
+                          const Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Website",
+                                  style:
+                                      TextStyle(fontWeight: FontWeight.bold)),
+                              Text("sqcodes.com",
+                                  style: TextStyle(color: Colors.grey)),
+                            ],
+                          )
+                        ],
+                      ),
+                      const SizedBox(height: 25),
+                      //fourth child of left column
+                      Row(
+                        children: [
+                          IconButton(
+                              onPressed: () {},
+                              color: Colors.orange,
+                              icon: const Icon(Icons.location_on)),
+                          const SizedBox(width: 8),
+                          const Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Address",
+                                  style:
+                                      TextStyle(fontWeight: FontWeight.bold)),
+                              Text("Nairobi, Kenya",
+                                  style: TextStyle(color: Colors.grey)),
+                            ],
+                          )
+                        ],
+                      ),
+                      // const SizedBox(height: 25),
+                    ],
+                  ),
+                  //right column
+                  Column(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: Colors.orange,
+                            width: 4,
+                          ),
+                        ),
+                        child: const CircleAvatar(
+                          backgroundImage: AssetImage("images/paul.jpg"),
+                          radius: 70,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 8,
+                      ),
+                      const Text(
+                        "Paul Magadi",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 30),
+                      ),
+                      const Text(
+                        "Software Developer",
+                        textAlign: TextAlign.center,
+                      ),
+                    ],
+                  )
+                ],
+              ),
             ),
           )
         ],
