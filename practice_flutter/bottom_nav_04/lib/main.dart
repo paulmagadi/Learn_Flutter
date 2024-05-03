@@ -58,7 +58,7 @@ class ProfileScreen extends StatelessWidget {
                                 onPressed: () {},
                                 color: mainColor,
                                 icon: const Icon(Icons.call)),
-                            const SizedBox(width: 8),
+                            const SizedBox(width: 4),
                             const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -81,7 +81,7 @@ class ProfileScreen extends StatelessWidget {
                                 onPressed: () {},
                                 color: mainColor,
                                 icon: const Icon(Icons.email)),
-                            const SizedBox(width: 8),
+                            const SizedBox(width: 4),
                             const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -104,7 +104,7 @@ class ProfileScreen extends StatelessWidget {
                                 onPressed: () {},
                                 color: mainColor,
                                 icon: const Icon(Icons.web)),
-                            const SizedBox(width: 8),
+                            const SizedBox(width: 4),
                             const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -127,7 +127,7 @@ class ProfileScreen extends StatelessWidget {
                                 onPressed: () {},
                                 color: mainColor,
                                 icon: const Icon(Icons.location_on)),
-                            const SizedBox(width: 8),
+                            const SizedBox(width: 4),
                             const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -187,9 +187,9 @@ class ProfileScreen extends StatelessWidget {
             const Column(
               children: [
                 Text(
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In libero metus, vestibulum ac pharetra a, interdum sit amet odio. Vivamus id volutpat est, quis posuere urna. Donec cursus"
-                  // overflow: TextOverflow.clip, // Add this to control text overflow
-                ),
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In libero metus, vestibulum ac pharetra a, interdum sit amet odio. Vivamus id volutpat est, quis posuere urna. Donec cursus"
+                    // overflow: TextOverflow.clip, // Add this to control text overflow
+                    ),
               ],
             )
           ],
