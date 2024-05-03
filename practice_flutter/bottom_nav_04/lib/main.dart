@@ -72,7 +72,7 @@ class ProfileScreen extends StatelessWidget {
                           )
                         ],
                       ),
-                      const SizedBox(height: 25),
+                      const SizedBox(height: 20),
                       //second child of left column
                       Row(
                         children: [
@@ -95,7 +95,7 @@ class ProfileScreen extends StatelessWidget {
                           )
                         ],
                       ),
-                      const SizedBox(height: 25),
+                      const SizedBox(height: 20),
                       //Third child of left column
                       Row(
                         children: [
@@ -118,7 +118,7 @@ class ProfileScreen extends StatelessWidget {
                           )
                         ],
                       ),
-                      const SizedBox(height: 25),
+                      const SizedBox(height: 20),
                       //fourth child of left column
                       Row(
                         children: [
@@ -141,7 +141,7 @@ class ProfileScreen extends StatelessWidget {
                           )
                         ],
                       ),
-                      // const SizedBox(height: 25),
+                      // const SizedBox(height: 20),
                     ],
                   ),
                   //right column
@@ -157,7 +157,7 @@ class ProfileScreen extends StatelessWidget {
                         ),
                         child: const CircleAvatar(
                           backgroundImage: AssetImage("images/paul.jpg"),
-                          radius: 70,
+                          radius: 60,
                         ),
                       ),
                       const SizedBox(
@@ -166,14 +166,14 @@ class ProfileScreen extends StatelessWidget {
                       const Text(
                         "Paul Magadi",
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 30),
+                            fontWeight: FontWeight.bold, fontSize: 24),
                       ),
                       const Text(
                         "Software Developer",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: mainColor,
-                          fontSize: 18,
+                          fontSize: 16,
                         ),
                       ),
                     ],
