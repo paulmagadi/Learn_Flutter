@@ -223,7 +223,7 @@ class _MyAppState extends State<MyApp> {
         backgroundColor: bgColor,
         bottomNavigationBar: CurvedNavigationBar(
           backgroundColor: whiteColor,
-          color: bgColor,
+          color: whiteColor,
           buttonBackgroundColor: bgColor,
           height: 60,
           // animationCurve: Curves.easeOut,
