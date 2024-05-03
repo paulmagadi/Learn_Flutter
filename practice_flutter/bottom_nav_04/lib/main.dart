@@ -222,9 +222,9 @@ class _MyAppState extends State<MyApp> {
         body: _screens[_selectedIndex],
         backgroundColor: bgColor,
         bottomNavigationBar: CurvedNavigationBar(
-          backgroundColor: whiteColor,
+          backgroundColor: bgColor,
           color: whiteColor,
-          buttonBackgroundColor: bgColor,
+          buttonBackgroundColor: whiteColor,
           height: 60,
           // animationCurve: Curves.easeOut,
           // animationDuration: const Duration(microseconds: 10),

@@ -2,6 +2,8 @@
 
 A Flutter package for easy implementation of curved navigation bar.
 
+[Check here](https://pub.dev/packages/curved_navigation_bar)
+
 
 **Add dependency** 
 
