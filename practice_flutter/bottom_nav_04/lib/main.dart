@@ -15,9 +15,23 @@ class HomeScreen extends StatelessWidget {
                 //left column
                 Column(
                   children: [
-                    Column(
+                    Row(
                       children: [
-                        IconButton(onPressed: () {}, icon: const Icon(Icons.call)),
+                        Column(
+                          children: [
+                            IconButton(
+                                onPressed: () {}, icon: const Icon(Icons.call)),
+                            const Column(
+                              children: [
+                                Text("Tell",
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold)),
+                                Text("+254700000001",
+                                    style: TextStyle(color: Colors.grey)),
+                              ],
+                            )
+                          ],
+                        )
                       ],
                     )
                   ],
