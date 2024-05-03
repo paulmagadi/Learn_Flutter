@@ -5,7 +5,30 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const Center(child: Text('Home Screen'));
+    return SafeArea(
+      child: Column(
+        children: [
+          Card(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                //left column
+                Column(
+                  children: [
+                    Column(
+                      children: [
+                        IconButton(onPressed: () {}, icon: const Icon(Icons.call)),
+                      ],
+                    )
+                  ],
+                ),
+                //right column
+              ],
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
 
