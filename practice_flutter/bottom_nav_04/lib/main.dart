@@ -220,6 +220,7 @@ class _MyAppState extends State<MyApp> {
         ),
         // Set the body according to the selected index
         body: _screens[_selectedIndex],
+        backgroundColor: bgColor,
         bottomNavigationBar: CurvedNavigationBar(
           backgroundColor: whiteColor,
           color: bgColor,
