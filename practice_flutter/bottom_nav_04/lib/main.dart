@@ -37,9 +37,8 @@ class ProfileScreen extends StatelessWidget {
         children: [
           Card(
             shadowColor: mainColor,
-            surfaceTintColor: const Color.fromARGB(255, 0, 255, 204),
+            surfaceTintColor: tintColor,
             // borderOnForeground: false,
-
             margin: const EdgeInsets.all(20),
             elevation: 4.0,
             child: Container(
@@ -174,6 +173,7 @@ class ProfileScreen extends StatelessWidget {
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: mainColor,
+                          fontSize: 18,
                         ),
                       ),
                     ],
