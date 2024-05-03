@@ -15,17 +15,35 @@ class HomeScreen extends StatelessWidget {
                 //left column
                 Column(
                   children: [
+                    //first child of left column
                     Row(
                       children: [
                         IconButton(
                             onPressed: () {}, icon: const Icon(Icons.call)),
-                            const SizedBox(width: 4),
+                        const SizedBox(width: 4),
                         const Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Tell",
                                 style: TextStyle(fontWeight: FontWeight.bold)),
                             Text("+254700000001",
+                                style: TextStyle(color: Colors.grey)),
+                          ],
+                        )
+                      ],
+                    ),
+                    //second child of left column
+                    Row(
+                      children: [
+                        IconButton(
+                            onPressed: () {}, icon: const Icon(Icons.email)),
+                        const SizedBox(width: 4),
+                        const Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("Email",
+                                style: TextStyle(fontWeight: FontWeight.bold)),
+                            Text("sqcodes@gmail.com",
                                 style: TextStyle(color: Colors.grey)),
                           ],
                         )
