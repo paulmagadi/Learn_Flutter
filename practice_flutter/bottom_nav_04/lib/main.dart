@@ -5,9 +5,6 @@ void main() {
   runApp(const MyApp());
 }
 
-int _page = 0;
-GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -19,22 +16,10 @@ class MyApp extends StatelessWidget {
           title: const Center(child: Text(("Curved Bottom Navigation Bar"))),
         ),
         body: Container(
-          color: Colors.blueAccent,
-          child: Center(
+          color:const Color.fromARGB(255, 255, 255, 255),
+          child: const Center(
             child: Column(
-              children: <Widget>[
-                Text(_page.toString(),
-                    textScaler: const TextScaler.linear(10.0)),
-                ElevatedButton(
-                  child: const Text('Go To Page of index 1'),
-                  onPressed: () {
-                    //Page change using state does the same as clicking index 1 navigation button
-                    final CurvedNavigationBarState? navBarState =
-                        _bottomNavigationKey.currentState;
-                    navBarState?.setPage(2);
-                  },
-                )
-              ],
+              children: <Widget>[],
             ),
           ),
         ),
