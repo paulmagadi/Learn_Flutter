@@ -56,9 +56,7 @@ class _HomePageState extends State<HomePage> {
             appBar: AppBar(
                 title: Row(
                     children: [
-                        // Logo: Place an Image widget as the leading widget in AppBar
-                        
-                        // Spacer to push the search bar to the right
+                      Text("Bellamore"),
                         Spacer(),
                         // Search bar: Add a TextField as an action
                         Expanded(
