@@ -9,15 +9,12 @@ import 'screens/profile.dart';
 
 import 'package:curved_navigation_bar_with_label/curved_navigation_bar.dart';
 
-
-
 class HomePage extends StatefulWidget {
     const HomePage({super.key});
 
     @override
     State<HomePage> createState() => _HomePageState();
 }
-
 
 class _HomePageState extends State<HomePage> {
     int _selectedIndex = 0;
@@ -39,7 +36,7 @@ class _HomePageState extends State<HomePage> {
     @override
     Widget build(BuildContext context) {
         return Scaffold(
-            appBar: SearchAppBar(title: 'Bellamore'),
+            appBar: SearchAppBar(title: 'GreenFields'),
             body: _pages[_selectedIndex],
             bottomNavigationBar: CurvedNavigationBar(
                 items: [
