@@ -54,6 +54,7 @@ class _HomePageState extends State<HomePage> {
     Widget build(BuildContext context) {
         return Scaffold(
             appBar: AppBar(
+              elevation: 2,
                 title: Row(
                     children: [
                       Text("Bellamore"),
@@ -63,15 +64,14 @@ class _HomePageState extends State<HomePage> {
                             child: TextField(
                                 onSubmitted: (String query) {
                                     // Handle search query submission
-                                    print('Search query: $query');
                                 },
                                 decoration: InputDecoration(
                                     hintText: 'Search...',
-                                    hintStyle: TextStyle(color: Colors.white70),
+                                    hintStyle: TextStyle(color: const Color.fromARGB(179, 99, 99, 99)),
                                     border: InputBorder.none,
-                                    icon: Icon(Icons.search, color: Colors.white),
+                                    icon: Icon(Icons.search, color: const Color.fromARGB(255, 88, 88, 88)),
                                 ),
-                                style: TextStyle(color: Colors.white),
+                                style: TextStyle(color: const Color.fromARGB(255, 0, 0, 0)),
                             ),
                         ),
                     ],
