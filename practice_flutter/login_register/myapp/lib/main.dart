@@ -1,11 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/cart.dart';
-import 'screens/category.dart';
-import 'screens/deals.dart';
-import 'screens/home.dart';  
-import 'package:curved_navigation_bar_with_label/curved_navigation_bar.dart';
-
-import 'screens/profile.dart';
+import 'home_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,79 +11,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'E-commerce App',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.orange,
       ),
-      home: HomePage(),  // Set the home page as the main page
+      home: HomePage(),  
     );
   }
 }
 
-
-
-class HomePage extends StatefulWidget {
-    const HomePage({super.key});
-
-    @override
-    State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-    int _selectedIndex = 0;
-
-    final List<Widget> _pages = [
-        const HomeScreen(),
-        const CategoryScreen(),
-        const ProfileScreen(),
-        const CartScreen(),
-        const DealsScreen(),
-    ];
-
-    void _onItemTapped(int index) {
-        setState(() {
-            _selectedIndex = index;
-        });
-    }
-
-    @override
-    Widget build(BuildContext context) {
-        return Scaffold(
-            appBar: AppBar(
-              elevation: 2,
-                title: Row(
-                    children: [
-                      Text("Bellamore"),
-                        Spacer(),
-                        // Search bar: Add a TextField as an action
-                        Expanded(
-                            child: TextField(
-                                onSubmitted: (String query) {
-                                    // Handle search query submission
-                                },
-                                decoration: InputDecoration(
-                                    hintText: 'Search...',
-                                    hintStyle: TextStyle(color: const Color.fromARGB(179, 99, 99, 99)),
-                                    border: InputBorder.none,
-                                    icon: Icon(Icons.search, color: const Color.fromARGB(255, 88, 88, 88)),
-                                ),
-                                style: TextStyle(color: const Color.fromARGB(255, 0, 0, 0)),
-                            ),
-                        ),
-                    ],
-                ),
-            ),
-            body: _pages[_selectedIndex],
-            bottomNavigationBar: CurvedNavigationBar(
-                items: [
-                    CurvedNavigationBarItem(icon: const Icon(Icons.home), label: "Home"),
-                    CurvedNavigationBarItem(icon: const Icon(Icons.category), label: "Category"),
-                    CurvedNavigationBarItem(icon: const Icon(Icons.local_offer), label: "Deals"),
-                    CurvedNavigationBarItem(icon: const Icon(Icons.shopping_cart), label: "Cart"),
-                    CurvedNavigationBarItem(icon: const Icon(Icons.person), label: "Account"),
-                ],
-                index: _selectedIndex,
-                onTap: _onItemTapped,
-            ),
-        );
-    }
-}
 
