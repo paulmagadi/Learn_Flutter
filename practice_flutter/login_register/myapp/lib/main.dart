@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/screens/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,6 +21,3 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class HomePage {
-  const HomePage();
-}
