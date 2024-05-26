@@ -57,10 +57,7 @@ class _HomePageState extends State<HomePage> {
                 title: Row(
                     children: [
                         // Logo: Place an Image widget as the leading widget in AppBar
-                        Image.asset(
-                            'assets/logo.png',  // Path to your logo image
-                            height: 30,  // Adjust the height as desired
-                        ),
+                        
                         // Spacer to push the search bar to the right
                         Spacer(),
                         // Search bar: Add a TextField as an action
