@@ -61,7 +61,7 @@ class _HomePageState extends State<HomePage> {
               ),
               onTap: () {
                 // Navigate to the About page
-                Navigator.pushNamed(context, '/about');
+                Navigator.pushNamed(context, '/contact');
               },
             ),
 
