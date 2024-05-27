@@ -41,6 +41,7 @@ class _HomePageState extends State<HomePage> {
       appBar: SearchAppBar(title: 'Runtime Cakes'),
       drawer: drawer(context),
       body: _pages[_selectedIndex],
+      
       bottomNavigationBar: CustomLineIndicatorBottomNavbar(
         selectedColor: Colors.blue,
         unSelectedColor: Color.fromARGB(255, 0, 0, 0),
