@@ -10,7 +10,7 @@ Drawer drawer(BuildContext context) {
             color: Colors.blue,
           ),
           currentAccountPicture: CircleAvatar(
-              // backgroundImage: AssetImage('assets/images/paul.jpg'),
+              backgroundImage: AssetImage('assets/images/cassidy.jpg'),
               ),
           accountName: Text('Cassidy Red'),
           accountEmail: Text('cacindyreds@gmail.com'),
