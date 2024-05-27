@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import '../constants/colors.dart';
 
 class HelpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: colorAppBar,
-        foregroundColor: colorWhite, //set Text and icon colors to white
+        backgroundColor: Colors.blue,
+        foregroundColor: Colors.white, //set Text and icon colors to white
         title: const Text('Help'),
       ),
       body: Padding(

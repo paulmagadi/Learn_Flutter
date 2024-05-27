@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../constants/colors.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 class CalendarPage extends StatefulWidget {
@@ -16,8 +15,8 @@ class _CalendarPageState extends State<CalendarPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: colorAppBar,
-        foregroundColor: colorWhite, //set Text and icon colors to white
+        backgroundColor: Colors.blue,
+        foregroundColor: Colors.white, //set Text and icon colors to white
         title: const Text(
           'Calendar',
           // style: TextStyle(color: colorWhite),
