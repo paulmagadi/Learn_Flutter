@@ -46,12 +46,23 @@ class _HomePageState extends State<HomePage> {
                 color: Colors.blue,
               ),
               currentAccountPicture: CircleAvatar(
-                backgroundImage: AssetImage('assets/images/paul.jpg'),
+                // backgroundImage: AssetImage('assets/images/paul.jpg'),
               ),
               accountName: Text('Paul SQ Magadi'),
               accountEmail: Text('paul.learner@plp.com'),
             ),
             // List Tile inside the Drawer
+            ListTile(
+              title: const Text('Contact Us'),
+              leading: const Icon(
+                Icons.info,
+                color: Colors.blue,
+              ),
+              onTap: () {
+                // Navigate to the About page
+                Navigator.pushNamed(context, '/about');
+              },
+            ),
             
             ListTile(
               title: const Text('About'),
