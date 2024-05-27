@@ -27,13 +27,13 @@ class _BannerCarouselState extends State<BannerCarousel> {
         // Carousel slider
         CarouselSlider(
           items: items.map((item) {
-            // Wrap each image in a ClipRRect to apply border radius
             return ClipRRect(
+              clipBehavior: Clip.antiAliasWithSaveLayer,
               borderRadius:
-                  BorderRadius.circular(8.0), // Specify the border radius
+                  BorderRadius.circular(8.0), 
               child: Image.asset(
                 item,
-                fit: BoxFit.cover,
+                fit: BoxFit.contain,
                 width: double.infinity,
               ),
             );
