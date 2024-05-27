@@ -10,12 +10,12 @@ class BannerCarousel extends StatefulWidget {
 
 class _BannerCarouselState extends State<BannerCarousel> {
   final List<String> items = [
-    'assets/images/banner/7.png',
-    'assets/images/banner/2.png',
-    'assets/images/banner/4.png',
-    'assets/images/banner/5.png',
-    'assets/images/banner/6.png',
-    'assets/images/banner/3.png',
+    'assets/images/cakes/1.png',
+    'assets/images/cakes/2.png',
+    'assets/images/cakes/3.png',
+    'assets/images/cakes/4.png',
+    'assets/images/cakes/5.png',
+    'assets/images/cakes/6.png',
   ];
   final CarouselController _controller = CarouselController();
   int _current = 0;
