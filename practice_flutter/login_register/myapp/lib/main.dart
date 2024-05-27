@@ -18,9 +18,9 @@ class MyApp extends StatelessWidget {
       ),
       home: HomePage(),
       routes: {
-        '/about': (context) => AboutPage(), //Route to About Page/screen
-        '/help': (context) => HelpPage(), //Route to Help Page/screen
-        '/contact': (context) => ContactUsPage(), //Route to Calendar Page/screen
+        '/about': (context) => AboutPage(), 
+        '/help': (context) => HelpPage(), 
+        '/contact': (context) => ContactUsPage(), 
       }, //Home view
     );
   }
