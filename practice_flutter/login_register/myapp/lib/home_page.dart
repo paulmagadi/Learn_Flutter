@@ -9,7 +9,7 @@ import 'screens/deals.dart';
 import 'screens/home.dart';
 import 'screens/profile.dart';
 
-import 'package:curved_navigation_bar_with_label/curved_navigation_bar.dart';
+import 'package:bottom_navbar_with_indicator/bottom_navbar_with_indicator.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -19,12 +19,12 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _selectedIndex = 2;
+  int _selectedIndex = 0;
 
   final List<Widget> _pages = [
+    const HomeScreen(),
     const CategoryScreen(),
     const DealsScreen(),
-    const HomeScreen(),
     const CartScreen(),
     const ProfileScreen(),
   ];
@@ -41,43 +41,44 @@ class _HomePageState extends State<HomePage> {
       appBar: SearchAppBar(title: 'Runtime Cakes'),
       drawer: drawer(context),
       body: _pages[_selectedIndex],
-      bottomNavigationBar: CurvedNavigationBar(
-        height: 50.00,
-        items: [
-          CurvedNavigationBarItem(
-              icon: const Icon(
-                Icons.category_outlined,
-                size: 20,
-              ),
-              label: "Category"),
-          CurvedNavigationBarItem(
-              icon: const Icon(
-                Icons.local_offer_outlined,
-                size: 20,
-              ),
-              label: "Deals"),
-          CurvedNavigationBarItem(
-              icon: const Icon(
-                Icons.home_outlined,
-                size: 20,
-              ),
-              label: "Home"),
-          CurvedNavigationBarItem(
-              icon: const Icon(
-                Icons.shopping_cart_outlined,
-                size: 20,
-              ),
-              label: "Cart"),
-          CurvedNavigationBarItem(
-              icon: const Icon(
-                Icons.person_2_outlined,
-                size: 20,
-              ),
-              label: "Account"),
-        ],
-        index: _selectedIndex,
-        onTap: _onItemTapped,
-      ),
+      bottomNavigationBar: CustomLineIndicatorBottomNavbar(
+                    selectedColor: Colors.blue,
+                    unSelectedColor: Colors.black54,
+                    backgroundColor: Colors.white,
+                    currentIndex: _selectedIndex,
+                    onTap: (index) {
+                    setState(() {
+                        _selectedIndex = index;
+                    });
+                    },
+                    enableLineIndicator: true,
+                    lineIndicatorWidth: 2,
+                    indicatorType: IndicatorType.bottom,
+                    // gradient: LinearGradient(
+                    //   colors: kGradients,
+                    // ),
+
+                    customBottomBarItems: [
+                    CustomBottomBarItems(
+                        label: 'Home',
+                        icon: Icons.home,
+                    ),
+                    CustomBottomBarItems(
+                        label: 'Categories',
+                        icon: Icons.category_outlined,
+                    ),
+                    CustomBottomBarItems(
+                        label: 'Deals', icon: Icons.local_offer_outlined),
+                    CustomBottomBarItems(
+                        label: 'Cart',
+                        icon: Icons.shopping_cart_outlined,
+                    ),
+                    CustomBottomBarItems(
+                        label: 'Account',
+                        icon: Icons.person_2_outlined,
+                    ),
+                    ],
+                ),
     );
   }
 }
