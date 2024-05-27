@@ -9,7 +9,7 @@ class DealsScreen extends StatelessWidget {
     SingleChildScrollView(
       child: Row(
         children: [
-          Text('Hello')
+          Text('Deals')
         ],
       ),
     ));

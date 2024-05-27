@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
   width: 100.0, // Width of the container
   color: Colors.blue, // Background color
   alignment: Alignment.center, // Align the child to the center
-  child: Text('Hello World'), // Child widget
+  child: Text('Home Page'), // Child widget
   padding: EdgeInsets.all(10.0), // Padding inside the container
   margin: EdgeInsets.all(20.0), // Margin outside the container
 )

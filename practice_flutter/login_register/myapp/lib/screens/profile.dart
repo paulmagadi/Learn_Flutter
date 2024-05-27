@@ -9,7 +9,7 @@ class ProfileScreen extends StatelessWidget {
     SingleChildScrollView(
       child: Row(
         children: [
-          Text('Hello')
+          Text('Account')
         ],
       ),
     ));

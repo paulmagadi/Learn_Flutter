@@ -9,7 +9,7 @@ class CartScreen extends StatelessWidget {
     SingleChildScrollView(
       child: Row(
         children: [
-          Text('Hello')
+          Text('Cart')
         ],
       ),
     ));
