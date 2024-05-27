@@ -19,12 +19,13 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _selectedIndex = 0;
+  int _selectedIndex = 2;
 
   final List<Widget> _pages = [
+    
+    const HomeScreen(),
     const CategoryScreen(),
     const DealsScreen(),
-    const HomeScreen(),
     const CartScreen(),
     const ProfileScreen(),
   ];
