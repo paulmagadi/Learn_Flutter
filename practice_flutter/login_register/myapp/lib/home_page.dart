@@ -19,12 +19,12 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _selectedIndex = 0;
+  int _selectedIndex = 2;
 
   final List<Widget> _pages = [
-    const HomeScreen(),
     const CategoryScreen(),
     const DealsScreen(),
+    const HomeScreen(),
     const CartScreen(),
     const ProfileScreen(),
   ];
@@ -42,43 +42,44 @@ class _HomePageState extends State<HomePage> {
       drawer: drawer(context),
       body: _pages[_selectedIndex],
       bottomNavigationBar: CustomLineIndicatorBottomNavbar(
-                    selectedColor: Colors.blue,
-                    unSelectedColor: Colors.black54,
-                    backgroundColor: Colors.white,
-                    currentIndex: _selectedIndex,
-                    onTap: (index) {
-                    setState(() {
-                        _selectedIndex = index;
-                    });
-                    },
-                    enableLineIndicator: true,
-                    lineIndicatorWidth: 2,
-                    indicatorType: IndicatorType.bottom,
-                    // gradient: LinearGradient(
-                    //   colors: kGradients,
-                    // ),
+        selectedColor: Colors.blue,
+        unSelectedColor: Color.fromARGB(255, 0, 0, 0),
+        backgroundColor: Color.fromARGB(255, 224, 223, 223),
+        currentIndex: _selectedIndex,
+        onTap: (index) {
+          setState(() {
+            _selectedIndex = index;
+          });
+        },
 
-                    customBottomBarItems: [
-                    CustomBottomBarItems(
-                        label: 'Home',
-                        icon: Icons.home,
-                    ),
-                    CustomBottomBarItems(
-                        label: 'Categories',
-                        icon: Icons.category_outlined,
-                    ),
-                    CustomBottomBarItems(
-                        label: 'Deals', icon: Icons.local_offer_outlined),
-                    CustomBottomBarItems(
-                        label: 'Cart',
-                        icon: Icons.shopping_cart_outlined,
-                    ),
-                    CustomBottomBarItems(
-                        label: 'Account',
-                        icon: Icons.person_2_outlined,
-                    ),
-                    ],
-                ),
+        enableLineIndicator: true,
+        lineIndicatorWidth: 2,
+        indicatorType: IndicatorType.bottom,
+        // gradient: LinearGradient(
+        //   colors: kGradients,
+        // ),
+
+        customBottomBarItems: [
+          CustomBottomBarItems(
+            label: 'Categories',
+            icon: Icons.category_outlined,
+          ),
+          CustomBottomBarItems(
+              label: 'Deals', icon: Icons.local_offer_outlined),
+          CustomBottomBarItems(
+            label: 'Home',
+            icon: Icons.home,
+          ),
+          CustomBottomBarItems(
+            label: 'Cart',
+            icon: Icons.shopping_cart_outlined,
+          ),
+          CustomBottomBarItems(
+            label: 'Account',
+            icon: Icons.person_2_outlined,
+          ),
+        ],
+      ),
     );
   }
 }
