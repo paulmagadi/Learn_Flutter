@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
             ListTile(
               title: const Text('Contact Us'),
               leading: const Icon(
-                Icons.info,
+                Icons.message,
                 color: Colors.blue,
               ),
               onTap: () {
@@ -87,17 +87,7 @@ class _HomePageState extends State<HomePage> {
                 Navigator.pushNamed(context, '/help');
               },
             ),
-            ListTile(
-              title: const Text('Calendar'),
-              leading: const Icon(
-                Icons.calendar_today,
-                color: Colors.blue,
-              ),
-              onTap: () {
-                // Navigate to the Calendar page
-                Navigator.pushNamed(context, '/calendar');
-              },
-            ),
+            
             ListTile(
               title: const Text('Logout'),
               leading: const Icon(
