@@ -46,31 +46,31 @@ class _HomePageState extends State<HomePage> {
         items: [
           CurvedNavigationBarItem(
               icon: const Icon(
-                Icons.category,
+                Icons.category_outlined,
                 size: 20,
               ),
               label: "Category"),
           CurvedNavigationBarItem(
               icon: const Icon(
-                Icons.local_offer,
+                Icons.local_offer_outlined,
                 size: 20,
               ),
               label: "Deals"),
           CurvedNavigationBarItem(
               icon: const Icon(
-                Icons.home,
+                Icons.home_outlined,
                 size: 20,
               ),
               label: "Home"),
           CurvedNavigationBarItem(
               icon: const Icon(
-                Icons.shopping_cart,
+                Icons.shopping_cart_outlined,
                 size: 20,
               ),
               label: "Cart"),
           CurvedNavigationBarItem(
               icon: const Icon(
-                Icons.person,
+                Icons.person_2_outlined,
                 size: 20,
               ),
               label: "Account"),
