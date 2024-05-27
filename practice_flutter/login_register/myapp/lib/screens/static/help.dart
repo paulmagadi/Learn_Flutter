@@ -18,12 +18,8 @@ class HelpPage extends StatelessWidget {
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16),
-            const Text(
-              '1. Add a new task using the input box and the "+" button.\n'
-              '2. Complete a task by tapping on the checkbox next to it.\n'
-              '3. Delete a task by tapping the delete icon.\n'
-              '4. Use the search bar to find tasks quickly.\n',
-            ),
+            const Text('1. To register click Register.\n'
+                '2. To Login click Login.\n'),
             const SizedBox(height: 16),
             const Text(
               'FAQs',
@@ -31,9 +27,7 @@ class HelpPage extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             const Text(
-              'Q: How do I add a task?\nA: Type the task description in the input box and tap the "+" button.\n\n'
-              'Q: How do I mark a task as completed?\nA: Tap the checkbox next to the task.\n\n'
-              'Q: How do I delete a task?\nA: Tap the delete icon next to the task.\n\n',
+              'Q: Do you have a store?\nA: Yes we have a store.\n\n',
             ),
             const SizedBox(height: 16),
             const Text(

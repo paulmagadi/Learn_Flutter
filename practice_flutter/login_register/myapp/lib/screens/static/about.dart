@@ -7,7 +7,7 @@ class AboutPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.blue,
         foregroundColor: Colors.white, //set Text and icon colors to white
-        title: const Text('About Task Master'),
+        title: const Text('About'),
       ),
       body: const Padding(
         padding: EdgeInsets.all(16.0),
@@ -20,8 +20,7 @@ class AboutPage extends StatelessWidget {
             ),
             SizedBox(height: 16),
             Text(
-              'This is a to-do app designed to help you stay organized and manage your tasks effectively. '
-              'You can add, complete, and delete tasks as needed.',
+              'We are here to offer you the most amazing customer experience.',
             ),
             SizedBox(height: 16),
             Text(
