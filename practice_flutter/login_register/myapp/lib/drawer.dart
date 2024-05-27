@@ -12,7 +12,7 @@ Drawer drawer(BuildContext context) {
           currentAccountPicture: CircleAvatar(
               // backgroundImage: AssetImage('assets/images/paul.jpg'),
               ),
-          accountName: Text('Cacinde Reds'),
+          accountName: Text('Cassidy Red'),
           accountEmail: Text('cacindyreds@gmail.com'),
         ),
         // List Tile inside the Drawer
