@@ -12,8 +12,8 @@ Drawer drawer(BuildContext context) {
           currentAccountPicture: CircleAvatar(
               // backgroundImage: AssetImage('assets/images/paul.jpg'),
               ),
-          accountName: Text('Paul SQ Magadi'),
-          accountEmail: Text('paul.learner@plp.com'),
+          accountName: Text('Cacinde Reds'),
+          accountEmail: Text('cacindyreds@gmail.com'),
         ),
         // List Tile inside the Drawer
         ListTile(

@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: SearchAppBar(title: 'GreenFields'),
+      appBar: SearchAppBar(title: 'Runtime Cakes'),
       drawer: drawer(context),
       body: _pages[_selectedIndex],
       bottomNavigationBar: CurvedNavigationBar(
