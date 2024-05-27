@@ -63,19 +63,19 @@ class _BannerCarouselState extends State<BannerCarousel> {
                 height: 12.0,
                 margin:
                     const EdgeInsets.symmetric(vertical: 8.0, horizontal: 4.0),
-                // decoration: BoxDecoration(
-                //   shape: BoxShape.circle,
-                //   color: _current == entry.key
-                //       ? Colors.blue // Active dot color
-                //       : Colors.grey, // Inactive dot color
-                // ),
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: (Theme.of(context).brightness == Brightness.dark
-                          ? Colors.white
-                          : const Color.fromARGB(255, 255, 149, 0))
-                      .withOpacity(_current == entry.key ? 0.9 : 0.4),
+                  color: _current == entry.key
+                      ? Colors.blue // Active dot color
+                      : Colors.grey, // Inactive dot color
                 ),
+                // decoration: BoxDecoration(
+                //   shape: BoxShape.circle,
+                //   color: (Theme.of(context).brightness == Brightness.dark
+                //           ? Colors.white
+                //           : const Color.fromARGB(255, 255, 149, 0))
+                //       .withOpacity(_current == entry.key ? 0.9 : 0.4),
+                // ),
               ),
             );
           }).toList(),
