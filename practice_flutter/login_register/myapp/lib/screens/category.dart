@@ -21,13 +21,13 @@ class CategoryView extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView.builder(
       padding: const EdgeInsets.all(15),
-      shrinkWrap: true, // Add this line
-      physics: NeverScrollableScrollPhysics(), // Add this line
+      shrinkWrap: true, 
+      physics: const NeverScrollableScrollPhysics(), 
       gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
         maxCrossAxisExtent: 200,
         childAspectRatio: 3 / 2,
-        crossAxisSpacing: 20,
-        mainAxisSpacing: 20,
+        crossAxisSpacing: 10,
+        mainAxisSpacing: 10,
       ),
       itemCount: DUMMY_CATEGORIES.length,
       itemBuilder: (ctx, index) {
