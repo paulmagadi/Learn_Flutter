@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'appbar.dart';
 
 import 'drawer.dart';
@@ -22,7 +21,7 @@ class _HomePageState extends State<HomePage> {
   int _selectedIndex = 2;
 
   final List<Widget> _pages = [
-    const CategoryScreen(),
+    CategoriesScreen(),
     const DealsScreen(),
     const HomeScreen(),
     const CartScreen(),
