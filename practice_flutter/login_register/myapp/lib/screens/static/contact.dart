@@ -134,7 +134,7 @@ class _ContactUsPageState extends State<ContactUsPage> {
             const SizedBox(height: 20),
             Center(
               child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   IconButton(
                     icon: FaIcon(FontAwesomeIcons.facebook), onPressed: () {  },
