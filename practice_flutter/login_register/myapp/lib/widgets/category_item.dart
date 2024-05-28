@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../screens/product_screen.dart';
-
 class CategoryItem extends StatelessWidget {
   final String id;
   final String title;
@@ -16,7 +15,10 @@ class CategoryItem extends StatelessWidget {
     Navigator.of(ctx).push(
       MaterialPageRoute(
         builder: (_) {
-          return ProductsScreen(categoryId: id, categoryTitle: title);
+          return ProductsScreen(
+            categoryId: id,
+            categoryTitle: title,
+          );
         },
       ),
     );
@@ -37,7 +39,7 @@ class CategoryItem extends StatelessWidget {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
-          borderRadius: BorderRadius.circular(5),
+          borderRadius: BorderRadius.circular(15),
           image: DecorationImage(
             image: AssetImage(imageUrl),
             fit: BoxFit.cover,
@@ -47,7 +49,7 @@ class CategoryItem extends StatelessWidget {
         ),
         child: Text(
           title,
-          style: Theme.of(context).textTheme.titleLarge?.copyWith(
+          style: Theme.of(context).textTheme.headline6?.copyWith(
                 color: Colors.white,
               ),
           textAlign: TextAlign.center,
