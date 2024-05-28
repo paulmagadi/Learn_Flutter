@@ -137,15 +137,15 @@ class _ContactUsPageState extends State<ContactUsPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   IconButton(
-                    icon: FaIcon(FontAwesomeIcons.facebook, color: Colors.blue,), onPressed: () {  },
+                    icon: FaIcon(FontAwesomeIcons.facebook, color: Colors.blue, size: 30,), onPressed: () {  },
                   ),
                   const SizedBox(width: 5),
                   IconButton(
-                    icon: FaIcon(FontAwesomeIcons.x, color: Colors.blue,), onPressed: () {  },
+                    icon: FaIcon(FontAwesomeIcons.x, color: Colors.blue, size: 30,), onPressed: () {  },
                   ),
                   const SizedBox(width: 5),
                   IconButton(
-                    icon: FaIcon(FontAwesomeIcons.instagram, color: Colors.blue,), onPressed: () {  },
+                    icon: FaIcon(FontAwesomeIcons.instagram, color: Colors.blue, size: 30,), onPressed: () {  },
                   )
               
                 ],
