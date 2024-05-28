@@ -62,7 +62,7 @@ class _BannerCarouselState extends State<BannerCarousel> {
                 width: 12.0,
                 height: 12.0,
                 margin:
-                    const EdgeInsets.symmetric(vertical: 8.0, horizontal: 4.0),
+                    const EdgeInsets.symmetric(vertical: 8.0, horizontal: 12.0),
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: _current == entry.key
