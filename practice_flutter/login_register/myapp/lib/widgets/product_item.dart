@@ -31,7 +31,7 @@ class ProductItem extends StatelessWidget {
       child: Card(
         elevation: 5,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(15),
+          borderRadius: BorderRadius.circular(5),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -40,7 +40,7 @@ class ProductItem extends StatelessWidget {
               borderRadius: BorderRadius.vertical(top: Radius.circular(15)),
               child: Image.asset(
                 imageUrl,
-                height: 100, 
+                height: 150, 
                 width: double.infinity,
                 fit: BoxFit.cover,
               ),
