@@ -20,7 +20,7 @@ class CategoryView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      padding: const EdgeInsets.all(15),
+      // padding: const EdgeInsets.all(15),
       shrinkWrap: true, 
       physics: const NeverScrollableScrollPhysics(), 
       gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(

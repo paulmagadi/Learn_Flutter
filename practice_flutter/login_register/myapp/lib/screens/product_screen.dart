@@ -23,7 +23,7 @@ class ProductsScreen extends StatelessWidget {
         title: Text(categoryTitle),
       ),
       body: GridView.builder(
-        padding: const EdgeInsets.all(15),
+        // padding: const EdgeInsets.all(15),
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
           maxCrossAxisExtent: 200,
           childAspectRatio: 3 / 2,

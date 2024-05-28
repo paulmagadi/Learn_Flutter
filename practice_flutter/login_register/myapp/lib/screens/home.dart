@@ -10,13 +10,30 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start, 
-      children: [
-        BannerCarousel(),
-        CategoryView(),
-        ProductsView(),
-      ]),
+      child: Padding(
+        padding: EdgeInsets.all(8.0),
+        child: Column(
+            
+        children: [
+          BannerCarousel(),
+          Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Categories',
+                    style:TextStyle(fontSize: 34),
+                  ),]),
+          CategoryView(),
+          Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Products',
+                    style:TextStyle(fontSize: 34),
+                  ),]),
+          ProductsView(),
+        ]),
+      ),
     );
   }
 }
