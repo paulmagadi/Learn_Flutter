@@ -15,3 +15,4 @@ class Product {
     required this.categoryId,
   });
 }
+

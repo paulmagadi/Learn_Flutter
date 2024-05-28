@@ -13,18 +13,32 @@ class ProductItem extends StatelessWidget {
     required this.price,
   });
 
+  void selectProduct(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (ctx) => ProductDetailsScreen(
+          productId: id,
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Card(
-      elevation: 5,
-      margin: EdgeInsets.all(10),
-      child: ListTile(
-        leading: CircleAvatar(
-          backgroundImage: AssetImage(imageUrl),
+    return GestureDetector(
+      onTap: () => selectProduct(context),
+      child: GridTile(
+        child: Image.network(imageUrl, fit: BoxFit.cover),
+        footer: GridTileBar(
+          backgroundColor: Colors.black87,
+          title: Text(
+            title,
+            textAlign: TextAlign.center,
+          ),
+          subtitle: Text('\$$price'),
         ),
-        title: Text(title),
-        subtitle: Text('\$${price.toString()}'),
       ),
     );
   }
 }
+
