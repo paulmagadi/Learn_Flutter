@@ -83,7 +83,7 @@ class _ContactUsPageState extends State<ContactUsPage> {
                       return null;
                     },
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   TextFormField(
                     controller: _emailController,
                     decoration: const InputDecoration(labelText: 'Email', 
@@ -102,7 +102,7 @@ class _ContactUsPageState extends State<ContactUsPage> {
                       return null;
                     },
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   TextFormField(
                     style: const TextStyle(color: Colors.black),
                     controller: _messageController,
@@ -120,7 +120,7 @@ class _ContactUsPageState extends State<ContactUsPage> {
                       return null;
                     },
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   _isLoading
                       ? CircularProgressIndicator()
                       : ElevatedButton(
@@ -130,6 +130,15 @@ class _ContactUsPageState extends State<ContactUsPage> {
                 ],
               ),
             ),
+            const SizedBox(height: 20),
+            Row(
+              children: [
+                Icon(Icons.facebook_outlined),
+                Icon(Icons.tweet),
+                Icon(Icons.facebook_outlined),
+
+              ],
+            )
           ]),
         ),
       ),
