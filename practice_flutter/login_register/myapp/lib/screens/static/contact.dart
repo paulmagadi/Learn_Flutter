@@ -71,7 +71,11 @@ class _ContactUsPageState extends State<ContactUsPage> {
                 children: [
                   TextFormField(
                     controller: _nameController,
-                    decoration: InputDecoration(labelText: 'Name'),
+                    decoration: const InputDecoration(labelText: 'Name',
+                    enabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.grey)),
+                            focusedBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.black))),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
                         return 'Please enter your name';
@@ -79,9 +83,14 @@ class _ContactUsPageState extends State<ContactUsPage> {
                       return null;
                     },
                   ),
+                  SizedBox(height: 20),
                   TextFormField(
                     controller: _emailController,
-                    decoration: InputDecoration(labelText: 'Email'),
+                    decoration: const InputDecoration(labelText: 'Email', 
+                    enabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.grey)),
+                            focusedBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.black))),
                     keyboardType: TextInputType.emailAddress,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
@@ -93,10 +102,11 @@ class _ContactUsPageState extends State<ContactUsPage> {
                       return null;
                     },
                   ),
+                  SizedBox(height: 20),
                   TextFormField(
-                    style: TextStyle(color: Colors.black),
+                    style: const TextStyle(color: Colors.black),
                     controller: _messageController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         labelText: 'Message',
                         enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(color: Colors.grey)),
