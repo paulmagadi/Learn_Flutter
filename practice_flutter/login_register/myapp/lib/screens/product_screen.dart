@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import '../models/product.dart';
+import '../models/data.dart';
 import '../widgets/product_item.dart';
-import '../main.dart'; // Import DUMMY_PRODUCTS
 
 class ProductsScreen extends StatelessWidget {
   final String categoryId;
