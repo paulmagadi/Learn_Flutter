@@ -9,7 +9,20 @@ class CategoriesScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Cake Store'),
       ),
-      body: GridView(
+      body: CategoryView(),
+    );
+  }
+}
+
+class CategoryView extends StatelessWidget {
+  const CategoryView({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      child: GridView(
         padding: const EdgeInsets.all(15),
         children: DUMMY_CATEGORIES
             .map((catData) => CategoryItem(
