@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/screens/category.dart';
 
 import '../components/home/banner_carousel.dart';
+import 'product_list.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -13,7 +14,8 @@ class HomeScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start, 
       children: [
         BannerCarousel(),
-        CategoryView()
+        CategoryView(),
+        ProductsView(),
       ]),
     );
   }
