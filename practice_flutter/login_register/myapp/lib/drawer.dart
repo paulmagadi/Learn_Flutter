@@ -50,7 +50,7 @@ Drawer drawer(BuildContext context) {
             Navigator.pushNamed(context, '/help');
           },
         ),
-
+        const Spacer(),
         ListTile(
           title: const Text('Logout'),
           leading: const Icon(
@@ -58,9 +58,7 @@ Drawer drawer(BuildContext context) {
             color: Colors.blue,
           ),
           onTap: () {
-            // Handle logout action
-            // Add your logout logic here, e.g., sign out the user, navigate to the login screen
-            // Navigator.pushReplacementNamed(context, '/login');
+            Navigator.pushReplacementNamed(context, '/');
           },
         ),
       ],
