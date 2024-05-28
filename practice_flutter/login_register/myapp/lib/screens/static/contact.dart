@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ContactUsPage extends StatefulWidget {
   @override
@@ -133,9 +134,15 @@ class _ContactUsPageState extends State<ContactUsPage> {
             const SizedBox(height: 20),
             Row(
               children: [
-                Icon(Icons.facebook_outlined),
-                Icon(Icons.tweet),
-                Icon(Icons.facebook_outlined),
+                IconButton(
+                  icon: FaIcon(FontAwesomeIcons.facebook), onPressed: () {  },
+                ),
+                IconButton(
+                  icon: FaIcon(FontAwesomeIcons.x), onPressed: () {  },
+                ),
+                IconButton(
+                  icon: FaIcon(FontAwesomeIcons.instagram), onPressed: () {  },
+                )
 
               ],
             )
