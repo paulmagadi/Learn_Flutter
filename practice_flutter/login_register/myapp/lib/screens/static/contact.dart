@@ -50,17 +50,20 @@ class _ContactUsPageState extends State<ContactUsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[150],
       appBar: AppBar(
         title: Text('Send Us a message'),
       ),
-      body: SafeArea(
+      body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(children: [
             const Center(
-              child: Icon(Icons.message_outlined,
-              size: 100,
-              color: Colors.blue,),
+              child: Icon(
+                Icons.message_outlined,
+                size: 100,
+                color: Colors.blue,
+              ),
             ),
             Form(
               key: _formKey,
@@ -91,8 +94,14 @@ class _ContactUsPageState extends State<ContactUsPage> {
                     },
                   ),
                   TextFormField(
+                    style: TextStyle(color: Colors.black),
                     controller: _messageController,
-                    decoration: InputDecoration(labelText: 'Message'),
+                    decoration: InputDecoration(
+                        labelText: 'Message',
+                        enabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.grey)),
+                            focusedBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.black))),
                     maxLines: 5,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
