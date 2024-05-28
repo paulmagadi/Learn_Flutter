@@ -132,19 +132,24 @@ class _ContactUsPageState extends State<ContactUsPage> {
               ),
             ),
             const SizedBox(height: 20),
-            Row(
-              children: [
-                IconButton(
-                  icon: FaIcon(FontAwesomeIcons.facebook), onPressed: () {  },
-                ),
-                IconButton(
-                  icon: FaIcon(FontAwesomeIcons.x), onPressed: () {  },
-                ),
-                IconButton(
-                  icon: FaIcon(FontAwesomeIcons.instagram), onPressed: () {  },
-                )
-
-              ],
+            Center(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  IconButton(
+                    icon: FaIcon(FontAwesomeIcons.facebook), onPressed: () {  },
+                  ),
+                  const SizedBox(width: 5),
+                  IconButton(
+                    icon: FaIcon(FontAwesomeIcons.x), onPressed: () {  },
+                  ),
+                  const SizedBox(width: 5),
+                  IconButton(
+                    icon: FaIcon(FontAwesomeIcons.instagram), onPressed: () {  },
+                  )
+              
+                ],
+              ),
             )
           ]),
         ),
