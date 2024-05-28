@@ -6,6 +6,7 @@ final List<Category> DUMMY_CATEGORIES = [
   Category(id: 'c1', title: 'Cakes', imageUrl: 'assets/images/cakes/1.png'),
   Category(id: 'c2', title: 'Cupcakes', imageUrl: 'assets/images/cakes/2.png'),
   Category(id: 'c3', title: 'Cookies', imageUrl: 'assets/images/cakes/3.png'),
+  Category(id: 'c4', title: 'Burns', imageUrl: 'assets/images/cakes/4.png'),
 ];
 
 final List<Product> DUMMY_PRODUCTS = [
@@ -81,4 +82,61 @@ final List<Product> DUMMY_PRODUCTS = [
     imageUrl: 'assets/images/cakes/9.png',
     categoryId: 'c3',
   ),
+  Product(
+    id: 'p10',
+    title: 'Chocolate Chip Cookie',
+    description: 'Crispy chocolate chip cookie',
+    price: 2.0,
+    imageUrl: 'assets/images/cakes/10.png',
+    categoryId: 'c4',
+  ),
+    Product(
+    id: 'p11',
+    title: 'Chocolate Cake',
+    description: 'Delicious chocolate cake',
+    price: 20.0,
+    imageUrl: 'assets/images/cakes/11.png',
+    categoryId: 'c4',
+  ),
+  Product(
+    id: 'p12',
+    title: 'Vanilla Cupcake',
+    description: 'Tasty vanilla cupcake',
+    price: 5.0,
+    imageUrl: 'assets/images/cakes/12.png',
+    categoryId: 'c4',
+  ),
+  Product(
+    id: 'p13',
+    title: 'Chocolate Chip Cookie',
+    description: 'Crispy chocolate chip cookie',
+    price: 2.0,
+    imageUrl: 'assets/images/cakes/13.png',
+    categoryId: 'c4',
+  ),
+  Product(
+    id: 'p14',
+    title: 'Chocolate Chip Cookie',
+    description: 'Crispy chocolate chip cookie',
+    price: 2.0,
+    imageUrl: 'assets/images/cakes/14.png',
+    categoryId: 'c1',
+  ),
+  Product(
+    id: 'p15',
+    title: 'Chocolate Chip Cookie',
+    description: 'Crispy chocolate chip cookie',
+    price: 2.0,
+    imageUrl: 'assets/images/cakes/15.png',
+    categoryId: 'c2',
+  ),
+  Product(
+    id: 'p16',
+    title: 'Chocolate Chip Cookie',
+    description: 'Crispy chocolate chip cookie',
+    price: 2.0,
+    imageUrl: 'assets/images/cakes/16.png',
+    categoryId: 'c3',
+  ),
+   
 ];
