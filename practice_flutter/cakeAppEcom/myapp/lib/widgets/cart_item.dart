@@ -24,16 +24,18 @@ class CartItemWidget extends StatelessWidget {
       key: ValueKey(id),
       background: Container(
         color: Theme.of(context).colorScheme.error,
-        child: Icon(
-          Icons.delete_forever_outlined,
-          color: const Color.fromARGB(255, 255, 70, 70),
-          size: 40,
-        ),
-        alignment: Alignment.centerRight,
-        padding: EdgeInsets.only(right: 20),
-        margin: EdgeInsets.symmetric(
-          horizontal: 15,
-          vertical: 4,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(right: 20),
+              child: Icon(
+                Icons.delete_forever_outlined,
+                color: const Color.fromARGB(255, 255, 70, 70),
+                size: 40,
+              ),
+            ),
+          ],
         ),
       ),
       direction: DismissDirection.endToStart,
