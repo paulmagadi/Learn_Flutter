@@ -33,6 +33,7 @@ dependencies:
   curved_navigation_bar_with_label: ^2.1.4
   form_validator: ^2.1.1
   table_calendar: ^3.1.1
+  provider: ^6.0.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
