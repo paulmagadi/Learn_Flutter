@@ -1,13 +1,12 @@
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'appbar.dart';
 import 'drawer.dart';
 import 'screens/cart.dart';
 import 'screens/category.dart';
 import 'screens/deals.dart';
 import 'screens/home.dart';
 import 'screens/profile.dart';
-import 'package:bottom_navbar_with_indicator/bottom_navbar_with_indicator.dart';
 import '../models/cart.dart';
 
 class HomePage extends StatefulWidget {
@@ -19,6 +18,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 2;
+  String _searchQuery = '';
 
   final List<Widget> _pages = [
     CategoriesScreen(),
@@ -34,79 +34,112 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  void _updateSearchQuery(String query) {
+    setState(() {
+      _searchQuery = query;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final cart = Provider.of<Cart>(context);
-    return  Scaffold(
-      backgroundColor: Color.fromARGB(255, 249, 243, 243),
-      appBar: AppBar(
-        title: Text('Runtime Cakes'),
-        actions: [
-          Stack(
-            children: [
-              IconButton(
-                icon: Icon(Icons.shopping_cart),
-                onPressed: () {
-                  setState(() {
-                    _selectedIndex = 3;
-                  });
-                },
-              ),
-              Positioned(
-                right: 8,
-                top: 8,
-                child: Container(
-                  padding: EdgeInsets.all(2),
-                  decoration: BoxDecoration(
-                    color: Colors.red,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  constraints: BoxConstraints(
-                    minWidth: 16,
-                    minHeight: 16,
-                  ),
-                  child: Text(
-                    '${cart.itemCount}',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 10,
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
+    return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 249, 243, 243),
+      appBar: SearchAppBar(title: 'Runtime Cakes', onSearch: _updateSearchQuery,),
+
+        // actions: [
+        //   Stack(
+        //     children: [
+        //       IconButton(
+        //         icon: const Icon(Icons.shopping_cart),
+        //         onPressed: () {
+        //           setState(() {
+        //             _selectedIndex = 3;
+        //           });
+        //         },
+        //       ),
+        //       Positioned(
+        //         right: 8,
+        //         top: 8,
+        //         child: Container(
+        //           padding: const EdgeInsets.all(2),
+        //           decoration: BoxDecoration(
+        //             color: Colors.red,
+        //             borderRadius: BorderRadius.circular(10),
+        //           ),
+        //           constraints: const BoxConstraints(
+        //             minWidth: 16,
+        //             minHeight: 16,
+        //           ),
+        //           child: Text(
+        //             '${cart.itemCount}',
+        //             textAlign: TextAlign.center,
+        //             style: const TextStyle(
+        //               fontSize: 10,
+        //               color: Colors.white, // Ensure text is visible
+        //             ),
+        //           ),
+        //         ),
+        //       ),
+        //     ],
+        //   ),
+        // ],
+      // ),
       drawer: drawer(context),
       body: _pages[_selectedIndex],
-      bottomNavigationBar: CustomLineIndicatorBottomNavbar(
-        selectedColor: Colors.blue,
-        unSelectedColor: Color.fromARGB(255, 0, 0, 0),
-        backgroundColor: Color.fromARGB(255, 224, 223, 223),
+      bottomNavigationBar: BottomNavigationBar(
+        showUnselectedLabels: true,
+        selectedItemColor: Colors.blue,
+        unselectedItemColor: Colors.black,
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
-        enableLineIndicator: true,
-        lineIndicatorWidth: 2,
-        indicatorType: IndicatorType.bottom,
-        customBottomBarItems: [
-          CustomBottomBarItems(
+        items: [
+          const BottomNavigationBarItem(
+            icon: Icon(Icons.category_outlined),
             label: 'Categories',
-            icon: Icons.category_outlined,
           ),
-          CustomBottomBarItems(
-              label: 'Deals', icon: Icons.local_offer_outlined),
-          CustomBottomBarItems(
+          const BottomNavigationBarItem(
+            icon: Icon(Icons.local_offer_outlined),
+            label: 'Deals',
+          ),
+          const BottomNavigationBarItem(
+            icon: Icon(Icons.home),
             label: 'Home',
-            icon: Icons.home,
           ),
-          CustomBottomBarItems(
+          BottomNavigationBarItem(
+            icon: Stack(
+              children: [
+                const Icon(Icons.shopping_cart_outlined),
+                if (cart.itemCount > 0)
+                  Positioned(
+                    right: 0,
+                    child: Container(
+                      padding: const EdgeInsets.all(1),
+                      decoration: BoxDecoration(
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                      constraints: const BoxConstraints(
+                        minWidth: 12,
+                        minHeight: 12,
+                      ),
+                      child: Text(
+                        '${cart.itemCount}',
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 8,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+              ],
+            ),
             label: 'Cart',
-            icon: Icons.shopping_cart_outlined,
           ),
-          CustomBottomBarItems(
+          const BottomNavigationBarItem(
+            icon: Icon(Icons.person_2_outlined),
             label: 'Account',
-            icon: Icons.person_2_outlined,
           ),
         ],
       ),
