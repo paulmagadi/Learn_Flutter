@@ -170,19 +170,18 @@ class ProductItem extends StatelessWidget {
                         child: Text(
                           title,
                           style: const TextStyle(
-                            fontSize: 14,
+                            fontSize: 18,
                             fontWeight: FontWeight.bold,
                           ),
                           textAlign: TextAlign.left,
                           overflow: TextOverflow
-                              .ellipsis, // This will add "..." at the end if the text overflows
-                          maxLines:
-                              1, // This ensures the text stays on a single line
+                              .ellipsis, 
+                          maxLines: 2, 
                         ),
                       ),
                     ],
                   ),
-                  const SizedBox(height: 5),
+                  const Spacer(flex: 1,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
