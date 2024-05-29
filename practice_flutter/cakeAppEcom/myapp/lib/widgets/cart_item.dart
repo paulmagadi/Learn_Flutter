@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../models/cart.dart';
@@ -20,47 +21,36 @@ class CartItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final cart = Provider.of<Cart>(context, listen: false);
-    return Dismissible(
-      key: ValueKey(id),
-      background: Container(
-        color: Theme.of(context).colorScheme.error,
-        child: Padding(
-          padding: const EdgeInsets.only(right: 20),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              Icon(
-                Icons.delete_forever_outlined,
-                color: const Color.fromARGB(255, 255, 70, 70),
-                size: 40,
-              ),
-            ],
-          ),
-        ),
+    return Card(
+      margin: EdgeInsets.symmetric(
+        horizontal: 15,
+        vertical: 4,
       ),
-      direction: DismissDirection.endToStart,
-      onDismissed: (direction) {
-        cart.removeItem(productId);
-      },
-      child: Card(
-        margin: EdgeInsets.symmetric(
-          horizontal: 15,
-          vertical: 4,
-        ),
-        child: Padding(
-          padding: EdgeInsets.all(8),
-          child: ListTile(
-            leading: CircleAvatar(
-              child: Padding(
-                padding: EdgeInsets.all(5),
-                child: FittedBox(
-                  child: Text('\$$price'),
-                ),
+      child: Padding(
+        padding: EdgeInsets.all(8),
+        child: ListTile(
+          leading: CircleAvatar(
+            child: Padding(
+              padding: EdgeInsets.all(5),
+              child: FittedBox(
+                child: Text('\$$price'),
               ),
             ),
-            title: Text(title),
-            subtitle: Text('Total: \$${(price * quantity).toStringAsFixed(2)}'),
-            trailing: Text('$quantity x'),
+          ),
+          title: Text(title),
+          subtitle: Text('Total: \$${(price * quantity).toStringAsFixed(2)}'),
+          trailing: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text('$quantity x'),
+              IconButton(
+                icon: Icon(Icons.delete_forever_outlined),
+                onPressed: () {
+                  cart.removeItem(productId);
+                },
+                color: Theme.of(context).colorScheme.error,
+              ),
+            ],
           ),
         ),
       ),
