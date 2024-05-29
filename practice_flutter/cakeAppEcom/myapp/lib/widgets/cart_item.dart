@@ -8,7 +8,7 @@ class CartItemWidget extends StatelessWidget {
   final String title;
   final int quantity;
   final double price;
-  final String imageUrl; 
+  final String imageUrl;
 
   CartItemWidget({
     required this.id,
@@ -16,7 +16,7 @@ class CartItemWidget extends StatelessWidget {
     required this.title,
     required this.quantity,
     required this.price,
-    required this.imageUrl, y
+    required this.imageUrl,
   });
 
   @override
@@ -38,7 +38,21 @@ class CartItemWidget extends StatelessWidget {
           trailing: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text('$quantity x'),
+              IconButton(
+                icon: Icon(Icons.remove),
+                onPressed: () {
+                  cart.decrementItem(productId);
+                },
+                color: Theme.of(context).primaryColor,
+              ),
+              Text('$quantity'),
+              IconButton(
+                icon: Icon(Icons.add),
+                onPressed: () {
+                  cart.addItem(productId, price, title, 1, imageUrl);
+                },
+                color: Theme.of(context).primaryColor,
+              ),
               IconButton(
                 icon: Icon(Icons.delete_forever_outlined),
                 onPressed: () {
@@ -53,3 +67,4 @@ class CartItemWidget extends StatelessWidget {
     );
   }
 }
+
