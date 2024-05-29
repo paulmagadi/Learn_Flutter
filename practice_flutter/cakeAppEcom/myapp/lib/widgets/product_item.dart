@@ -165,33 +165,26 @@ class ProductItem extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    title,
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    textAlign: TextAlign.left,
+                  Row(
+                    children: [
+                      Text(
+                        title,
+                        style: const TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        textAlign: TextAlign.left,
+                      ),
+                    ],
                   ),
-                  // SizedBox(height: 5),
-                  // Text(
-                  //   '\$$price',
-                  //   style: TextStyle(
-                  //     fontSize: 14,
-                  //     color: Colors.grey,
-                  //   ),
-                  //   textAlign: TextAlign.left,
-                  // ),
-                
-                // Padding(
-              // padding: EdgeInsets.all(20),
+              const SizedBox(height: 5),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
                     '\$$price',
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 14,
                       color: Colors.grey,
                     ),
                   ),
