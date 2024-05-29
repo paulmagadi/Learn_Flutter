@@ -23,10 +23,10 @@ class CartItemWidget extends StatelessWidget {
     return Dismissible(
       key: ValueKey(id),
       background: Container(
-        color: Theme.of(context).errorColor,
+        color: Theme.of(context).colorScheme.error,
         child: Icon(
           Icons.delete,
-          color: Colors.white,
+          color: const Color.fromARGB(255, 255, 70, 70),
           size: 40,
         ),
         alignment: Alignment.centerRight,
@@ -38,7 +38,7 @@ class CartItemWidget extends StatelessWidget {
       ),
       direction: DismissDirection.endToStart,
       onDismissed: (direction) {
-        cart.removeListener(productId as VoidCallback);
+        cart.removeItem(productId);
       },
       child: Card(
         margin: EdgeInsets.symmetric(
