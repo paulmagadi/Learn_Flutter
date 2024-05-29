@@ -82,7 +82,7 @@ class ProductItem extends StatelessWidget {
                             cart.addItem(id, price, title, 1);
                             ScaffoldMessenger.of(context).showSnackBar(
                               const SnackBar(
-                                content: Text('Added to cart!'),
+                                content: Text('Item Added to Cart!'),
                                 duration: Duration(seconds: 2),
                               ),
                             );
