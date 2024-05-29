@@ -19,10 +19,8 @@ class Cart with ChangeNotifier {
     });
     return total;
   }
-  
-  get imageUrl => null;
 
-  void addItem(String productId, double price, String title, int quantity) {
+  void addItem(String productId, double price, String title, int quantity, String imageUrl) {
     if (_items.containsKey(productId)) {
       _items.update(
         productId,
@@ -30,9 +28,8 @@ class Cart with ChangeNotifier {
           id: existingCartItem.id,
           title: existingCartItem.title,
           quantity: existingCartItem.quantity + quantity,
-          price: existingCartItem.price,
-          imageUrl: existingCartItem.imageUrl
-
+          price: existingCartItem.price, 
+          imageUrl: existingCartItem.imageUrl, 
         ),
       );
     } else {
@@ -42,7 +39,7 @@ class Cart with ChangeNotifier {
           id: DateTime.now().toString(),
           title: title,
           quantity: quantity,
-          price: price,
+          price: price, 
           imageUrl: imageUrl,
         ),
       );

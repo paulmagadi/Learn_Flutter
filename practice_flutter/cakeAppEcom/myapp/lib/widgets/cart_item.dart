@@ -16,7 +16,7 @@ class CartItemWidget extends StatelessWidget {
     required this.title,
     required this.quantity,
     required this.price,
-    required this.imageUrl, // Initialize the imageUrl property
+    required this.imageUrl, y
   });
 
   @override
@@ -31,7 +31,7 @@ class CartItemWidget extends StatelessWidget {
         padding: EdgeInsets.all(8),
         child: ListTile(
           leading: CircleAvatar(
-            backgroundImage: NetworkImage(imageUrl), // Use the product image
+            backgroundImage: AssetImage(imageUrl), // Use the product image
           ),
           title: Text(title),
           subtitle: Text('Total: \$${(price * quantity).toStringAsFixed(2)}'),

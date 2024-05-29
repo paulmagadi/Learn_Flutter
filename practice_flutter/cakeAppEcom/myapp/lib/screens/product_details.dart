@@ -85,6 +85,7 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                   selectedProduct.price,
                   selectedProduct.title,
                   _quantity,
+                  selectedProduct.imageUrl
                 );
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
