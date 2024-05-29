@@ -19,6 +19,8 @@ class Cart with ChangeNotifier {
     });
     return total;
   }
+  
+  get imageUrl => null;
 
   void addItem(String productId, double price, String title, int quantity) {
     if (_items.containsKey(productId)) {
@@ -29,6 +31,8 @@ class Cart with ChangeNotifier {
           title: existingCartItem.title,
           quantity: existingCartItem.quantity + quantity,
           price: existingCartItem.price,
+          imageUrl: existingCartItem.imageUrl
+
         ),
       );
     } else {
@@ -39,6 +43,7 @@ class Cart with ChangeNotifier {
           title: title,
           quantity: quantity,
           price: price,
+          imageUrl: imageUrl,
         ),
       );
     }

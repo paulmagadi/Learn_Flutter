@@ -8,7 +8,7 @@ class CartItemWidget extends StatelessWidget {
   final String title;
   final int quantity;
   final double price;
-  final String imageUrl; // Add imageUrl property
+  final String imageUrl; 
 
   CartItemWidget({
     required this.id,
