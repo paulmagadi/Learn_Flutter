@@ -131,10 +131,10 @@ class ProductItem extends StatelessWidget {
                     fit: BoxFit.cover,
                   ),
                   Positioned(
-                    top: 10,
-                    right: 10,
+                    top: 2,
+                    right: 2,
                     child: IconButton(
-                      icon: Icon(Icons.shopping_cart),
+                      icon: Icon(Icons.add_shopping_cart_outlined),
                       color: Theme.of(context).colorScheme.secondary,
                       onPressed: () {
                         cart.addItem(id, price, title);
