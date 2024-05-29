@@ -40,7 +40,7 @@
 //               borderRadius: BorderRadius.vertical(top: Radius.circular(15)),
 //               child: Image.asset(
 //                 imageUrl,
-//                 height: 150, 
+//                 height: 150,
 //                 width: double.infinity,
 //                 fit: BoxFit.cover,
 //               ),
@@ -76,7 +76,6 @@
 //     );
 //   }
 // }
-
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -167,47 +166,52 @@ class ProductItem extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      Text(
-                        title,
-                        style: const TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.bold,
+                      Expanded(
+                        child: Text(
+                          title,
+                          style: const TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          textAlign: TextAlign.left,
+                          overflow: TextOverflow
+                              .ellipsis, // This will add "..." at the end if the text overflows
+                          maxLines:
+                              1, // This ensures the text stays on a single line
                         ),
-                        textAlign: TextAlign.left,
                       ),
                     ],
                   ),
-              const SizedBox(height: 5),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    '\$$price',
-                    style: TextStyle(
-                      fontSize: 14,
-                      color: Colors.grey,
-                    ),
-                  ),
-                  IconButton(
-                    icon: Icon(Icons.add_shopping_cart_outlined),
-                    onPressed: () {
-                      cart.addItem(id, price, title, 1); 
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text('Added to cart!'),
-                          duration: Duration(seconds: 2),
+                  const SizedBox(height: 5),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        '\$$price',
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Colors.grey,
                         ),
-                      );
-                    },
-                    color: Theme.of(context).primaryColor,
+                      ),
+                      IconButton(
+                        icon: Icon(Icons.add_shopping_cart_outlined),
+                        onPressed: () {
+                          cart.addItem(id, price, title, 1);
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content: Text('Added to cart!'),
+                              duration: Duration(seconds: 2),
+                            ),
+                          );
+                        },
+                        color: Theme.of(context).primaryColor,
+                      ),
+                    ],
                   ),
+                  // ),
                 ],
               ),
-            // ),
-          ],
-              ),
             ),
-            
           ],
         ),
       ),
