@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'appbar.dart';
@@ -20,21 +21,13 @@ class _HomePageState extends State<HomePage> {
   int _selectedIndex = 2;
   String _searchQuery = '';
 
-  final List<Widget> _pages = [
-    CategoriesScreen(),
-    const DealsScreen(),
-    const HomeScreen(),
-     CartScreen(),
-    const ProfileScreen(),
-  ];
-
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
     });
   }
 
-  void _updateSearchQuery(String query) {
+  void _onSearch(String query) {
     setState(() {
       _searchQuery = query;
     });
@@ -45,48 +38,21 @@ class _HomePageState extends State<HomePage> {
     final cart = Provider.of<Cart>(context);
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 249, 243, 243),
-      appBar: SearchAppBar(title: 'Runtime Cakes', onSearch: _updateSearchQuery,),
-
-        // actions: [
-        //   Stack(
-        //     children: [
-        //       IconButton(
-        //         icon: const Icon(Icons.shopping_cart),
-        //         onPressed: () {
-        //           setState(() {
-        //             _selectedIndex = 3;
-        //           });
-        //         },
-        //       ),
-        //       Positioned(
-        //         right: 8,
-        //         top: 8,
-        //         child: Container(
-        //           padding: const EdgeInsets.all(2),
-        //           decoration: BoxDecoration(
-        //             color: Colors.red,
-        //             borderRadius: BorderRadius.circular(10),
-        //           ),
-        //           constraints: const BoxConstraints(
-        //             minWidth: 16,
-        //             minHeight: 16,
-        //           ),
-        //           child: Text(
-        //             '${cart.itemCount}',
-        //             textAlign: TextAlign.center,
-        //             style: const TextStyle(
-        //               fontSize: 10,
-        //               color: Colors.white, // Ensure text is visible
-        //             ),
-        //           ),
-        //         ),
-        //       ),
-        //     ],
-        //   ),
-        // ],
-      // ),
+      appBar: SearchAppBar(
+        title: 'Runtime Cakes',
+        onSearch: _onSearch,
+      ),
       drawer: drawer(context),
-      body: _pages[_selectedIndex],
+      body: IndexedStack(
+        index: _selectedIndex,
+        children: [
+          CategoriesScreen(),
+          const DealsScreen(),
+          HomeScreen(searchQuery: _searchQuery),
+           CartScreen(),
+          const ProfileScreen(),
+        ],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         showUnselectedLabels: true,
         selectedItemColor: Colors.blue,
