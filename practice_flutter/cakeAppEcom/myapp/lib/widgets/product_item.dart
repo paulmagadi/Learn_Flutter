@@ -121,7 +121,7 @@ class ProductItem extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             ClipRRect(
-              borderRadius: BorderRadius.vertical(top: Radius.circular(15)),
+              // borderRadius: BorderRadius.vertical(top: Radius.circular(15)),
               child: Stack(
                 children: [
                   Image.asset(
