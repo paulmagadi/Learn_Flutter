@@ -14,7 +14,7 @@ class ProductsView extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
         maxCrossAxisExtent: 200,
-        childAspectRatio: 2.3/3,
+        childAspectRatio: 2/3,
         crossAxisSpacing: 5,
         mainAxisSpacing: 10,
       ),

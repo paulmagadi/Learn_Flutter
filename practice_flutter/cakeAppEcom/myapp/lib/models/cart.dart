@@ -20,14 +20,14 @@ class Cart with ChangeNotifier {
     return total;
   }
 
-  void addItem(String productId, double price, String title) {
+  void addItem(String productId, double price, String title, int quantity) {
     if (_items.containsKey(productId)) {
       _items.update(
         productId,
         (existingCartItem) => CartItem(
           id: existingCartItem.id,
           title: existingCartItem.title,
-          quantity: existingCartItem.quantity + 1,
+          quantity: existingCartItem.quantity + quantity,
           price: existingCartItem.price,
         ),
       );
@@ -37,11 +37,16 @@ class Cart with ChangeNotifier {
         () => CartItem(
           id: DateTime.now().toString(),
           title: title,
-          quantity: 1,
+          quantity: quantity,
           price: price,
         ),
       );
     }
+    notifyListeners();
+  }
+
+  void removeItem(String productId) {
+    _items.remove(productId);
     notifyListeners();
   }
 }

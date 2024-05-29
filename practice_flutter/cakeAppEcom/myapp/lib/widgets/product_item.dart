@@ -130,33 +130,33 @@ class ProductItem extends StatelessWidget {
                     width: double.infinity,
                     fit: BoxFit.cover,
                   ),
-                  Positioned(
-                    top: 2,
-                    right: 2,
-                    child: IconButton(
-                      icon: Icon(Icons.add_shopping_cart_outlined),
-                      color: Theme.of(context).colorScheme.secondary,
-                      onPressed: () {
-                        cart.addItem(id, price, title);
-                        ScaffoldMessenger.of(context).hideCurrentSnackBar();
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            content: Text(
-                              'Added item to cart!',
-                              textAlign: TextAlign.center,
-                            ),
-                            duration: Duration(seconds: 2),
-                            action: SnackBarAction(
-                              label: 'UNDO',
-                              onPressed: () {
-                                // Code to undo the addition
-                              },
-                            ),
-                          ),
-                        );
-                      },
-                    ),
-                  ),
+                  // Positioned(
+                  //   bottom: 2,
+                  //   right: 2,
+                  //   child: IconButton(
+                  //     icon: Icon(Icons.add_shopping_cart_outlined),
+                  //     color: Theme.of(context).colorScheme.secondary,
+                  //     onPressed: () {
+                  //       cart.addItem(id, price, title, 1);
+                  //       ScaffoldMessenger.of(context).hideCurrentSnackBar();
+                  //       ScaffoldMessenger.of(context).showSnackBar(
+                  //         SnackBar(
+                  //           content: Text(
+                  //             'Added item to cart!',
+                  //             textAlign: TextAlign.center,
+                  //           ),
+                  //           duration: Duration(seconds: 2),
+                  //           action: SnackBarAction(
+                  //             label: 'UNDO',
+                  //             onPressed: () {
+                  //               // Code to undo the addition
+                  //             },
+                  //           ),
+                  //         ),
+                  //       );
+                  //     },
+                  //   ),
+                  // ),
                 ],
               ),
             ),
@@ -173,18 +173,48 @@ class ProductItem extends StatelessWidget {
                     ),
                     textAlign: TextAlign.left,
                   ),
-                  SizedBox(height: 5),
+                  // SizedBox(height: 5),
+                  // Text(
+                  //   '\$$price',
+                  //   style: TextStyle(
+                  //     fontSize: 14,
+                  //     color: Colors.grey,
+                  //   ),
+                  //   textAlign: TextAlign.left,
+                  // ),
+                
+                // Padding(
+              // padding: EdgeInsets.all(20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
                   Text(
                     '\$$price',
                     style: TextStyle(
-                      fontSize: 14,
+                      fontSize: 20,
                       color: Colors.grey,
                     ),
-                    textAlign: TextAlign.left,
+                  ),
+                  IconButton(
+                    icon: Icon(Icons.add_shopping_cart_outlined),
+                    onPressed: () {
+                      cart.addItem(id, price, title, 1); 
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text('Added to cart!'),
+                          duration: Duration(seconds: 2),
+                        ),
+                      );
+                    },
+                    color: Theme.of(context).primaryColor,
                   ),
                 ],
               ),
+            // ),
+          ],
+              ),
             ),
+            
           ],
         ),
       ),
