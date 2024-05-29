@@ -31,7 +31,7 @@ class CartItemWidget extends StatelessWidget {
         padding: EdgeInsets.all(8),
         child: ListTile(
           leading: CircleAvatar(
-            backgroundImage: AssetImage(imageUrl), // Use the product image
+            backgroundImage: AssetImage(imageUrl), 
           ),
           title: Text(title),
           subtitle: Text('Total: \$${(price * quantity).toStringAsFixed(2)}'),
@@ -45,7 +45,7 @@ class CartItemWidget extends StatelessWidget {
                 },
                 color: Theme.of(context).primaryColor,
               ),
-              Text('$quantity'),
+              Text('$quantity', style: TextStyle(fontSize: 16),),
               IconButton(
                 icon: Icon(Icons.add),
                 onPressed: () {
@@ -54,7 +54,7 @@ class CartItemWidget extends StatelessWidget {
                 color: Theme.of(context).primaryColor,
               ),
               IconButton(
-                icon: Icon(Icons.delete_forever_outlined),
+                icon: Icon(Icons.clear_outlined),
                 onPressed: () {
                   cart.removeItem(productId);
                 },

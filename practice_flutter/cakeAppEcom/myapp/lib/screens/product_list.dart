@@ -14,9 +14,9 @@ class ProductsView extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
         maxCrossAxisExtent: 200,
-        childAspectRatio: 2/3,
+        childAspectRatio: 2.2/3,
         crossAxisSpacing: 5,
-        mainAxisSpacing: 10,
+        mainAxisSpacing: 5,
       ),
       itemBuilder: (ctx, index) {
         final product = DUMMY_PRODUCTS[index];

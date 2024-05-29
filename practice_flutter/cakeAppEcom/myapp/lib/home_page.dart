@@ -37,7 +37,8 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     final cart = Provider.of<Cart>(context);
-    return Scaffold(
+    return  Scaffold(
+      backgroundColor: Color.fromARGB(255, 249, 243, 243),
       appBar: AppBar(
         title: Text('Runtime Cakes'),
         actions: [
