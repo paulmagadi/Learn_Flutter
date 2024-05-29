@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../models/cart.dart';
@@ -9,6 +8,7 @@ class CartItemWidget extends StatelessWidget {
   final String title;
   final int quantity;
   final double price;
+  final String imageUrl; // Add imageUrl property
 
   CartItemWidget({
     required this.id,
@@ -16,6 +16,7 @@ class CartItemWidget extends StatelessWidget {
     required this.title,
     required this.quantity,
     required this.price,
+    required this.imageUrl, // Initialize the imageUrl property
   });
 
   @override
@@ -30,12 +31,7 @@ class CartItemWidget extends StatelessWidget {
         padding: EdgeInsets.all(8),
         child: ListTile(
           leading: CircleAvatar(
-            child: Padding(
-              padding: EdgeInsets.all(5),
-              child: FittedBox(
-                child: Text('\$$price'),
-              ),
-            ),
+            backgroundImage: NetworkImage(imageUrl), // Use the product image
           ),
           title: Text(title),
           subtitle: Text('Total: \$${(price * quantity).toStringAsFixed(2)}'),
