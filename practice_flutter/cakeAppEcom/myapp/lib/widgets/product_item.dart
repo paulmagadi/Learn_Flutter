@@ -65,23 +65,23 @@ class ProductItem extends StatelessWidget {
                       overflow: TextOverflow.ellipsis,
                       maxLines: 2,
                     ),
-                    Spacer(), // Pushes the following content to the bottom
+                    const Spacer(), 
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
                           '\$$price',
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 14,
                             color: Colors.grey,
                           ),
                         ),
                         IconButton(
-                          icon: Icon(Icons.add_shopping_cart_outlined),
+                          icon: const Icon(Icons.add_shopping_cart_outlined),
                           onPressed: () {
                             cart.addItem(id, price, title, 1);
                             ScaffoldMessenger.of(context).showSnackBar(
-                              SnackBar(
+                              const SnackBar(
                                 content: Text('Added to cart!'),
                                 duration: Duration(seconds: 2),
                               ),
